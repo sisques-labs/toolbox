@@ -53,6 +53,13 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M12 2a14 14 0 0 0 0 20" />
     </>
   ),
+  html: (
+    <>
+      <path d="M8 4 4 12l4 8" />
+      <path d="M16 4l4 8-4 8" />
+      <path d="M14 6l-4 12" />
+    </>
+  ),
   jwt: (
     <>
       <circle cx="8" cy="15" r="4" />

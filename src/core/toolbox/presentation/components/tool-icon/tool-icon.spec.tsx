@@ -10,6 +10,7 @@ const ALL_TOOL_IDS: ToolId[] = [
   'yaml',
   'base64',
   'url',
+  'html',
   'jwt',
   'hash',
   'uuid',

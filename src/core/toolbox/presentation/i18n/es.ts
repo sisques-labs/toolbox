@@ -44,6 +44,10 @@ const dict = {
       description:
         'Codifica y decodifica cadenas en formato URL (percent-encoding)',
     },
+    html: {
+      label: 'Entidades HTML',
+      description: 'Escapa y desescapa caracteres especiales de HTML',
+    },
     jwt: {
       label: 'Decodificador JWT',
       description: 'Inspecciona la cabecera y el payload de un JSON Web Token',
@@ -77,6 +81,8 @@ const dict = {
     minify: 'Minificar',
     encode: 'Codificar',
     decode: 'Decodificar',
+    escape: 'Escapar',
+    unescape: 'Desescapar',
     now: 'Ahora',
   },
   fields: {
@@ -100,6 +106,7 @@ const dict = {
     plainText: 'Texto plano',
     base64Text: 'Texto Base64',
     urlEncodedText: 'Texto codificado en URL',
+    htmlEntities: 'Entidades HTML',
     header: 'CABECERA',
     payload: 'PAYLOAD',
     signature: 'FIRMA',

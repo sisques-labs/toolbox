@@ -38,6 +38,10 @@ const dict = {
       label: 'URL encoder',
       description: 'Encode and decode URL-formatted (percent-encoded) strings',
     },
+    html: {
+      label: 'HTML entities',
+      description: 'Escape and unescape HTML special characters',
+    },
     jwt: {
       label: 'JWT decoder',
       description: 'Inspect the header and payload of a JSON Web Token',
@@ -71,6 +75,8 @@ const dict = {
     minify: 'Minify',
     encode: 'Encode',
     decode: 'Decode',
+    escape: 'Escape',
+    unescape: 'Unescape',
     now: 'Now',
   },
   fields: {
@@ -94,6 +100,7 @@ const dict = {
     plainText: 'Plain text',
     base64Text: 'Base64 text',
     urlEncodedText: 'URL-encoded text',
+    htmlEntities: 'HTML entities',
     header: 'HEADER',
     payload: 'PAYLOAD',
     signature: 'SIGNATURE',
