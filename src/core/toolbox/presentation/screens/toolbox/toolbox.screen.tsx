@@ -79,9 +79,11 @@ function ToolboxScreenContent() {
   );
 }
 
-export function ToolboxScreen() {
+export function ToolboxScreen({
+  initialLocale,
+}: { initialLocale?: Locale } = {}) {
   return (
-    <Providers>
+    <Providers initialLocale={initialLocale}>
       <ToolboxScreenContent />
     </Providers>
   );

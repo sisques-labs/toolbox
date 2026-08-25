@@ -47,6 +47,15 @@ describe('ToolboxScreen', () => {
     expect(document.documentElement.classList.contains('dark')).toBe(true);
   });
 
+  it('renders in the given initialLocale, for URL-prefixed pages like /en/', () => {
+    render(<ToolboxScreen initialLocale="en" />);
+
+    expect(
+      screen.getByRole('heading', { name: 'Case converter' }),
+    ).toBeInTheDocument();
+    expect(screen.getByLabelText('Input text')).toBeInTheDocument();
+  });
+
   it('shows a toast after copying a result', () => {
     Object.assign(navigator, { clipboard: { writeText: vi.fn() } });
     render(<ToolboxScreen />);
