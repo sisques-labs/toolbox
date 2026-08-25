@@ -86,6 +86,10 @@ const dict = {
       label: 'Color converter',
       description: 'Convert colors between hex, RGB and HSL',
     },
+    base: {
+      label: 'Base converter',
+      description: 'Convert integers between binary, octal, decimal and hex',
+    },
     chmod: {
       label: 'Chmod calculator',
       description: 'Compute Unix file permissions as octal and symbolic modes',
@@ -140,6 +144,8 @@ const dict = {
     textLeft: 'Text A',
     textRight: 'Text B',
     chmodOctal: 'Octal',
+    numberInput: 'Number',
+    fromBase: 'From base',
   },
   labels: {
     plainText: 'Plain text',
@@ -161,6 +167,12 @@ const dict = {
     hex: 'HEX',
     rgb: 'RGB',
     hsl: 'HSL',
+    decimal: 'Decimal',
+    binary: 'Binary',
+    base2: 'Binary (2)',
+    base8: 'Octal (8)',
+    base10: 'Decimal (10)',
+    base16: 'Hex (16)',
     expression: 'Expression',
     choosePreset: 'Choose a preset…',
     noMatches: 'No matches',
@@ -202,6 +214,7 @@ const dict = {
     invalidJsonLeft: 'Left JSON is invalid',
     invalidJsonRight: 'Right JSON is invalid',
     invalidChmod: 'Enter a 3-digit octal mode (0–7), e.g. 755',
+    invalidBaseNumber: 'Enter a valid number for the selected base',
   },
   copiedSuffix: ' copied',
 } as const;
