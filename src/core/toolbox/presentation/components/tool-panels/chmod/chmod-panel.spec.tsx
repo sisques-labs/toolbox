@@ -6,7 +6,7 @@ describe('ChmodPanel', () => {
   it('shows default 755 permissions', () => {
     render(<ChmodPanel t={enToolbox} onCopy={() => {}} />);
     expect(screen.getByText('755')).toBeInTheDocument();
-    expect(screen.getByText('rwxr-xr--')).toBeInTheDocument();
+    expect(screen.getByText('rwxr-xr-x')).toBeInTheDocument();
   });
 
   it('updates flags when octal changes', () => {

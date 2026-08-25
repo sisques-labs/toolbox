@@ -16,7 +16,7 @@ const useCase = new CalculateChmodUseCase();
 const DEFAULT_FLAGS: ChmodFlags = {
   owner: { read: true, write: true, execute: true },
   group: { read: true, write: false, execute: true },
-  other: { read: true, write: false, execute: false },
+  other: { read: true, write: false, execute: true },
 };
 
 function PermissionGroup({

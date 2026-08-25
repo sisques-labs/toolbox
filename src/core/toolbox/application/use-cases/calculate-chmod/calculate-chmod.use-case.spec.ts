@@ -8,15 +8,15 @@ describe('CalculateChmodUseCase', () => {
       useCase.fromFlags({
         owner: { read: true, write: true, execute: true },
         group: { read: true, write: false, execute: true },
-        other: { read: true, write: false, execute: false },
+        other: { read: true, write: false, execute: true },
       }),
     ).toEqual({
       octal: '755',
-      symbolic: 'rwxr-xr--',
+      symbolic: 'rwxr-xr-x',
       flags: {
         owner: { read: true, write: true, execute: true },
         group: { read: true, write: false, execute: true },
-        other: { read: true, write: false, execute: false },
+        other: { read: true, write: false, execute: true },
       },
     });
   });
