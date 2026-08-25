@@ -13,6 +13,7 @@ import { HtmlPanel } from '@/core/toolbox/presentation/components/tool-panels/ht
 import { JwtPanel } from '@/core/toolbox/presentation/components/tool-panels/jwt/jwt-panel';
 import { HashPanel } from '@/core/toolbox/presentation/components/tool-panels/hash/hash-panel';
 import { UuidPanel } from '@/core/toolbox/presentation/components/tool-panels/uuid/uuid-panel';
+import { UlidPanel } from '@/core/toolbox/presentation/components/tool-panels/ulid/ulid-panel';
 import { PasswordPanel } from '@/core/toolbox/presentation/components/tool-panels/password/password-panel';
 import { CrontabPanel } from '@/core/toolbox/presentation/components/tool-panels/crontab/crontab-panel';
 import { TimestampPanel } from '@/core/toolbox/presentation/components/tool-panels/timestamp/timestamp-panel';
@@ -53,6 +54,8 @@ export function ActiveToolPanel({
       return <HashPanel t={t} onCopy={onCopy} />;
     case 'uuid':
       return <UuidPanel t={t} onCopy={onCopy} />;
+    case 'ulid':
+      return <UlidPanel t={t} onCopy={onCopy} />;
     case 'password':
       return <PasswordPanel t={t} onCopy={onCopy} />;
     case 'crontab':

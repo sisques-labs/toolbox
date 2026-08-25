@@ -15,6 +15,7 @@ const ALL_TOOL_IDS: ToolId[] = [
   'jwt',
   'hash',
   'uuid',
+  'ulid',
   'password',
   'crontab',
   'timestamp',

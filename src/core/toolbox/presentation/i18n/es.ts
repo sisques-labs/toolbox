@@ -64,6 +64,10 @@ const dict = {
       label: 'Generador de UUID',
       description: 'Genera UUID v4 aleatorios',
     },
+    ulid: {
+      label: 'Generador de ULID',
+      description: 'Genera ULID ordenables lexicográficamente',
+    },
     password: {
       label: 'Generador de contraseñas',
       description: 'Crea contraseñas aleatorias seguras',

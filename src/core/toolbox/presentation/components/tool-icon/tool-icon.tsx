@@ -88,6 +88,12 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <line x1="16" y1="4" x2="14" y2="20" />
     </>
   ),
+  ulid: (
+    <>
+      <path d="M4 7h16M4 12h16M4 17h10" />
+      <circle cx="18" cy="17" r="2" />
+    </>
+  ),
   password: (
     <>
       <rect x="5" y="11" width="14" height="9" rx="2" />
