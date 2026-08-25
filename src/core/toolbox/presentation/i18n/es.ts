@@ -92,6 +92,10 @@ const dict = {
       label: 'Conversor de color',
       description: 'Convierte colores entre hex, RGB y HSL',
     },
+    chmod: {
+      label: 'Calculadora chmod',
+      description: 'Calcula permisos Unix en modo octal y simbólico',
+    },
     subnet: {
       label: 'Calculadora de subred',
       description: 'Obtén red, broadcast y rango de hosts a partir de un CIDR',
@@ -141,6 +145,7 @@ const dict = {
     flagMultiline: 'Multilínea (m)',
     textLeft: 'Texto A',
     textRight: 'Texto B',
+    chmodOctal: 'Octal',
   },
   labels: {
     plainText: 'Texto plano',
@@ -172,6 +177,14 @@ const dict = {
     diffAdded: 'Añadido',
     diffRemoved: 'Eliminado',
     diffChanged: 'Cambiado',
+    octal: 'Octal',
+    symbolic: 'Simbólico',
+    chmodOwner: 'Propietario',
+    chmodGroup: 'Grupo',
+    chmodOther: 'Otros',
+    chmodRead: 'Lectura',
+    chmodWrite: 'Escritura',
+    chmodExecute: 'Ejecución',
   },
   presets: {
     everyMinute: 'Cada minuto',
@@ -195,6 +208,7 @@ const dict = {
     invalidRegex: 'Expresión regular no válida',
     invalidJsonLeft: 'El JSON de la izquierda no es válido',
     invalidJsonRight: 'El JSON de la derecha no es válido',
+    invalidChmod: 'Introduce un modo octal de 3 dígitos (0–7), ej. 755',
   },
   copiedSuffix: ' copiado',
 } as const satisfies ToolboxDictTranslated;

@@ -134,6 +134,13 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M12 2v2M12 20v2M2 12h2M20 12h2" />
     </>
   ),
+  [ToolId.Chmod]: (
+    <>
+      <rect x="5" y="11" width="14" height="9" rx="2" />
+      <path d="M8 11V8a4 4 0 0 1 8 0" />
+      <path d="M9 16h6" />
+    </>
+  ),
   [ToolId.Subnet]: (
     <>
       <rect x="9" y="3" width="6" height="4" rx="1" />

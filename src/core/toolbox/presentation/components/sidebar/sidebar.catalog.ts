@@ -25,7 +25,7 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
   },
   {
     category: ToolCategoryId.Converters,
-    tools: [ToolId.Timestamp, ToolId.Color],
+    tools: [ToolId.Timestamp, ToolId.Color, ToolId.Chmod],
   },
   { category: ToolCategoryId.Network, tools: [ToolId.Subnet] },
 ];

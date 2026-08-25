@@ -18,6 +18,7 @@ export const ToolId = {
   Crontab: 'crontab',
   Timestamp: 'timestamp',
   Color: 'color',
+  Chmod: 'chmod',
   Subnet: 'subnet',
 } as const;
 

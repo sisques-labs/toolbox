@@ -86,6 +86,10 @@ const dict = {
       label: 'Color converter',
       description: 'Convert colors between hex, RGB and HSL',
     },
+    chmod: {
+      label: 'Chmod calculator',
+      description: 'Compute Unix file permissions as octal and symbolic modes',
+    },
     subnet: {
       label: 'IP subnet calculator',
       description: 'Get network, broadcast and host range from a CIDR',
@@ -135,6 +139,7 @@ const dict = {
     flagMultiline: 'Multiline (m)',
     textLeft: 'Text A',
     textRight: 'Text B',
+    chmodOctal: 'Octal',
   },
   labels: {
     plainText: 'Plain text',
@@ -166,6 +171,14 @@ const dict = {
     diffAdded: 'Added',
     diffRemoved: 'Removed',
     diffChanged: 'Changed',
+    octal: 'Octal',
+    symbolic: 'Symbolic',
+    chmodOwner: 'Owner',
+    chmodGroup: 'Group',
+    chmodOther: 'Other',
+    chmodRead: 'Read',
+    chmodWrite: 'Write',
+    chmodExecute: 'Execute',
   },
   presets: {
     everyMinute: 'Every minute',
@@ -188,6 +201,7 @@ const dict = {
     invalidRegex: 'Invalid regular expression',
     invalidJsonLeft: 'Left JSON is invalid',
     invalidJsonRight: 'Right JSON is invalid',
+    invalidChmod: 'Enter a 3-digit octal mode (0–7), e.g. 755',
   },
   copiedSuffix: ' copied',
 } as const;
