@@ -15,9 +15,12 @@ export const ToolId = {
   Uuid: 'uuid',
   Ulid: 'ulid',
   Password: 'password',
+  Totp: 'totp',
   Crontab: 'crontab',
+  Qr: 'qr',
   Timestamp: 'timestamp',
   Color: 'color',
+  Base: 'base',
   Chmod: 'chmod',
   Subnet: 'subnet',
 } as const;

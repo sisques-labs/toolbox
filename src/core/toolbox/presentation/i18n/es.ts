@@ -80,9 +80,18 @@ const dict = {
       label: 'Generador de contraseñas',
       description: 'Crea contraseñas aleatorias seguras',
     },
+    totp: {
+      label: 'OTP / TOTP',
+      description:
+        'Genera contraseñas de un solo uso basadas en el tiempo a partir de un secreto Base32',
+    },
     crontab: {
       label: 'Generador de crontab',
       description: 'Construye y explica expresiones de cron',
+    },
+    qr: {
+      label: 'Código QR',
+      description: 'Genera un código QR a partir de texto o una URL',
     },
     timestamp: {
       label: 'Conversor de timestamp',
@@ -91,6 +100,11 @@ const dict = {
     color: {
       label: 'Conversor de color',
       description: 'Convierte colores entre hex, RGB y HSL',
+    },
+    base: {
+      label: 'Conversor de base',
+      description:
+        'Convierte enteros entre binario, octal, decimal y hexadecimal',
     },
     chmod: {
       label: 'Calculadora chmod',
@@ -146,6 +160,10 @@ const dict = {
     textLeft: 'Texto A',
     textRight: 'Texto B',
     chmodOctal: 'Octal',
+    numberInput: 'Número',
+    fromBase: 'Base de origen',
+    totpSecret: 'Secreto Base32',
+    qrContent: 'Contenido',
   },
   labels: {
     plainText: 'Texto plano',
@@ -167,6 +185,12 @@ const dict = {
     hex: 'HEX',
     rgb: 'RGB',
     hsl: 'HSL',
+    decimal: 'Decimal',
+    binary: 'Binario',
+    base2: 'Binario (2)',
+    base8: 'Octal (8)',
+    base10: 'Decimal (10)',
+    base16: 'Hex (16)',
     expression: 'Expresión',
     choosePreset: 'Elige un preajuste…',
     noMatches: 'Sin coincidencias',
@@ -185,6 +209,7 @@ const dict = {
     chmodRead: 'Lectura',
     chmodWrite: 'Escritura',
     chmodExecute: 'Ejecución',
+    totpRemaining: 'Caduca en {seconds}s',
   },
   presets: {
     everyMinute: 'Cada minuto',
@@ -209,6 +234,9 @@ const dict = {
     invalidJsonLeft: 'El JSON de la izquierda no es válido',
     invalidJsonRight: 'El JSON de la derecha no es válido',
     invalidChmod: 'Introduce un modo octal de 3 dígitos (0–7), ej. 755',
+    invalidBaseNumber: 'Introduce un número válido para la base seleccionada',
+    invalidTotpSecret: 'Introduce un secreto Base32 válido',
+    emptyQrContent: 'Introduce texto o una URL para codificar',
   },
   copiedSuffix: ' copiado',
 } as const satisfies ToolboxDictTranslated;
