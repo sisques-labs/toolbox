@@ -80,9 +80,18 @@ const dict = {
       label: 'Generador de contraseñas',
       description: 'Crea contraseñas aleatorias seguras',
     },
+    totp: {
+      label: 'OTP / TOTP',
+      description:
+        'Genera contraseñas de un solo uso basadas en el tiempo a partir de un secreto Base32',
+    },
     crontab: {
       label: 'Generador de crontab',
       description: 'Construye y explica expresiones de cron',
+    },
+    qr: {
+      label: 'Código QR',
+      description: 'Genera un código QR a partir de texto o una URL',
     },
     timestamp: {
       label: 'Conversor de timestamp',
@@ -153,6 +162,8 @@ const dict = {
     chmodOctal: 'Octal',
     numberInput: 'Número',
     fromBase: 'Base de origen',
+    totpSecret: 'Secreto Base32',
+    qrContent: 'Contenido',
   },
   labels: {
     plainText: 'Texto plano',
@@ -198,6 +209,7 @@ const dict = {
     chmodRead: 'Lectura',
     chmodWrite: 'Escritura',
     chmodExecute: 'Ejecución',
+    totpRemaining: 'Caduca en {seconds}s',
   },
   presets: {
     everyMinute: 'Cada minuto',
@@ -223,6 +235,8 @@ const dict = {
     invalidJsonRight: 'El JSON de la derecha no es válido',
     invalidChmod: 'Introduce un modo octal de 3 dígitos (0–7), ej. 755',
     invalidBaseNumber: 'Introduce un número válido para la base seleccionada',
+    invalidTotpSecret: 'Introduce un secreto Base32 válido',
+    emptyQrContent: 'Introduce texto o una URL para codificar',
   },
   copiedSuffix: ' copiado',
 } as const satisfies ToolboxDictTranslated;

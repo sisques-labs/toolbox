@@ -74,9 +74,18 @@ const dict = {
       label: 'Password generator',
       description: 'Create strong random passwords',
     },
+    totp: {
+      label: 'OTP / TOTP',
+      description:
+        'Generate time-based one-time passwords from a Base32 secret',
+    },
     crontab: {
       label: 'Crontab generator',
       description: 'Build and explain cron schedule expressions',
+    },
+    qr: {
+      label: 'QR code',
+      description: 'Generate a QR code from text or a URL',
     },
     timestamp: {
       label: 'Timestamp converter',
@@ -146,6 +155,8 @@ const dict = {
     chmodOctal: 'Octal',
     numberInput: 'Number',
     fromBase: 'From base',
+    totpSecret: 'Base32 secret',
+    qrContent: 'Content',
   },
   labels: {
     plainText: 'Plain text',
@@ -191,6 +202,7 @@ const dict = {
     chmodRead: 'Read',
     chmodWrite: 'Write',
     chmodExecute: 'Execute',
+    totpRemaining: 'Expires in {seconds}s',
   },
   presets: {
     everyMinute: 'Every minute',
@@ -215,6 +227,8 @@ const dict = {
     invalidJsonRight: 'Right JSON is invalid',
     invalidChmod: 'Enter a 3-digit octal mode (0–7), e.g. 755',
     invalidBaseNumber: 'Enter a valid number for the selected base',
+    invalidTotpSecret: 'Enter a valid Base32 secret',
+    emptyQrContent: 'Enter text or a URL to encode',
   },
   copiedSuffix: ' copied',
 } as const;
