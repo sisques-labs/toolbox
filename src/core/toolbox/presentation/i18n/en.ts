@@ -26,6 +26,10 @@ const dict = {
       label: 'Regex tester',
       description: 'Test regular expressions against sample text',
     },
+    'text-diff': {
+      label: 'Text diff',
+      description: 'Compare two texts line by line',
+    },
     json: {
       label: 'JSON formatter',
       description: 'Validate, format and minify JSON',
@@ -129,6 +133,8 @@ const dict = {
     flagGlobal: 'Global (g)',
     flagIgnoreCase: 'Ignore case (i)',
     flagMultiline: 'Multiline (m)',
+    textLeft: 'Text A',
+    textRight: 'Text B',
   },
   labels: {
     plainText: 'Plain text',

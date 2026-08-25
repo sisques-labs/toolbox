@@ -3,7 +3,13 @@ import { ToolCategoryId, ToolId } from '@/core/toolbox/domain/tool.types';
 export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
   {
     category: ToolCategoryId.Text,
-    tools: [ToolId.Case, ToolId.Slug, ToolId.Lorem, ToolId.Regex],
+    tools: [
+      ToolId.Case,
+      ToolId.Slug,
+      ToolId.Lorem,
+      ToolId.Regex,
+      ToolId.TextDiff,
+    ],
   },
   {
     category: ToolCategoryId.Data,

@@ -31,6 +31,10 @@ const dict = {
       label: 'Probador de regex',
       description: 'Prueba expresiones regulares contra un texto de ejemplo',
     },
+    'text-diff': {
+      label: 'Diff de texto',
+      description: 'Compara dos textos línea a línea',
+    },
     json: {
       label: 'Formateador JSON',
       description: 'Valida, formatea y minifica JSON',
@@ -135,6 +139,8 @@ const dict = {
     flagGlobal: 'Global (g)',
     flagIgnoreCase: 'Ignorar mayúsculas (i)',
     flagMultiline: 'Multilínea (m)',
+    textLeft: 'Texto A',
+    textRight: 'Texto B',
   },
   labels: {
     plainText: 'Texto plano',

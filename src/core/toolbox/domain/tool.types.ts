@@ -3,6 +3,7 @@ export const ToolId = {
   Slug: 'slug',
   Lorem: 'lorem',
   Regex: 'regex',
+  TextDiff: 'text-diff',
   Json: 'json',
   JsonDiff: 'json-diff',
   Yaml: 'yaml',
