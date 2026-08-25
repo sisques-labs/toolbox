@@ -5,6 +5,7 @@ export type ToolId =
   | 'json'
   | 'yaml'
   | 'base64'
+  | 'url'
   | 'jwt'
   | 'hash'
   | 'uuid'

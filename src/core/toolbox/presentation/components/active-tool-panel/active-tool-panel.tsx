@@ -7,6 +7,7 @@ import { LoremPanel } from '@/core/toolbox/presentation/components/tool-panels/l
 import { JsonPanel } from '@/core/toolbox/presentation/components/tool-panels/json/json-panel';
 import { YamlPanel } from '@/core/toolbox/presentation/components/tool-panels/yaml/yaml-panel';
 import { Base64Panel } from '@/core/toolbox/presentation/components/tool-panels/base64/base64-panel';
+import { UrlPanel } from '@/core/toolbox/presentation/components/tool-panels/url/url-panel';
 import { JwtPanel } from '@/core/toolbox/presentation/components/tool-panels/jwt/jwt-panel';
 import { HashPanel } from '@/core/toolbox/presentation/components/tool-panels/hash/hash-panel';
 import { UuidPanel } from '@/core/toolbox/presentation/components/tool-panels/uuid/uuid-panel';
@@ -36,6 +37,8 @@ export function ActiveToolPanel({
       return <YamlPanel t={t} onCopy={onCopy} />;
     case 'base64':
       return <Base64Panel t={t} onCopy={onCopy} />;
+    case 'url':
+      return <UrlPanel t={t} onCopy={onCopy} />;
     case 'jwt':
       return <JwtPanel t={t} />;
     case 'hash':

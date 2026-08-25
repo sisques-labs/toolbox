@@ -34,6 +34,10 @@ const dict = {
       label: 'Base64',
       description: 'Encode and decode Base64 strings',
     },
+    url: {
+      label: 'URL encoder',
+      description: 'Encode and decode URL-formatted (percent-encoded) strings',
+    },
     jwt: {
       label: 'JWT decoder',
       description: 'Inspect the header and payload of a JSON Web Token',
@@ -89,6 +93,7 @@ const dict = {
   labels: {
     plainText: 'Plain text',
     base64Text: 'Base64 text',
+    urlEncodedText: 'URL-encoded text',
     header: 'HEADER',
     payload: 'PAYLOAD',
     signature: 'SIGNATURE',
