@@ -94,6 +94,13 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M12 8v4l3 2" />
     </>
   ),
+  color: (
+    <>
+      <circle cx="12" cy="12" r="8" />
+      <circle cx="12" cy="12" r="3" />
+      <path d="M12 2v2M12 20v2M2 12h2M20 12h2" />
+    </>
+  ),
   subnet: (
     <>
       <rect x="9" y="3" width="6" height="4" rx="1" />

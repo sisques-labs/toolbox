@@ -5,6 +5,6 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
   { category: 'data', tools: ['json', 'yaml'] },
   { category: 'encoding', tools: ['base64', 'url', 'html', 'jwt', 'hash'] },
   { category: 'generators', tools: ['uuid', 'password'] },
-  { category: 'converters', tools: ['timestamp'] },
+  { category: 'converters', tools: ['timestamp', 'color'] },
   { category: 'network', tools: ['subnet'] },
 ];

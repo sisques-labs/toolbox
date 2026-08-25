@@ -16,6 +16,7 @@ const ALL_TOOL_IDS: ToolId[] = [
   'uuid',
   'password',
   'timestamp',
+  'color',
   'subnet',
 ];
 

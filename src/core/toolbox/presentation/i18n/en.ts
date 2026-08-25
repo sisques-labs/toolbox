@@ -62,6 +62,10 @@ const dict = {
       label: 'Timestamp converter',
       description: 'Convert between Unix time and readable dates',
     },
+    color: {
+      label: 'Color converter',
+      description: 'Convert colors between hex, RGB and HSL',
+    },
     subnet: {
       label: 'IP subnet calculator',
       description: 'Get network, broadcast and host range from a CIDR',
@@ -95,6 +99,7 @@ const dict = {
     jsonInput: 'JSON input',
     yamlInput: 'YAML input',
     jwtToken: 'JWT token',
+    colorInput: 'Color',
   },
   labels: {
     plainText: 'Plain text',
@@ -113,6 +118,9 @@ const dict = {
     hostRange: 'Usable host range',
     totalAddresses: 'Total addresses',
     usableHosts: 'Usable hosts',
+    hex: 'HEX',
+    rgb: 'RGB',
+    hsl: 'HSL',
   },
   strength: {
     weak: 'Weak',
@@ -124,6 +132,7 @@ const dict = {
     invalidCidr: 'Enter a valid CIDR, e.g. 10.0.0.0/16',
     invalidJwt: 'Not a valid JWT — expected 3 dot-separated parts.',
     undecodableJwt: 'Could not decode this token.',
+    invalidColor: 'Enter a valid color (hex, rgb or hsl)',
   },
   copiedSuffix: ' copied',
 } as const;

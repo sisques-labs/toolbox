@@ -68,6 +68,10 @@ const dict = {
       label: 'Conversor de timestamp',
       description: 'Convierte entre tiempo Unix y fechas legibles',
     },
+    color: {
+      label: 'Conversor de color',
+      description: 'Convierte colores entre hex, RGB y HSL',
+    },
     subnet: {
       label: 'Calculadora de subred',
       description: 'Obtén red, broadcast y rango de hosts a partir de un CIDR',
@@ -101,6 +105,7 @@ const dict = {
     jsonInput: 'Entrada JSON',
     yamlInput: 'Entrada YAML',
     jwtToken: 'Token JWT',
+    colorInput: 'Color',
   },
   labels: {
     plainText: 'Texto plano',
@@ -119,6 +124,9 @@ const dict = {
     hostRange: 'Rango de hosts utilizables',
     totalAddresses: 'Direcciones totales',
     usableHosts: 'Hosts utilizables',
+    hex: 'HEX',
+    rgb: 'RGB',
+    hsl: 'HSL',
   },
   strength: {
     weak: 'Débil',
@@ -131,6 +139,7 @@ const dict = {
     invalidJwt:
       'No es un JWT válido — se esperaban 3 partes separadas por puntos.',
     undecodableJwt: 'No se ha podido decodificar este token.',
+    invalidColor: 'Introduce un color válido (hex, rgb o hsl)',
   },
   copiedSuffix: ' copiado',
 } as const satisfies ToolboxDictTranslated;

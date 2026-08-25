@@ -12,6 +12,7 @@ export type ToolId =
   | 'uuid'
   | 'password'
   | 'timestamp'
+  | 'color'
   | 'subnet';
 
 export type ToolCategoryId =
