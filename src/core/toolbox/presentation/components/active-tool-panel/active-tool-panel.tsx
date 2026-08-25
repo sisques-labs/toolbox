@@ -1,4 +1,4 @@
-import type { ToolId } from '@/core/toolbox/domain/tool.types';
+import { ToolId } from '@/core/toolbox/domain/tool.types';
 import type { ToolboxDict } from '@/core/toolbox/presentation/i18n/en';
 import type { WidenStringLiterals } from '@/shared/presentation/i18n/widen-literals';
 import { CasePanel } from '@/core/toolbox/presentation/components/tool-panels/case/case-panel';
@@ -30,41 +30,41 @@ export function ActiveToolPanel({
   onCopy: (text: string, label: string) => void;
 }) {
   switch (activeTool) {
-    case 'case':
+    case ToolId.Case:
       return <CasePanel t={t} onCopy={onCopy} />;
-    case 'slug':
+    case ToolId.Slug:
       return <SlugPanel t={t} onCopy={onCopy} />;
-    case 'lorem':
+    case ToolId.Lorem:
       return <LoremPanel t={t} onCopy={onCopy} />;
-    case 'regex':
+    case ToolId.Regex:
       return <RegexPanel t={t} />;
-    case 'json':
+    case ToolId.Json:
       return <JsonPanel t={t} onCopy={onCopy} />;
-    case 'yaml':
+    case ToolId.Yaml:
       return <YamlPanel t={t} onCopy={onCopy} />;
-    case 'base64':
+    case ToolId.Base64:
       return <Base64Panel t={t} onCopy={onCopy} />;
-    case 'url':
+    case ToolId.Url:
       return <UrlPanel t={t} onCopy={onCopy} />;
-    case 'html':
+    case ToolId.Html:
       return <HtmlPanel t={t} onCopy={onCopy} />;
-    case 'jwt':
+    case ToolId.Jwt:
       return <JwtPanel t={t} />;
-    case 'hash':
+    case ToolId.Hash:
       return <HashPanel t={t} onCopy={onCopy} />;
-    case 'uuid':
+    case ToolId.Uuid:
       return <UuidPanel t={t} onCopy={onCopy} />;
-    case 'ulid':
+    case ToolId.Ulid:
       return <UlidPanel t={t} onCopy={onCopy} />;
-    case 'password':
+    case ToolId.Password:
       return <PasswordPanel t={t} onCopy={onCopy} />;
-    case 'crontab':
+    case ToolId.Crontab:
       return <CrontabPanel t={t} onCopy={onCopy} />;
-    case 'timestamp':
+    case ToolId.Timestamp:
       return <TimestampPanel t={t} onCopy={onCopy} />;
-    case 'color':
+    case ToolId.Color:
       return <ColorPanel t={t} onCopy={onCopy} />;
-    case 'subnet':
+    case ToolId.Subnet:
       return <SubnetPanel t={t} />;
   }
 }

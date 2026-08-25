@@ -1,22 +1,36 @@
-export type ToolId =
-  | 'case'
-  | 'slug'
-  | 'lorem'
-  | 'regex'
-  | 'json'
-  | 'yaml'
-  | 'base64'
-  | 'url'
-  | 'html'
-  | 'jwt'
-  | 'hash'
-  | 'uuid'
-  | 'ulid'
-  | 'password'
-  | 'crontab'
-  | 'timestamp'
-  | 'color'
-  | 'subnet';
+export const ToolId = {
+  Case: 'case',
+  Slug: 'slug',
+  Lorem: 'lorem',
+  Regex: 'regex',
+  Json: 'json',
+  Yaml: 'yaml',
+  Base64: 'base64',
+  Url: 'url',
+  Html: 'html',
+  Jwt: 'jwt',
+  Hash: 'hash',
+  Uuid: 'uuid',
+  Ulid: 'ulid',
+  Password: 'password',
+  Crontab: 'crontab',
+  Timestamp: 'timestamp',
+  Color: 'color',
+  Subnet: 'subnet',
+} as const;
+
+export type ToolId = (typeof ToolId)[keyof typeof ToolId];
+
+export const ALL_TOOL_IDS = Object.values(ToolId);
+
+export const ToolCategoryId = {
+  Text: 'text',
+  Data: 'data',
+  Encoding: 'encoding',
+  Generators: 'generators',
+  Converters: 'converters',
+  Network: 'network',
+} as const;
 
 export type ToolCategoryId =
-  'text' | 'data' | 'encoding' | 'generators' | 'converters' | 'network';
+  (typeof ToolCategoryId)[keyof typeof ToolCategoryId];
