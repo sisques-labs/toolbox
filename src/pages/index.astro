@@ -1,0 +1,44 @@
+---
+import { HomeScreen } from '@/core/home/presentation/screens/home/home.screen';
+import { DEFAULT_LOCALE } from '@/shared/presentation/i18n/locale';
+import enShell from '@/shared/presentation/i18n/shell/en';
+import esShell from '@/shared/presentation/i18n/shell/es';
+import '@/shared/presentation/styles/global.css';
+
+const shellDictionaries = { en: enShell, es: esShell };
+const t = shellDictionaries[DEFAULT_LOCALE];
+---
+
+<html lang={DEFAULT_LOCALE}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href={`${import.meta.env.BASE_URL.replace(/\/?$/, '/')}favicon.svg`}
+    />
+    <title>{t.siteTitle}</title>
+    <script is:inline>
+      (function () {
+        const stored = localStorage.getItem('toolbox:theme');
+        const prefersDark = window.matchMedia(
+          '(prefers-color-scheme: dark)',
+        ).matches;
+        const isDark = stored ? stored === 'dark' : prefersDark;
+        document.documentElement.classList.toggle('dark', isDark);
+      })();
+    </script>
+  </head>
+  <body
+    class="min-h-screen bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100"
+  >
+    <div
+      class="pointer-events-none fixed inset-x-0 top-0 -z-10 h-[28rem] bg-[radial-gradient(ellipse_60%_50%_at_50%_-10%,#e0e7ff,transparent)] dark:bg-[radial-gradient(ellipse_60%_50%_at_50%_-10%,#1e1b4b,transparent)]"
+    >
+    </div>
+    <main class="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+      <HomeScreen client:load />
+    </main>
+  </body>
+</html>
