@@ -5,7 +5,10 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
     category: ToolCategoryId.Text,
     tools: [ToolId.Case, ToolId.Slug, ToolId.Lorem, ToolId.Regex],
   },
-  { category: ToolCategoryId.Data, tools: [ToolId.Json, ToolId.Yaml] },
+  {
+    category: ToolCategoryId.Data,
+    tools: [ToolId.Json, ToolId.JsonDiff, ToolId.Yaml],
+  },
   {
     category: ToolCategoryId.Encoding,
     tools: [ToolId.Base64, ToolId.Url, ToolId.Html, ToolId.Jwt, ToolId.Hash],

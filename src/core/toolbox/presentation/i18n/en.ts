@@ -30,6 +30,10 @@ const dict = {
       label: 'JSON formatter',
       description: 'Validate, format and minify JSON',
     },
+    'json-diff': {
+      label: 'JSON diff',
+      description: 'Compare two JSON documents and list the differences',
+    },
     yaml: {
       label: 'YAML ↔ JSON',
       description: 'Convert between YAML and JSON',
@@ -109,6 +113,8 @@ const dict = {
     cidr: 'CIDR (e.g. 192.168.1.0/24)',
     indent: 'Indent',
     jsonInput: 'JSON input',
+    jsonLeft: 'JSON A',
+    jsonRight: 'JSON B',
     yamlInput: 'YAML input',
     jwtToken: 'JWT token',
     colorInput: 'Color',
@@ -149,6 +155,11 @@ const dict = {
     noMatches: 'No matches',
     matchCount: '{count} matches',
     matchIndex: 'index {index}',
+    noDifferences: 'No differences',
+    diffCount: '{count} differences',
+    diffAdded: 'Added',
+    diffRemoved: 'Removed',
+    diffChanged: 'Changed',
   },
   presets: {
     everyMinute: 'Every minute',
@@ -169,6 +180,8 @@ const dict = {
     invalidColor: 'Enter a valid color (hex, rgb or hsl)',
     invalidCron: 'Enter a valid 5-field cron expression',
     invalidRegex: 'Invalid regular expression',
+    invalidJsonLeft: 'Left JSON is invalid',
+    invalidJsonRight: 'Right JSON is invalid',
   },
   copiedSuffix: ' copied',
 } as const;

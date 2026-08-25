@@ -33,6 +33,13 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M16 4c2 0 3 1 3 3v3c0 1 1 2 2 2-1 0-2 1-2 2v3c0 2-1 3-3 3" />
     </>
   ),
+  [ToolId.JsonDiff]: (
+    <>
+      <path d="M4 6h7M4 12h5M4 18h7" />
+      <path d="M14 6h6M14 12h6M14 18h6" />
+      <path d="M12 4v16" />
+    </>
+  ),
   [ToolId.Yaml]: (
     <>
       <path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />

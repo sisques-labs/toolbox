@@ -35,6 +35,10 @@ const dict = {
       label: 'Formateador JSON',
       description: 'Valida, formatea y minifica JSON',
     },
+    'json-diff': {
+      label: 'Diff de JSON',
+      description: 'Compara dos documentos JSON y lista las diferencias',
+    },
     yaml: {
       label: 'YAML ↔ JSON',
       description: 'Convierte entre YAML y JSON',
@@ -115,6 +119,8 @@ const dict = {
     cidr: 'CIDR (ej. 192.168.1.0/24)',
     indent: 'Sangría',
     jsonInput: 'Entrada JSON',
+    jsonLeft: 'JSON A',
+    jsonRight: 'JSON B',
     yamlInput: 'Entrada YAML',
     jwtToken: 'Token JWT',
     colorInput: 'Color',
@@ -155,6 +161,11 @@ const dict = {
     noMatches: 'Sin coincidencias',
     matchCount: '{count} coincidencias',
     matchIndex: 'índice {index}',
+    noDifferences: 'Sin diferencias',
+    diffCount: '{count} diferencias',
+    diffAdded: 'Añadido',
+    diffRemoved: 'Eliminado',
+    diffChanged: 'Cambiado',
   },
   presets: {
     everyMinute: 'Cada minuto',
@@ -176,6 +187,8 @@ const dict = {
     invalidColor: 'Introduce un color válido (hex, rgb o hsl)',
     invalidCron: 'Introduce una expresión cron válida de 5 campos',
     invalidRegex: 'Expresión regular no válida',
+    invalidJsonLeft: 'El JSON de la izquierda no es válido',
+    invalidJsonRight: 'El JSON de la derecha no es válido',
   },
   copiedSuffix: ' copiado',
 } as const satisfies ToolboxDictTranslated;

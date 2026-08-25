@@ -4,6 +4,7 @@ export const ToolId = {
   Lorem: 'lorem',
   Regex: 'regex',
   Json: 'json',
+  JsonDiff: 'json-diff',
   Yaml: 'yaml',
   Base64: 'base64',
   Url: 'url',
