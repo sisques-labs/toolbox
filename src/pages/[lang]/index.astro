@@ -1,15 +1,23 @@
 ---
 import { ToolboxScreen } from '@/core/toolbox/presentation/screens/toolbox/toolbox.screen';
-import { DEFAULT_LOCALE } from '@/shared/presentation/i18n/locale';
+import {
+  SUPPORTED_LOCALES,
+  type Locale,
+} from '@/shared/presentation/i18n/locale';
 import enShell from '@/shared/presentation/i18n/shell/en';
 import esShell from '@/shared/presentation/i18n/shell/es';
 import '@/shared/presentation/styles/global.css';
 
+export function getStaticPaths() {
+  return SUPPORTED_LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Locale;
 const shellDictionaries = { en: enShell, es: esShell };
-const t = shellDictionaries[DEFAULT_LOCALE];
+const t = shellDictionaries[lang];
 ---
 
-<html lang={DEFAULT_LOCALE}>
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -33,6 +41,6 @@ const t = shellDictionaries[DEFAULT_LOCALE];
   <body
     class="h-screen overflow-hidden text-slate-900 antialiased dark:text-slate-100"
   >
-    <ToolboxScreen client:load />
+    <ToolboxScreen client:load initialLocale={lang} />
   </body>
 </html>
