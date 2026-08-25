@@ -19,7 +19,7 @@ Features live under `src/core/{feature}/`, each with only the layers it actually
 - **infrastructure/** — repositories/API clients implementing the ports. Only needed once a feature talks to an external API.
 - **presentation/** — `screens/`, `components/`, `hooks/`, `i18n/`, `schemas/` (if a form needs validation), `providers/` (if the feature owns cross-component client state).
 
-`src/core/home/` currently only has a `presentation/` layer — it's UI composition (the landing page), not a domain with business rules. That's expected, not a gap to fill.
+`src/core/toolbox/` is the site's only feature: the tool sidebar/header shell plus one `domain`/`application` pair per utility (case converter, slug generator, JSON/YAML/Base64, JWT decoder, hash generator, UUID/password generators, timestamp converter, subnet calculator) and their `presentation` panels.
 
 Cross-layer rules:
 - domain never imports application/infrastructure/presentation

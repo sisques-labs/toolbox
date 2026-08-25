@@ -1,5 +1,5 @@
 ---
-import { HomeScreen } from '@/core/home/presentation/screens/home/home.screen';
+import { ToolboxScreen } from '@/core/toolbox/presentation/screens/toolbox/toolbox.screen';
 import { DEFAULT_LOCALE } from '@/shared/presentation/i18n/locale';
 import enShell from '@/shared/presentation/i18n/shell/en';
 import esShell from '@/shared/presentation/i18n/shell/es';
@@ -31,14 +31,8 @@ const t = shellDictionaries[DEFAULT_LOCALE];
     </script>
   </head>
   <body
-    class="min-h-screen bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100"
+    class="h-screen overflow-hidden text-slate-900 antialiased dark:text-slate-100"
   >
-    <div
-      class="pointer-events-none fixed inset-x-0 top-0 -z-10 h-[28rem] bg-[radial-gradient(ellipse_60%_50%_at_50%_-10%,#e0e7ff,transparent)] dark:bg-[radial-gradient(ellipse_60%_50%_at_50%_-10%,#1e1b4b,transparent)]"
-    >
-    </div>
-    <main class="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
-      <HomeScreen client:load />
-    </main>
+    <ToolboxScreen client:load />
   </body>
 </html>
