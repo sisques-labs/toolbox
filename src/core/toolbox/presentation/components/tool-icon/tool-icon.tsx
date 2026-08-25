@@ -88,6 +88,13 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M8 11V7a4 4 0 1 1 8 0v4" />
     </>
   ),
+  crontab: (
+    <>
+      <rect x="4" y="5" width="16" height="15" rx="2" />
+      <path d="M8 3v4M16 3v4M4 11h16" />
+      <path d="M8 15h2M12 15h2" />
+    </>
+  ),
   timestamp: (
     <>
       <circle cx="12" cy="12" r="8" />

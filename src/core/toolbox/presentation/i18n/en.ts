@@ -58,6 +58,10 @@ const dict = {
       label: 'Password generator',
       description: 'Create strong random passwords',
     },
+    crontab: {
+      label: 'Crontab generator',
+      description: 'Build and explain cron schedule expressions',
+    },
     timestamp: {
       label: 'Timestamp converter',
       description: 'Convert between Unix time and readable dates',
@@ -100,6 +104,12 @@ const dict = {
     yamlInput: 'YAML input',
     jwtToken: 'JWT token',
     colorInput: 'Color',
+    preset: 'Preset',
+    minute: 'Minute',
+    hour: 'Hour',
+    dayOfMonth: 'Day of month',
+    month: 'Month',
+    dayOfWeek: 'Day of week',
   },
   labels: {
     plainText: 'Plain text',
@@ -121,6 +131,14 @@ const dict = {
     hex: 'HEX',
     rgb: 'RGB',
     hsl: 'HSL',
+    expression: 'Expression',
+    choosePreset: 'Choose a preset…',
+  },
+  presets: {
+    everyMinute: 'Every minute',
+    hourly: 'Every hour',
+    daily: 'Every day at 09:00',
+    weekdays: 'Weekdays at 09:00',
   },
   strength: {
     weak: 'Weak',
@@ -133,6 +151,7 @@ const dict = {
     invalidJwt: 'Not a valid JWT — expected 3 dot-separated parts.',
     undecodableJwt: 'Could not decode this token.',
     invalidColor: 'Enter a valid color (hex, rgb or hsl)',
+    invalidCron: 'Enter a valid 5-field cron expression',
   },
   copiedSuffix: ' copied',
 } as const;

@@ -11,6 +11,7 @@ export type ToolId =
   | 'hash'
   | 'uuid'
   | 'password'
+  | 'crontab'
   | 'timestamp'
   | 'color'
   | 'subnet';

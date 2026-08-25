@@ -64,6 +64,10 @@ const dict = {
       label: 'Generador de contraseñas',
       description: 'Crea contraseñas aleatorias seguras',
     },
+    crontab: {
+      label: 'Generador de crontab',
+      description: 'Construye y explica expresiones de cron',
+    },
     timestamp: {
       label: 'Conversor de timestamp',
       description: 'Convierte entre tiempo Unix y fechas legibles',
@@ -106,6 +110,12 @@ const dict = {
     yamlInput: 'Entrada YAML',
     jwtToken: 'Token JWT',
     colorInput: 'Color',
+    preset: 'Preajuste',
+    minute: 'Minuto',
+    hour: 'Hora',
+    dayOfMonth: 'Día del mes',
+    month: 'Mes',
+    dayOfWeek: 'Día de la semana',
   },
   labels: {
     plainText: 'Texto plano',
@@ -127,6 +137,14 @@ const dict = {
     hex: 'HEX',
     rgb: 'RGB',
     hsl: 'HSL',
+    expression: 'Expresión',
+    choosePreset: 'Elige un preajuste…',
+  },
+  presets: {
+    everyMinute: 'Cada minuto',
+    hourly: 'Cada hora',
+    daily: 'Cada día a las 09:00',
+    weekdays: 'Días laborables a las 09:00',
   },
   strength: {
     weak: 'Débil',
@@ -140,6 +158,7 @@ const dict = {
       'No es un JWT válido — se esperaban 3 partes separadas por puntos.',
     undecodableJwt: 'No se ha podido decodificar este token.',
     invalidColor: 'Introduce un color válido (hex, rgb o hsl)',
+    invalidCron: 'Introduce una expresión cron válida de 5 campos',
   },
   copiedSuffix: ' copiado',
 } as const satisfies ToolboxDictTranslated;
