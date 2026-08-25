@@ -2,6 +2,7 @@ export type ToolId =
   | 'case'
   | 'slug'
   | 'lorem'
+  | 'regex'
   | 'json'
   | 'yaml'
   | 'base64'

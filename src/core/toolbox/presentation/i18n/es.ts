@@ -27,6 +27,10 @@ const dict = {
       label: 'Lorem ipsum',
       description: 'Genera párrafos de relleno',
     },
+    regex: {
+      label: 'Probador de regex',
+      description: 'Prueba expresiones regulares contra un texto de ejemplo',
+    },
     json: {
       label: 'Formateador JSON',
       description: 'Valida, formatea y minifica JSON',
@@ -116,6 +120,11 @@ const dict = {
     dayOfMonth: 'Día del mes',
     month: 'Mes',
     dayOfWeek: 'Día de la semana',
+    pattern: 'Patrón',
+    testString: 'Texto de prueba',
+    flagGlobal: 'Global (g)',
+    flagIgnoreCase: 'Ignorar mayúsculas (i)',
+    flagMultiline: 'Multilínea (m)',
   },
   labels: {
     plainText: 'Texto plano',
@@ -139,6 +148,9 @@ const dict = {
     hsl: 'HSL',
     expression: 'Expresión',
     choosePreset: 'Elige un preajuste…',
+    noMatches: 'Sin coincidencias',
+    matchCount: '{count} coincidencias',
+    matchIndex: 'índice {index}',
   },
   presets: {
     everyMinute: 'Cada minuto',
@@ -159,6 +171,7 @@ const dict = {
     undecodableJwt: 'No se ha podido decodificar este token.',
     invalidColor: 'Introduce un color válido (hex, rgb o hsl)',
     invalidCron: 'Introduce una expresión cron válida de 5 campos',
+    invalidRegex: 'Expresión regular no válida',
   },
   copiedSuffix: ' copiado',
 } as const satisfies ToolboxDictTranslated;

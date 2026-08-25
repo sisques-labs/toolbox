@@ -21,6 +21,12 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <line x1="4" y1="18" x2="18" y2="18" />
     </>
   ),
+  regex: (
+    <>
+      <path d="M4 8h4l2 8 4-12 2 8h4" />
+      <path d="M5 16h3M16 16h3" />
+    </>
+  ),
   json: (
     <>
       <path d="M8 4c-2 0-3 1-3 3v3c0 1-1 2-2 2 1 0 2 1 2 2v3c0 2 1 3 3 3" />

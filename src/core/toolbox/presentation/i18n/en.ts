@@ -22,6 +22,10 @@ const dict = {
       label: 'Lorem ipsum',
       description: 'Generate placeholder paragraphs',
     },
+    regex: {
+      label: 'Regex tester',
+      description: 'Test regular expressions against sample text',
+    },
     json: {
       label: 'JSON formatter',
       description: 'Validate, format and minify JSON',
@@ -110,6 +114,11 @@ const dict = {
     dayOfMonth: 'Day of month',
     month: 'Month',
     dayOfWeek: 'Day of week',
+    pattern: 'Pattern',
+    testString: 'Test string',
+    flagGlobal: 'Global (g)',
+    flagIgnoreCase: 'Ignore case (i)',
+    flagMultiline: 'Multiline (m)',
   },
   labels: {
     plainText: 'Plain text',
@@ -133,6 +142,9 @@ const dict = {
     hsl: 'HSL',
     expression: 'Expression',
     choosePreset: 'Choose a preset…',
+    noMatches: 'No matches',
+    matchCount: '{count} matches',
+    matchIndex: 'index {index}',
   },
   presets: {
     everyMinute: 'Every minute',
@@ -152,6 +164,7 @@ const dict = {
     undecodableJwt: 'Could not decode this token.',
     invalidColor: 'Enter a valid color (hex, rgb or hsl)',
     invalidCron: 'Enter a valid 5-field cron expression',
+    invalidRegex: 'Invalid regular expression',
   },
   copiedSuffix: ' copied',
 } as const;
