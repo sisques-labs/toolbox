@@ -21,7 +21,13 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
   },
   {
     category: ToolCategoryId.Generators,
-    tools: [ToolId.Uuid, ToolId.Ulid, ToolId.Password, ToolId.Crontab],
+    tools: [
+      ToolId.Uuid,
+      ToolId.Ulid,
+      ToolId.Password,
+      ToolId.Totp,
+      ToolId.Crontab,
+    ],
   },
   {
     category: ToolCategoryId.Converters,

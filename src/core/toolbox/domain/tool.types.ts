@@ -15,6 +15,7 @@ export const ToolId = {
   Uuid: 'uuid',
   Ulid: 'ulid',
   Password: 'password',
+  Totp: 'totp',
   Crontab: 'crontab',
   Timestamp: 'timestamp',
   Color: 'color',

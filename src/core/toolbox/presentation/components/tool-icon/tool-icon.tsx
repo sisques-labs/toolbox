@@ -114,6 +114,13 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M8 11V7a4 4 0 1 1 8 0v4" />
     </>
   ),
+  [ToolId.Totp]: (
+    <>
+      <rect x="5" y="4" width="14" height="16" rx="2" />
+      <path d="M9 9h6M9 13h4" />
+      <circle cx="15" cy="16" r="1" />
+    </>
+  ),
   [ToolId.Crontab]: (
     <>
       <rect x="4" y="5" width="16" height="15" rx="2" />
