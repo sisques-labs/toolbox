@@ -9,7 +9,7 @@ Sisques Labs toolbox — a collection of small web utilities.
 - Tailwind CSS for styling
 - TypeScript throughout, strict mode
 - No backend, no database
-- [Vitest](https://vitest.dev) for unit tests
+- [Vitest](https://vitest.dev) + [Testing Library](https://testing-library.com) for unit tests
 
 ## Setup
 
@@ -23,14 +23,16 @@ pnpm build     # astro check && astro build
 
 Node version is pinned in `.nvmrc` (24). Package manager is pnpm, pinned via the `packageManager` field in `package.json`.
 
-## Project structure
+## Architecture
 
-- `src/pages/index.astro` — landing page, renders the `App` island
-- `src/components/App.tsx` — the interactive React island (`client:load`): theme/language state and the tools listing
-- `src/components/ThemeToggle.tsx`, `src/components/LanguageSwitcher.tsx` — shared UI controls
-- `src/lib/i18n/` — `es`/`en` string tables
+DDD + Screaming Architecture, mirroring [`sisques-labs/gardenia-web`](https://github.com/sisques-labs/gardenia-web) adapted to a backend-less static site. See [`AGENTS.md`](AGENTS.md) for the full set of conventions (layering rules, naming, testing, i18n). In short:
 
-Each new tool should live under its own route (`src/pages/<tool>.astro`) with its logic in `src/lib/<tool>/`, following the same pattern.
+- `src/core/<feature>/` — one folder per tool/feature, each with the layers it actually needs: `domain/` (pure types), `application/` (use-cases, only once there's real logic to orchestrate), `infrastructure/` (repositories, only once a tool talks to an API), `presentation/` (`components/`, `hooks/`, `screens/`, `i18n/`). `home` currently only has a `presentation/` layer — it's UI composition, not a domain.
+- `src/shared/` — cross-cutting code used by every feature: `presentation/components/` (shell chrome: `app-shell`, `theme-toggle`, `language-switcher`), `presentation/providers/` (theme/locale context), `presentation/i18n/` (locale plumbing + the `shell` dictionary), `presentation/styles/` (global Tailwind stylesheet).
+- `src/pages/*.astro` — thin Astro routes (fixed by Astro's routing convention); each just renders one screen from `src/core/<feature>/presentation/screens/`.
+- Path alias `@/*` → `./src/*` (configured in `tsconfig.json`, mirrored in `vitest.config.ts`).
+
+Each new tool gets its own route (`src/pages/<tool>.astro`) rendering `src/core/<tool>/presentation/screens/<tool>/<tool>.screen.tsx`, following the same pattern as `home`.
 
 ## Git hooks (Husky)
 

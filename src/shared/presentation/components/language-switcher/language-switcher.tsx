@@ -1,11 +1,11 @@
-import type { Locale } from '../lib/i18n';
+import type { Locale } from '@/shared/presentation/i18n/locale';
 
 const options: { value: Locale; label: string }[] = [
   { value: 'es', label: 'ES' },
   { value: 'en', label: 'EN' },
 ];
 
-export default function LanguageSwitcher({
+export function LanguageSwitcher({
   locale,
   onChange,
   label,

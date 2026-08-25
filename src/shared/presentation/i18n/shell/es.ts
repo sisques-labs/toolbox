@@ -1,21 +1,19 @@
-export const es = {
+import type { ShellDict } from './en';
+import type { WidenStringLiterals } from '@/shared/presentation/i18n/widen-literals';
+
+type ShellDictTranslated = WidenStringLiterals<ShellDict>;
+
+const dict = {
   siteTitle: 'Toolbox — herramientas de Sisques Labs',
   heading: 'Toolbox',
   tagline: 'Una colección de pequeñas utilidades web de Sisques Labs.',
-
-  tools: {
-    heading: 'Herramientas',
-    empty: 'Todavía no hay herramientas publicadas aquí. Vuelve pronto.',
-  },
-
   theme: {
     switchToLight: 'Cambiar a tema claro',
     switchToDark: 'Cambiar a tema oscuro',
   },
-
   language: {
     switcherLabel: 'Idioma',
   },
-};
+} as const satisfies ShellDictTranslated;
 
-export type Strings = typeof es;
+export default dict;

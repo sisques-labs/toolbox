@@ -1,12 +1,15 @@
 ---
-import App from '../components/App';
-import { locales, defaultLocale } from '../lib/i18n';
-import '../styles/global.css';
+import { HomeScreen } from '@/core/home/presentation/screens/home/home.screen';
+import { DEFAULT_LOCALE } from '@/shared/presentation/i18n/locale';
+import enShell from '@/shared/presentation/i18n/shell/en';
+import esShell from '@/shared/presentation/i18n/shell/es';
+import '@/shared/presentation/styles/global.css';
 
-const t = locales[defaultLocale];
+const shellDictionaries = { en: enShell, es: esShell };
+const t = shellDictionaries[DEFAULT_LOCALE];
 ---
 
-<html lang={defaultLocale}>
+<html lang={DEFAULT_LOCALE}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -35,7 +38,7 @@ const t = locales[defaultLocale];
     >
     </div>
     <main class="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
-      <App client:load />
+      <HomeScreen client:load />
     </main>
   </body>
 </html>

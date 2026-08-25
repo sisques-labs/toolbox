@@ -1,4 +1,7 @@
-import type { Strings } from '../lib/i18n';
+interface ThemeToggleLabels {
+  switchToLight: string;
+  switchToDark: string;
+}
 
 function SunIcon() {
   return (
@@ -33,21 +36,21 @@ function MoonIcon() {
   );
 }
 
-export default function ThemeToggle({
+export function ThemeToggle({
   theme,
   onToggle,
-  t,
+  labels,
 }: {
   theme: 'light' | 'dark';
   onToggle: () => void;
-  t: Strings;
+  labels: ThemeToggleLabels;
 }) {
   const isDark = theme === 'dark';
   return (
     <button
       type="button"
       onClick={onToggle}
-      aria-label={isDark ? t.theme.switchToLight : t.theme.switchToDark}
+      aria-label={isDark ? labels.switchToLight : labels.switchToDark}
       aria-pressed={isDark}
       className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 transition hover:border-indigo-300 hover:text-indigo-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-400 dark:hover:border-indigo-400 dark:hover:text-indigo-400"
     >
