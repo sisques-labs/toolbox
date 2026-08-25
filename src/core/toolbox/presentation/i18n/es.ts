@@ -89,6 +89,10 @@ const dict = {
       label: 'Generador de crontab',
       description: 'Construye y explica expresiones de cron',
     },
+    qr: {
+      label: 'Código QR',
+      description: 'Genera un código QR a partir de texto o una URL',
+    },
     timestamp: {
       label: 'Conversor de timestamp',
       description: 'Convierte entre tiempo Unix y fechas legibles',
@@ -159,6 +163,7 @@ const dict = {
     numberInput: 'Número',
     fromBase: 'Base de origen',
     totpSecret: 'Secreto Base32',
+    qrContent: 'Contenido',
   },
   labels: {
     plainText: 'Texto plano',
@@ -231,6 +236,7 @@ const dict = {
     invalidChmod: 'Introduce un modo octal de 3 dígitos (0–7), ej. 755',
     invalidBaseNumber: 'Introduce un número válido para la base seleccionada',
     invalidTotpSecret: 'Introduce un secreto Base32 válido',
+    emptyQrContent: 'Introduce texto o una URL para codificar',
   },
   copiedSuffix: ' copiado',
 } as const satisfies ToolboxDictTranslated;

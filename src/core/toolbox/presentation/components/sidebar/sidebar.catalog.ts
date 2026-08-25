@@ -27,6 +27,7 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
       ToolId.Password,
       ToolId.Totp,
       ToolId.Crontab,
+      ToolId.Qr,
     ],
   },
   {

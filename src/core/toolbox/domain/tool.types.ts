@@ -17,6 +17,7 @@ export const ToolId = {
   Password: 'password',
   Totp: 'totp',
   Crontab: 'crontab',
+  Qr: 'qr',
   Timestamp: 'timestamp',
   Color: 'color',
   Base: 'base',

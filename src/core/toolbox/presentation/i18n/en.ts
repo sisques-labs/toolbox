@@ -83,6 +83,10 @@ const dict = {
       label: 'Crontab generator',
       description: 'Build and explain cron schedule expressions',
     },
+    qr: {
+      label: 'QR code',
+      description: 'Generate a QR code from text or a URL',
+    },
     timestamp: {
       label: 'Timestamp converter',
       description: 'Convert between Unix time and readable dates',
@@ -152,6 +156,7 @@ const dict = {
     numberInput: 'Number',
     fromBase: 'From base',
     totpSecret: 'Base32 secret',
+    qrContent: 'Content',
   },
   labels: {
     plainText: 'Plain text',
@@ -223,6 +228,7 @@ const dict = {
     invalidChmod: 'Enter a 3-digit octal mode (0–7), e.g. 755',
     invalidBaseNumber: 'Enter a valid number for the selected base',
     invalidTotpSecret: 'Enter a valid Base32 secret',
+    emptyQrContent: 'Enter text or a URL to encode',
   },
   copiedSuffix: ' copied',
 } as const;

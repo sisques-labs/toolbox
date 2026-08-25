@@ -128,6 +128,14 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M8 15h2M12 15h2" />
     </>
   ),
+  [ToolId.Qr]: (
+    <>
+      <rect x="4" y="4" width="7" height="7" rx="1" />
+      <rect x="13" y="4" width="7" height="7" rx="1" />
+      <rect x="4" y="13" width="7" height="7" rx="1" />
+      <path d="M14 14h2v2h-2zM18 14h2v2h-2zM14 18h2v2h-2zM18 18h2v2h-2z" />
+    </>
+  ),
   [ToolId.Timestamp]: (
     <>
       <circle cx="12" cy="12" r="8" />
