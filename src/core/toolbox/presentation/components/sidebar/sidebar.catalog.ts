@@ -21,11 +21,18 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
   },
   {
     category: ToolCategoryId.Generators,
-    tools: [ToolId.Uuid, ToolId.Ulid, ToolId.Password, ToolId.Crontab],
+    tools: [
+      ToolId.Uuid,
+      ToolId.Ulid,
+      ToolId.Password,
+      ToolId.Totp,
+      ToolId.Crontab,
+      ToolId.Qr,
+    ],
   },
   {
     category: ToolCategoryId.Converters,
-    tools: [ToolId.Timestamp, ToolId.Color],
+    tools: [ToolId.Timestamp, ToolId.Color, ToolId.Base, ToolId.Chmod],
   },
   { category: ToolCategoryId.Network, tools: [ToolId.Subnet] },
 ];
