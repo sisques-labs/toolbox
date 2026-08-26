@@ -39,7 +39,7 @@ export function JsonPanel({
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />
-      <div className="flex items-center gap-2.5">
+      <div className="flex items-end gap-2.5">
         <div className="w-[140px]">
           <SelectField
             label={t.fields.indent}
