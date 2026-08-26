@@ -51,6 +51,7 @@ export const ToolId = {
   BasicAuth: 'basic-auth',
   MetaTags: 'meta-tags',
   MimeTypes: 'mime-types',
+  Keycode: 'keycode',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

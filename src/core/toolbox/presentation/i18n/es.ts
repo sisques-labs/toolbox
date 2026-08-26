@@ -238,6 +238,10 @@ const dict = {
       label: 'Tipos MIME',
       description: 'Consulta el tipo MIME de una extensión de archivo',
     },
+    keycode: {
+      label: 'Información de tecla',
+      description: 'Pulsa una tecla para ver sus valores key, code y keyCode',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -420,6 +424,11 @@ const dict = {
     username: 'Usuario',
     password: 'Contraseña',
     htmlOutput: 'HTML',
+    keyValue: 'key',
+    codeValue: 'code',
+    keyCodeValue: 'keyCode',
+    modifiers: 'Modificadores',
+    pressAnyKey: 'Pulsa una tecla…',
     bcryptMatch: 'Coincide',
     bcryptNoMatch: 'No coincide',
     passwordEntropy: 'Entropía',

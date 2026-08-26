@@ -226,6 +226,10 @@ const dict = {
       label: 'MIME types',
       description: 'Look up the MIME type for a file extension',
     },
+    keycode: {
+      label: 'Keycode info',
+      description: 'Press a key to see its key, code and keyCode values',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -408,6 +412,11 @@ const dict = {
     username: 'Username',
     password: 'Password',
     htmlOutput: 'HTML',
+    keyValue: 'key',
+    codeValue: 'code',
+    keyCodeValue: 'keyCode',
+    modifiers: 'Modifiers',
+    pressAnyKey: 'Press any key…',
     bcryptMatch: 'Match',
     bcryptNoMatch: 'No match',
     passwordEntropy: 'Entropy',

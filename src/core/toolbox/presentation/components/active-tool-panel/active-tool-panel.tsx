@@ -53,6 +53,7 @@ import { UrlParserPanel } from '@/core/toolbox/presentation/components/tool-pane
 import { BasicAuthPanel } from '@/core/toolbox/presentation/components/tool-panels/basic-auth/basic-auth-panel';
 import { MetaTagsPanel } from '@/core/toolbox/presentation/components/tool-panels/meta-tags/meta-tags-panel';
 import { MimeTypesPanel } from '@/core/toolbox/presentation/components/tool-panels/mime-types/mime-types-panel';
+import { KeycodePanel } from '@/core/toolbox/presentation/components/tool-panels/keycode/keycode-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -168,5 +169,7 @@ export function ActiveToolPanel({
       return <MetaTagsPanel t={t} onCopy={onCopy} />;
     case ToolId.MimeTypes:
       return <MimeTypesPanel t={t} />;
+    case ToolId.Keycode:
+      return <KeycodePanel t={t} />;
   }
 }

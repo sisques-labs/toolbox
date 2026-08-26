@@ -348,6 +348,12 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M8 14h8" />
     </>
   ),
+  [ToolId.Keycode]: (
+    <>
+      <rect x="3" y="7" width="18" height="10" rx="1.5" />
+      <path d="M7 11h.01M10.5 11h.01M14 11h.01M17.5 11h.01M8 14.5h8" />
+    </>
+  ),
 };
 
 export function ToolIcon({

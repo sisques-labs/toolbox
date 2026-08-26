@@ -75,6 +75,7 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
       ToolId.BasicAuth,
       ToolId.MetaTags,
       ToolId.MimeTypes,
+      ToolId.Keycode,
     ],
   },
   {
