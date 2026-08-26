@@ -24,7 +24,7 @@ export function JwtPanel({ t }: { t: WidenStringLiterals<ToolboxDict> }) {
       {result.ok ? (
         <div className="flex flex-col gap-3.5">
           <div>
-            <div className="mb-1.5 text-xs font-semibold text-slate-400 dark:text-slate-500">
+            <div className="mb-1.5 text-xs font-semibold text-slate-400 dark:text-slate-400">
               {t.labels.header}
             </div>
             <pre className="whitespace-pre-wrap rounded-lg border border-slate-200 bg-slate-50 p-3.5 font-mono text-sm text-slate-900 dark:border-slate-800 dark:bg-slate-800/50 dark:text-slate-100">
@@ -32,7 +32,7 @@ export function JwtPanel({ t }: { t: WidenStringLiterals<ToolboxDict> }) {
             </pre>
           </div>
           <div>
-            <div className="mb-1.5 text-xs font-semibold text-slate-400 dark:text-slate-500">
+            <div className="mb-1.5 text-xs font-semibold text-slate-400 dark:text-slate-400">
               {t.labels.payload}
             </div>
             <pre className="whitespace-pre-wrap rounded-lg border border-slate-200 bg-slate-50 p-3.5 font-mono text-sm text-slate-900 dark:border-slate-800 dark:bg-slate-800/50 dark:text-slate-100">
@@ -40,7 +40,7 @@ export function JwtPanel({ t }: { t: WidenStringLiterals<ToolboxDict> }) {
             </pre>
           </div>
           <div>
-            <div className="mb-1.5 text-xs font-semibold text-slate-400 dark:text-slate-500">
+            <div className="mb-1.5 text-xs font-semibold text-slate-400 dark:text-slate-400">
               {t.labels.signature}
             </div>
             <div className="break-all rounded-lg border border-slate-200 bg-slate-50 p-3.5 font-mono text-xs text-slate-600 dark:border-slate-800 dark:bg-slate-800/50 dark:text-slate-400">

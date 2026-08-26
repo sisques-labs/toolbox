@@ -38,7 +38,7 @@ export function TextDiffPanel({
         data-testid="text-diff-result"
       >
         {result.lines.length === 0 ? (
-          <p className="p-3 text-slate-500 dark:text-slate-400">
+          <p className="p-3 text-slate-500 dark:text-slate-300">
             {t.labels.noDifferences}
           </p>
         ) : (

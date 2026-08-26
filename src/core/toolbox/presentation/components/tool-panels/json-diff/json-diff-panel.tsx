@@ -48,7 +48,7 @@ export function JsonDiffPanel({
             : t.errors.invalidJsonRight}
         </p>
       ) : result.changes.length === 0 ? (
-        <p className="text-sm text-slate-500 dark:text-slate-400">
+        <p className="text-sm text-slate-500 dark:text-slate-300">
           {t.labels.noDifferences}
         </p>
       ) : (
@@ -72,7 +72,7 @@ export function JsonDiffPanel({
                 key={`${change.kind}-${change.path}`}
                 className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-2.5 font-mono text-sm dark:border-slate-800 dark:bg-slate-800/50"
               >
-                <div className="mb-1 text-[11px] font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500">
+                <div className="mb-1 text-[11px] font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-400">
                   {kindLabel}
                   {' · '}
                   {change.path}

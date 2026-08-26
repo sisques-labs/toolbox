@@ -29,7 +29,7 @@ export function LanguageSwitcher({
           className={`rounded-full px-2.5 py-1 transition ${
             locale === option.value
               ? 'bg-blue-600 text-white shadow-sm'
-              : 'text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-100'
+              : 'text-slate-500 hover:text-slate-800 dark:text-slate-300 dark:hover:text-slate-100'
           }`}
         >
           {option.label}

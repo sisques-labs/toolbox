@@ -64,7 +64,7 @@ export function RegexPanel({
           {t.errors.invalidRegex}
         </p>
       ) : result.matches.length === 0 ? (
-        <p className="text-sm text-slate-500 dark:text-slate-400">
+        <p className="text-sm text-slate-500 dark:text-slate-300">
           {t.labels.noMatches}
         </p>
       ) : (
@@ -83,7 +83,7 @@ export function RegexPanel({
               <div className="text-slate-900 dark:text-slate-100">
                 {match.value}
               </div>
-              <div className="mt-1 text-[11px] text-slate-400 dark:text-slate-500">
+              <div className="mt-1 text-[11px] text-slate-400 dark:text-slate-400">
                 {t.labels.matchIndex.replace('{index}', String(match.index))}
                 {match.groups.length > 0 ? ` · ${match.groups.join(', ')}` : ''}
               </div>

@@ -57,7 +57,7 @@ export function TotpPanel({
             <p className="font-mono text-4xl tracking-[0.3em] text-slate-900 dark:text-slate-100">
               {result.code}
             </p>
-            <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
+            <p className="mt-2 text-sm text-slate-500 dark:text-slate-300">
               {t.labels.totpRemaining.replace(
                 '{seconds}',
                 String(result.remainingSeconds),

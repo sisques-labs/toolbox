@@ -27,7 +27,7 @@ export function ToolHeader({
         <h1 className="text-xl font-bold text-slate-900 dark:text-slate-50">
           {title}
         </h1>
-        <p className="mt-0.5 text-sm text-slate-500 dark:text-slate-400">
+        <p className="mt-0.5 text-sm text-slate-500 dark:text-slate-300">
           {description}
         </p>
       </div>
