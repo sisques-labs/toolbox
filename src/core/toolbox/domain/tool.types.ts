@@ -72,6 +72,7 @@ export const ToolId = {
   Base64File: 'base64-file',
   StringObfuscator: 'string-obfuscator',
   AsciiDrawer: 'ascii-drawer',
+  EmojiPicker: 'emoji-picker',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

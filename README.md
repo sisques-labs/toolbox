@@ -17,6 +17,7 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - NATO phonetic alphabet — spell out text using the NATO phonetic alphabet
 - String obfuscator — mask the middle of a string, keeping the ends visible
 - ASCII text drawer — draw text as a block-letter ASCII banner
+- Emoji picker — search emoji by name and copy them
 
 **Data**
 - JSON formatter — validate, format and minify JSON

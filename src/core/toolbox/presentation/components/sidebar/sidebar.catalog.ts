@@ -14,6 +14,7 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
       ToolId.Nato,
       ToolId.StringObfuscator,
       ToolId.AsciiDrawer,
+      ToolId.EmojiPicker,
     ],
   },
   {

@@ -326,6 +326,10 @@ const dict = {
       label: 'Dibujante de texto ASCII',
       description: 'Dibuja texto como un banner ASCII de letras de bloque',
     },
+    'emoji-picker': {
+      label: 'Selector de emojis',
+      description: 'Busca emojis por nombre y cópialos',
+    },
   },
   actions: {
     copy: 'Copiar',

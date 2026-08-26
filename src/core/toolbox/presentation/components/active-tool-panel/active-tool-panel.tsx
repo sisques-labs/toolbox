@@ -74,6 +74,7 @@ import { TomlYamlPanel } from '@/core/toolbox/presentation/components/tool-panel
 import { Base64FilePanel } from '@/core/toolbox/presentation/components/tool-panels/base64-file/base64-file-panel';
 import { StringObfuscatorPanel } from '@/core/toolbox/presentation/components/tool-panels/string-obfuscator/string-obfuscator-panel';
 import { AsciiDrawerPanel } from '@/core/toolbox/presentation/components/tool-panels/ascii-drawer/ascii-drawer-panel';
+import { EmojiPickerPanel } from '@/core/toolbox/presentation/components/tool-panels/emoji-picker/emoji-picker-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -231,5 +232,7 @@ export function ActiveToolPanel({
       return <StringObfuscatorPanel t={t} onCopy={onCopy} />;
     case ToolId.AsciiDrawer:
       return <AsciiDrawerPanel t={t} onCopy={onCopy} />;
+    case ToolId.EmojiPicker:
+      return <EmojiPickerPanel t={t} onCopy={onCopy} />;
   }
 }

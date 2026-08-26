@@ -310,6 +310,10 @@ const dict = {
       label: 'ASCII text drawer',
       description: 'Draw text as a block-letter ASCII banner',
     },
+    'emoji-picker': {
+      label: 'Emoji picker',
+      description: 'Search emoji by name and copy them',
+    },
   },
   actions: {
     copy: 'Copy',
