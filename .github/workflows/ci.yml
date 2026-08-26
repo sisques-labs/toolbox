@@ -13,3 +13,4 @@ jobs:
     uses: sisques-labs/workflows/.github/workflows/node-ci.yml@main
     with:
       node_version: "22"
+      test_command: "test:cov"
