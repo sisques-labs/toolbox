@@ -242,6 +242,11 @@ const dict = {
       label: 'Información de tecla',
       description: 'Pulsa una tecla para ver sus valores key, code y keyCode',
     },
+    'user-agent': {
+      label: 'Analizador de user agent',
+      description:
+        'Analiza una cadena user agent en navegador, SO y dispositivo',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -344,6 +349,7 @@ const dict = {
     metaImageUrl: 'URL de imagen',
     metaPageUrl: 'URL de página',
     mimeTypeQuery: 'Buscar por extensión o tipo MIME',
+    userAgentInput: 'Cadena user agent',
   },
   labels: {
     plainText: 'Texto plano',
@@ -429,6 +435,10 @@ const dict = {
     keyCodeValue: 'keyCode',
     modifiers: 'Modificadores',
     pressAnyKey: 'Pulsa una tecla…',
+    browser: 'Navegador',
+    operatingSystem: 'Sistema operativo',
+    deviceType: 'Tipo de dispositivo',
+    engine: 'Motor',
     bcryptMatch: 'Coincide',
     bcryptNoMatch: 'No coincide',
     passwordEntropy: 'Entropía',

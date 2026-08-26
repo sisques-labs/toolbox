@@ -54,6 +54,7 @@ import { BasicAuthPanel } from '@/core/toolbox/presentation/components/tool-pane
 import { MetaTagsPanel } from '@/core/toolbox/presentation/components/tool-panels/meta-tags/meta-tags-panel';
 import { MimeTypesPanel } from '@/core/toolbox/presentation/components/tool-panels/mime-types/mime-types-panel';
 import { KeycodePanel } from '@/core/toolbox/presentation/components/tool-panels/keycode/keycode-panel';
+import { UserAgentPanel } from '@/core/toolbox/presentation/components/tool-panels/user-agent/user-agent-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -171,5 +172,7 @@ export function ActiveToolPanel({
       return <MimeTypesPanel t={t} />;
     case ToolId.Keycode:
       return <KeycodePanel t={t} />;
+    case ToolId.UserAgent:
+      return <UserAgentPanel t={t} />;
   }
 }

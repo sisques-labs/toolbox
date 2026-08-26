@@ -230,6 +230,10 @@ const dict = {
       label: 'Keycode info',
       description: 'Press a key to see its key, code and keyCode values',
     },
+    'user-agent': {
+      label: 'User agent parser',
+      description: 'Parse a user agent string into browser, OS and device',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -332,6 +336,7 @@ const dict = {
     metaImageUrl: 'Image URL',
     metaPageUrl: 'Page URL',
     mimeTypeQuery: 'Search by extension or MIME type',
+    userAgentInput: 'User agent string',
   },
   labels: {
     plainText: 'Plain text',
@@ -417,6 +422,10 @@ const dict = {
     keyCodeValue: 'keyCode',
     modifiers: 'Modifiers',
     pressAnyKey: 'Press any key…',
+    browser: 'Browser',
+    operatingSystem: 'Operating system',
+    deviceType: 'Device type',
+    engine: 'Engine',
     bcryptMatch: 'Match',
     bcryptNoMatch: 'No match',
     passwordEntropy: 'Entropy',

@@ -52,6 +52,7 @@ export const ToolId = {
   MetaTags: 'meta-tags',
   MimeTypes: 'mime-types',
   Keycode: 'keycode',
+  UserAgent: 'user-agent',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

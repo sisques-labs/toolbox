@@ -76,6 +76,7 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
       ToolId.MetaTags,
       ToolId.MimeTypes,
       ToolId.Keycode,
+      ToolId.UserAgent,
     ],
   },
   {
