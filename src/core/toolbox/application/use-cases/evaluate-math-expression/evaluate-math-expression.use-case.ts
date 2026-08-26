@@ -64,6 +64,11 @@ class Parser {
     return token;
   }
 
+  private peekOp(): string | null {
+    const token = this.peek();
+    return token?.type === 'op' ? token.value : null;
+  }
+
   parse(): number {
     const value = this.parseExpr();
     if (this.pos !== this.tokens.length) {
@@ -74,31 +79,22 @@ class Parser {
 
   private parseExpr(): number {
     let value = this.parseTerm();
-    while (
-      this.peek()?.type === 'op' &&
-      ['+', '-'].includes(this.peek()!.value)
-    ) {
-      const op = this.next() as { type: 'op'; value: string };
+    let op: string | null;
+    while ((op = this.peekOp()) && ['+', '-'].includes(op)) {
+      this.next();
       const rhs = this.parseTerm();
-      value = op.value === '+' ? value + rhs : value - rhs;
+      value = op === '+' ? value + rhs : value - rhs;
     }
     return value;
   }
 
   private parseTerm(): number {
     let value = this.parseUnary();
-    while (
-      this.peek()?.type === 'op' &&
-      ['*', '/', '%'].includes(this.peek()!.value)
-    ) {
-      const op = this.next() as { type: 'op'; value: string };
+    let op: string | null;
+    while ((op = this.peekOp()) && ['*', '/', '%'].includes(op)) {
+      this.next();
       const rhs = this.parseUnary();
-      value =
-        op.value === '*'
-          ? value * rhs
-          : op.value === '/'
-            ? value / rhs
-            : value % rhs;
+      value = op === '*' ? value * rhs : op === '/' ? value / rhs : value % rhs;
     }
     return value;
   }

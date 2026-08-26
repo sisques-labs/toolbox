@@ -82,6 +82,7 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - Keycode info — press a key to see its key, code and keyCode values
 - User agent parser — parse a user agent string into browser, OS and device
 - Safelink decoder — unwrap Outlook and Google redirect links
+- Device information — inspect your browser and device environment
 
 ## Tech stack
 

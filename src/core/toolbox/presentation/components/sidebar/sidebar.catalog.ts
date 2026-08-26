@@ -78,6 +78,7 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
       ToolId.Keycode,
       ToolId.UserAgent,
       ToolId.Safelink,
+      ToolId.DeviceInfo,
     ],
   },
   {

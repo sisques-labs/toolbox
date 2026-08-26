@@ -42,7 +42,7 @@ describe('GenerateWifiQrUseCase', () => {
       encryption: 'WPA',
       hidden: false,
     });
-    expect(result.ok).toBe(true);
+    if (!result.ok) throw new Error('expected a successful result');
     expect(result.svg).toContain('<svg');
   });
 

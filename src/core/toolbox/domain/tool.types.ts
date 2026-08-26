@@ -54,6 +54,7 @@ export const ToolId = {
   Keycode: 'keycode',
   UserAgent: 'user-agent',
   Safelink: 'safelink',
+  DeviceInfo: 'device-info',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

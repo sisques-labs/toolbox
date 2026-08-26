@@ -367,6 +367,13 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M9 12h5M12 9l3 3-3 3" />
     </>
   ),
+  [ToolId.DeviceInfo]: (
+    <>
+      <rect x="4" y="3" width="16" height="14" rx="1.5" />
+      <path d="M9 21h6M12 17v4" />
+      <path d="M8 8h.01M8 11h.01" />
+    </>
+  ),
 };
 
 export function ToolIcon({
