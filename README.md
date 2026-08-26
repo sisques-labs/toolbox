@@ -84,6 +84,9 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - Safelink decoder — unwrap Outlook and Google redirect links
 - Device information — inspect your browser and device environment
 
+**Development**
+- Random port generator — generate a random port number within a chosen range
+
 ## Tech stack
 
 - [Astro](https://astro.build) (SSG) as the base framework

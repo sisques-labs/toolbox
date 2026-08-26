@@ -374,6 +374,13 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M8 8h.01M8 11h.01" />
     </>
   ),
+  [ToolId.RandomPort]: (
+    <>
+      <rect x="4" y="9" width="16" height="8" rx="1.5" />
+      <circle cx="8" cy="13" r="1" />
+      <path d="M12 13h5" />
+    </>
+  ),
 };
 
 export function ToolIcon({

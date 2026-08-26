@@ -242,6 +242,10 @@ const dict = {
       label: 'Device information',
       description: 'Inspect your browser and device environment',
     },
+    'random-port': {
+      label: 'Random port generator',
+      description: 'Generate a random port number within a chosen range',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -346,6 +350,7 @@ const dict = {
     mimeTypeQuery: 'Search by extension or MIME type',
     userAgentInput: 'User agent string',
     safelinkInput: 'Wrapped link',
+    portRange: 'Range',
   },
   labels: {
     plainText: 'Plain text',
@@ -447,6 +452,10 @@ const dict = {
     timezone: 'Timezone',
     yes: 'Yes',
     no: 'No',
+    portWellKnown: 'Well-known (0-1023)',
+    portRegistered: 'Registered (1024-49151)',
+    portDynamic: 'Dynamic/private (49152-65535)',
+    portAny: 'Any (0-65535)',
     bcryptMatch: 'Match',
     bcryptNoMatch: 'No match',
     passwordEntropy: 'Entropy',

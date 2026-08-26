@@ -57,6 +57,7 @@ import { KeycodePanel } from '@/core/toolbox/presentation/components/tool-panels
 import { UserAgentPanel } from '@/core/toolbox/presentation/components/tool-panels/user-agent/user-agent-panel';
 import { SafelinkPanel } from '@/core/toolbox/presentation/components/tool-panels/safelink/safelink-panel';
 import { DeviceInfoPanel } from '@/core/toolbox/presentation/components/tool-panels/device-info/device-info-panel';
+import { RandomPortPanel } from '@/core/toolbox/presentation/components/tool-panels/random-port/random-port-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -180,5 +181,7 @@ export function ActiveToolPanel({
       return <SafelinkPanel t={t} onCopy={onCopy} />;
     case ToolId.DeviceInfo:
       return <DeviceInfoPanel t={t} />;
+    case ToolId.RandomPort:
+      return <RandomPortPanel t={t} onCopy={onCopy} />;
   }
 }

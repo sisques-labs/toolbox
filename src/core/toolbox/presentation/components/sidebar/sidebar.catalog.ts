@@ -82,6 +82,10 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
     ],
   },
   {
+    category: ToolCategoryId.Development,
+    tools: [ToolId.RandomPort],
+  },
+  {
     category: ToolCategoryId.Crypto,
     tools: [
       ToolId.Cypher,
