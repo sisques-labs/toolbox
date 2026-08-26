@@ -114,6 +114,10 @@ const dict = {
       label: 'Calculadora de subred',
       description: 'Obtén red, broadcast y rango de hosts a partir de un CIDR',
     },
+    'http-status': {
+      label: 'Códigos de estado HTTP',
+      description: 'Consulta códigos de estado HTTP y sus frases de motivo',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -165,6 +169,7 @@ const dict = {
     fromBase: 'Base de origen',
     totpSecret: 'Secreto Base32',
     qrContent: 'Contenido',
+    httpStatusQuery: 'Buscar por código o frase',
   },
   labels: {
     plainText: 'Texto plano',
@@ -211,6 +216,11 @@ const dict = {
     chmodWrite: 'Escritura',
     chmodExecute: 'Ejecución',
     totpRemaining: 'Caduca en {seconds}s',
+    httpInformational: 'Informativo',
+    httpSuccess: 'Éxito',
+    httpRedirection: 'Redirección',
+    httpClientError: 'Error de cliente',
+    httpServerError: 'Error de servidor',
   },
   presets: {
     everyMinute: 'Cada minuto',

@@ -107,6 +107,10 @@ const dict = {
       label: 'IP subnet calculator',
       description: 'Get network, broadcast and host range from a CIDR',
     },
+    'http-status': {
+      label: 'HTTP status codes',
+      description: 'Look up HTTP status codes and their reason phrases',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -158,6 +162,7 @@ const dict = {
     fromBase: 'From base',
     totpSecret: 'Base32 secret',
     qrContent: 'Content',
+    httpStatusQuery: 'Search by code or phrase',
   },
   labels: {
     plainText: 'Plain text',
@@ -204,6 +209,11 @@ const dict = {
     chmodWrite: 'Write',
     chmodExecute: 'Execute',
     totpRemaining: 'Expires in {seconds}s',
+    httpInformational: 'Informational',
+    httpSuccess: 'Success',
+    httpRedirection: 'Redirection',
+    httpClientError: 'Client error',
+    httpServerError: 'Server error',
   },
   presets: {
     everyMinute: 'Every minute',

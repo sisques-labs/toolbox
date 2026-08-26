@@ -41,6 +41,7 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 
 **Network**
 - IP subnet calculator — get network, broadcast and host range from a CIDR
+- HTTP status codes — look up HTTP status codes and their reason phrases
 
 ## Tech stack
 

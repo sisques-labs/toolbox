@@ -170,6 +170,13 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M12 7v5M12 12l-6 5M12 12l6 5" />
     </>
   ),
+  [ToolId.HttpStatus]: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M9 9.5a3 3 0 1 1 3.5 3c-.7.4-1 .8-1 1.7" />
+      <circle cx="12" cy="17.2" r="0.4" fill="currentColor" />
+    </>
+  ),
 };
 
 export function ToolIcon({

@@ -25,6 +25,7 @@ import { ColorPanel } from '@/core/toolbox/presentation/components/tool-panels/c
 import { BasePanel } from '@/core/toolbox/presentation/components/tool-panels/base/base-panel';
 import { ChmodPanel } from '@/core/toolbox/presentation/components/tool-panels/chmod/chmod-panel';
 import { SubnetPanel } from '@/core/toolbox/presentation/components/tool-panels/subnet/subnet-panel';
+import { HttpStatusPanel } from '@/core/toolbox/presentation/components/tool-panels/http-status/http-status-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -84,5 +85,7 @@ export function ActiveToolPanel({
       return <ChmodPanel t={t} onCopy={onCopy} />;
     case ToolId.Subnet:
       return <SubnetPanel t={t} />;
+    case ToolId.HttpStatus:
+      return <HttpStatusPanel t={t} />;
   }
 }
