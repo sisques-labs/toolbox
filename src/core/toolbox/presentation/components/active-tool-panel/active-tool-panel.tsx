@@ -33,6 +33,49 @@ import { RomanPanel } from '@/core/toolbox/presentation/components/tool-panels/r
 import { SubnetPanel } from '@/core/toolbox/presentation/components/tool-panels/subnet/subnet-panel';
 import { HttpStatusPanel } from '@/core/toolbox/presentation/components/tool-panels/http-status/http-status-panel';
 import { IpAddressPanel } from '@/core/toolbox/presentation/components/tool-panels/ip-address/ip-address-panel';
+import { CypherPanel } from '@/core/toolbox/presentation/components/tool-panels/cypher/cypher-panel';
+import { BcryptPanel } from '@/core/toolbox/presentation/components/tool-panels/bcrypt/bcrypt-panel';
+import { HmacPanel } from '@/core/toolbox/presentation/components/tool-panels/hmac/hmac-panel';
+import { PasswordStrengthPanel } from '@/core/toolbox/presentation/components/tool-panels/password-strength/password-strength-panel';
+import { Bip39Panel } from '@/core/toolbox/presentation/components/tool-panels/bip39/bip39-panel';
+import { RsaKeypairPanel } from '@/core/toolbox/presentation/components/tool-panels/rsa-keypair/rsa-keypair-panel';
+import { IpRangePanel } from '@/core/toolbox/presentation/components/tool-panels/ip-range/ip-range-panel';
+import { MacGeneratorPanel } from '@/core/toolbox/presentation/components/tool-panels/mac-generator/mac-generator-panel';
+import { MacLookupPanel } from '@/core/toolbox/presentation/components/tool-panels/mac-lookup/mac-lookup-panel';
+import { Ipv6UlaPanel } from '@/core/toolbox/presentation/components/tool-panels/ipv6-ula/ipv6-ula-panel';
+import { MathEvaluatorPanel } from '@/core/toolbox/presentation/components/tool-panels/math-evaluator/math-evaluator-panel';
+import { PercentagePanel } from '@/core/toolbox/presentation/components/tool-panels/percentage/percentage-panel';
+import { EtaPanel } from '@/core/toolbox/presentation/components/tool-panels/eta/eta-panel';
+import { TemperaturePanel } from '@/core/toolbox/presentation/components/tool-panels/temperature/temperature-panel';
+import { WifiQrPanel } from '@/core/toolbox/presentation/components/tool-panels/wifi-qr/wifi-qr-panel';
+import { SvgPlaceholderPanel } from '@/core/toolbox/presentation/components/tool-panels/svg-placeholder/svg-placeholder-panel';
+import { UrlParserPanel } from '@/core/toolbox/presentation/components/tool-panels/url-parser/url-parser-panel';
+import { BasicAuthPanel } from '@/core/toolbox/presentation/components/tool-panels/basic-auth/basic-auth-panel';
+import { MetaTagsPanel } from '@/core/toolbox/presentation/components/tool-panels/meta-tags/meta-tags-panel';
+import { MimeTypesPanel } from '@/core/toolbox/presentation/components/tool-panels/mime-types/mime-types-panel';
+import { KeycodePanel } from '@/core/toolbox/presentation/components/tool-panels/keycode/keycode-panel';
+import { UserAgentPanel } from '@/core/toolbox/presentation/components/tool-panels/user-agent/user-agent-panel';
+import { SafelinkPanel } from '@/core/toolbox/presentation/components/tool-panels/safelink/safelink-panel';
+import { DeviceInfoPanel } from '@/core/toolbox/presentation/components/tool-panels/device-info/device-info-panel';
+import { RandomPortPanel } from '@/core/toolbox/presentation/components/tool-panels/random-port/random-port-panel';
+import { EmailNormalizerPanel } from '@/core/toolbox/presentation/components/tool-panels/email-normalizer/email-normalizer-panel';
+import { XmlFormatterPanel } from '@/core/toolbox/presentation/components/tool-panels/xml-formatter/xml-formatter-panel';
+import { SqlPrettifierPanel } from '@/core/toolbox/presentation/components/tool-panels/sql-prettifier/sql-prettifier-panel';
+import { DockerComposePanel } from '@/core/toolbox/presentation/components/tool-panels/docker-compose/docker-compose-panel';
+import { GitCheatsheetPanel } from '@/core/toolbox/presentation/components/tool-panels/git-cheatsheet/git-cheatsheet-panel';
+import { RegexCheatsheetPanel } from '@/core/toolbox/presentation/components/tool-panels/regex-cheatsheet/regex-cheatsheet-panel';
+import { TextBinaryPanel } from '@/core/toolbox/presentation/components/tool-panels/text-binary/text-binary-panel';
+import { TextUnicodePanel } from '@/core/toolbox/presentation/components/tool-panels/text-unicode/text-unicode-panel';
+import { ListConverterPanel } from '@/core/toolbox/presentation/components/tool-panels/list-converter/list-converter-panel';
+import { MarkdownHtmlPanel } from '@/core/toolbox/presentation/components/tool-panels/markdown-html/markdown-html-panel';
+import { XmlJsonPanel } from '@/core/toolbox/presentation/components/tool-panels/xml-json/xml-json-panel';
+import { TomlJsonPanel } from '@/core/toolbox/presentation/components/tool-panels/toml-json/toml-json-panel';
+import { TomlYamlPanel } from '@/core/toolbox/presentation/components/tool-panels/toml-yaml/toml-yaml-panel';
+import { Base64FilePanel } from '@/core/toolbox/presentation/components/tool-panels/base64-file/base64-file-panel';
+import { StringObfuscatorPanel } from '@/core/toolbox/presentation/components/tool-panels/string-obfuscator/string-obfuscator-panel';
+import { AsciiDrawerPanel } from '@/core/toolbox/presentation/components/tool-panels/ascii-drawer/ascii-drawer-panel';
+import { EmojiPickerPanel } from '@/core/toolbox/presentation/components/tool-panels/emoji-picker/emoji-picker-panel';
+import { PhoneParserPanel } from '@/core/toolbox/presentation/components/tool-panels/phone-parser/phone-parser-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -108,5 +151,91 @@ export function ActiveToolPanel({
       return <HttpStatusPanel t={t} />;
     case ToolId.IpAddress:
       return <IpAddressPanel t={t} onCopy={onCopy} />;
+    case ToolId.Cypher:
+      return <CypherPanel t={t} onCopy={onCopy} />;
+    case ToolId.Bcrypt:
+      return <BcryptPanel t={t} onCopy={onCopy} />;
+    case ToolId.Hmac:
+      return <HmacPanel t={t} onCopy={onCopy} />;
+    case ToolId.PasswordStrength:
+      return <PasswordStrengthPanel t={t} />;
+    case ToolId.Bip39:
+      return <Bip39Panel t={t} onCopy={onCopy} />;
+    case ToolId.RsaKeypair:
+      return <RsaKeypairPanel t={t} onCopy={onCopy} />;
+    case ToolId.IpRange:
+      return <IpRangePanel t={t} />;
+    case ToolId.MacGenerator:
+      return <MacGeneratorPanel t={t} onCopy={onCopy} />;
+    case ToolId.MacLookup:
+      return <MacLookupPanel t={t} />;
+    case ToolId.Ipv6Ula:
+      return <Ipv6UlaPanel t={t} onCopy={onCopy} />;
+    case ToolId.MathEvaluator:
+      return <MathEvaluatorPanel t={t} onCopy={onCopy} />;
+    case ToolId.Percentage:
+      return <PercentagePanel t={t} />;
+    case ToolId.Eta:
+      return <EtaPanel t={t} />;
+    case ToolId.Temperature:
+      return <TemperaturePanel t={t} />;
+    case ToolId.WifiQr:
+      return <WifiQrPanel t={t} />;
+    case ToolId.SvgPlaceholder:
+      return <SvgPlaceholderPanel t={t} />;
+    case ToolId.UrlParser:
+      return <UrlParserPanel t={t} />;
+    case ToolId.BasicAuth:
+      return <BasicAuthPanel t={t} onCopy={onCopy} />;
+    case ToolId.MetaTags:
+      return <MetaTagsPanel t={t} onCopy={onCopy} />;
+    case ToolId.MimeTypes:
+      return <MimeTypesPanel t={t} />;
+    case ToolId.Keycode:
+      return <KeycodePanel t={t} />;
+    case ToolId.UserAgent:
+      return <UserAgentPanel t={t} />;
+    case ToolId.Safelink:
+      return <SafelinkPanel t={t} onCopy={onCopy} />;
+    case ToolId.DeviceInfo:
+      return <DeviceInfoPanel t={t} />;
+    case ToolId.RandomPort:
+      return <RandomPortPanel t={t} onCopy={onCopy} />;
+    case ToolId.EmailNormalizer:
+      return <EmailNormalizerPanel t={t} onCopy={onCopy} />;
+    case ToolId.XmlFormatter:
+      return <XmlFormatterPanel t={t} onCopy={onCopy} />;
+    case ToolId.SqlPrettifier:
+      return <SqlPrettifierPanel t={t} onCopy={onCopy} />;
+    case ToolId.DockerCompose:
+      return <DockerComposePanel t={t} onCopy={onCopy} />;
+    case ToolId.GitCheatsheet:
+      return <GitCheatsheetPanel t={t} />;
+    case ToolId.RegexCheatsheet:
+      return <RegexCheatsheetPanel t={t} />;
+    case ToolId.TextBinary:
+      return <TextBinaryPanel t={t} onCopy={onCopy} />;
+    case ToolId.TextUnicode:
+      return <TextUnicodePanel t={t} onCopy={onCopy} />;
+    case ToolId.ListConverter:
+      return <ListConverterPanel t={t} onCopy={onCopy} />;
+    case ToolId.MarkdownHtml:
+      return <MarkdownHtmlPanel t={t} onCopy={onCopy} />;
+    case ToolId.XmlJson:
+      return <XmlJsonPanel t={t} onCopy={onCopy} />;
+    case ToolId.TomlJson:
+      return <TomlJsonPanel t={t} onCopy={onCopy} />;
+    case ToolId.TomlYaml:
+      return <TomlYamlPanel t={t} onCopy={onCopy} />;
+    case ToolId.Base64File:
+      return <Base64FilePanel t={t} onCopy={onCopy} />;
+    case ToolId.StringObfuscator:
+      return <StringObfuscatorPanel t={t} onCopy={onCopy} />;
+    case ToolId.AsciiDrawer:
+      return <AsciiDrawerPanel t={t} onCopy={onCopy} />;
+    case ToolId.EmojiPicker:
+      return <EmojiPickerPanel t={t} onCopy={onCopy} />;
+    case ToolId.PhoneParser:
+      return <PhoneParserPanel t={t} />;
   }
 }

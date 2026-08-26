@@ -15,6 +15,12 @@ describe('ToolId const map', () => {
       ToolCategoryId.Generators,
       ToolCategoryId.Converters,
       ToolCategoryId.Network,
+      ToolCategoryId.Crypto,
+      ToolCategoryId.Web,
+      ToolCategoryId.Development,
+      ToolCategoryId.Math,
+      ToolCategoryId.Measurement,
+      ToolCategoryId.Images,
     ]);
   });
 });
