@@ -69,6 +69,7 @@ import { TextUnicodePanel } from '@/core/toolbox/presentation/components/tool-pa
 import { ListConverterPanel } from '@/core/toolbox/presentation/components/tool-panels/list-converter/list-converter-panel';
 import { MarkdownHtmlPanel } from '@/core/toolbox/presentation/components/tool-panels/markdown-html/markdown-html-panel';
 import { XmlJsonPanel } from '@/core/toolbox/presentation/components/tool-panels/xml-json/xml-json-panel';
+import { TomlJsonPanel } from '@/core/toolbox/presentation/components/tool-panels/toml-json/toml-json-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -216,5 +217,7 @@ export function ActiveToolPanel({
       return <MarkdownHtmlPanel t={t} onCopy={onCopy} />;
     case ToolId.XmlJson:
       return <XmlJsonPanel t={t} onCopy={onCopy} />;
+    case ToolId.TomlJson:
+      return <TomlJsonPanel t={t} onCopy={onCopy} />;
   }
 }

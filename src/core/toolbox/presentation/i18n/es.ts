@@ -306,6 +306,10 @@ const dict = {
       label: 'XML ↔ JSON',
       description: 'Convierte entre XML y JSON',
     },
+    'toml-json': {
+      label: 'TOML ↔ JSON',
+      description: 'Convierte entre TOML y JSON',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -323,6 +327,8 @@ const dict = {
     verify: 'Verificar',
     xmlToJson: 'XML → JSON',
     jsonToXml: 'JSON → XML',
+    tomlToJson: 'TOML → JSON',
+    jsonToToml: 'JSON → TOML',
   },
   fields: {
     inputText: 'Texto de entrada',
@@ -427,6 +433,7 @@ const dict = {
     listUnique: 'Eliminar duplicados',
     listRemoveEmpty: 'Eliminar líneas vacías',
     markdownInput: 'Entrada Markdown',
+    tomlInput: 'Entrada TOML',
   },
   labels: {
     plainText: 'Texto plano',
@@ -600,6 +607,9 @@ const dict = {
     invalidDockerRun: 'Introduce un comando docker run con al menos una imagen',
     invalidBinary: 'Introduce bytes binarios válidos separados por espacios',
     invalidJsonForXml: 'Introduce un JSON válido con una única clave raíz',
+    invalidToml: 'Introduce un TOML válido (líneas clave = valor y [tablas])',
+    invalidJsonForToml:
+      'Introduce un objeto JSON plano o con un nivel de anidación',
     invalidUnicode:
       'Introduce puntos de código U+XXXX válidos separados por espacios',
     invalidMac: 'Introduce una MAC válida, ej. 00:1A:2B:3C:4D:5E',

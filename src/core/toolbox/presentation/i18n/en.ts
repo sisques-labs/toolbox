@@ -290,6 +290,10 @@ const dict = {
       label: 'XML ↔ JSON',
       description: 'Convert between XML and JSON',
     },
+    'toml-json': {
+      label: 'TOML ↔ JSON',
+      description: 'Convert between TOML and JSON',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -307,6 +311,8 @@ const dict = {
     verify: 'Verify',
     xmlToJson: 'XML → JSON',
     jsonToXml: 'JSON → XML',
+    tomlToJson: 'TOML → JSON',
+    jsonToToml: 'JSON → TOML',
   },
   fields: {
     inputText: 'Input text',
@@ -411,6 +417,7 @@ const dict = {
     listUnique: 'Remove duplicates',
     listRemoveEmpty: 'Remove empty lines',
     markdownInput: 'Markdown input',
+    tomlInput: 'TOML input',
   },
   labels: {
     plainText: 'Plain text',
@@ -581,6 +588,8 @@ const dict = {
     invalidDockerRun: 'Enter a docker run command with at least an image',
     invalidBinary: 'Enter valid space-separated binary bytes',
     invalidJsonForXml: 'Enter valid JSON with a single root key',
+    invalidToml: 'Enter valid TOML (key = value lines and [tables])',
+    invalidJsonForToml: 'Enter a valid flat or one-level-nested JSON object',
     invalidUnicode: 'Enter valid space-separated U+XXXX code points',
     invalidMac: 'Enter a valid MAC address, e.g. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No vendor found for this prefix',

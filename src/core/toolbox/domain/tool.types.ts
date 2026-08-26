@@ -67,6 +67,7 @@ export const ToolId = {
   ListConverter: 'list-converter',
   MarkdownHtml: 'markdown-html',
   XmlJson: 'xml-json',
+  TomlJson: 'toml-json',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];
