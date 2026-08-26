@@ -172,6 +172,10 @@ const dict = {
       description:
         'Estima la entropía y el tiempo de descifrado de una contraseña',
     },
+    bip39: {
+      label: 'Mnemónico BIP39',
+      description: 'Genera o valida una frase semilla mnemónica BIP39',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -236,6 +240,8 @@ const dict = {
     bcryptPlainText: 'Texto plano a verificar',
     algorithm: 'Algoritmo',
     hmacSecret: 'Clave secreta',
+    bip39Strength: 'Fortaleza (bits)',
+    bip39MnemonicToValidate: 'Mnemónico a validar',
   },
   labels: {
     plainText: 'Texto plano',
@@ -311,6 +317,8 @@ const dict = {
     timeDays: '{count} días',
     timeYears: '{count} años',
     timeCenturies: 'Siglos',
+    valid: 'Válido',
+    invalid: 'No válido',
   },
   presets: {
     everyMinute: 'Cada minuto',

@@ -35,6 +35,7 @@ export const ToolId = {
   Bcrypt: 'bcrypt',
   Hmac: 'hmac',
   PasswordStrength: 'password-strength',
+  Bip39: 'bip39',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

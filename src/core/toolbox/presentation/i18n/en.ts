@@ -162,6 +162,10 @@ const dict = {
       label: 'Password strength analyser',
       description: 'Estimate a password’s entropy and time to crack',
     },
+    bip39: {
+      label: 'BIP39 mnemonic',
+      description: 'Generate or validate a BIP39 mnemonic seed phrase',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -226,6 +230,8 @@ const dict = {
     bcryptPlainText: 'Plain text to verify',
     algorithm: 'Algorithm',
     hmacSecret: 'Secret key',
+    bip39Strength: 'Strength (bits)',
+    bip39MnemonicToValidate: 'Mnemonic to validate',
   },
   labels: {
     plainText: 'Plain text',
@@ -301,6 +307,8 @@ const dict = {
     timeDays: '{count} days',
     timeYears: '{count} years',
     timeCenturies: 'Centuries',
+    valid: 'Valid',
+    invalid: 'Invalid',
   },
   presets: {
     everyMinute: 'Every minute',

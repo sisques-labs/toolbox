@@ -50,6 +50,12 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
   },
   {
     category: ToolCategoryId.Crypto,
-    tools: [ToolId.Cypher, ToolId.Bcrypt, ToolId.Hmac, ToolId.PasswordStrength],
+    tools: [
+      ToolId.Cypher,
+      ToolId.Bcrypt,
+      ToolId.Hmac,
+      ToolId.PasswordStrength,
+      ToolId.Bip39,
+    ],
   },
 ];

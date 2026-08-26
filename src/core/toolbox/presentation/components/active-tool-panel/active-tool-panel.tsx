@@ -37,6 +37,7 @@ import { CypherPanel } from '@/core/toolbox/presentation/components/tool-panels/
 import { BcryptPanel } from '@/core/toolbox/presentation/components/tool-panels/bcrypt/bcrypt-panel';
 import { HmacPanel } from '@/core/toolbox/presentation/components/tool-panels/hmac/hmac-panel';
 import { PasswordStrengthPanel } from '@/core/toolbox/presentation/components/tool-panels/password-strength/password-strength-panel';
+import { Bip39Panel } from '@/core/toolbox/presentation/components/tool-panels/bip39/bip39-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -120,5 +121,7 @@ export function ActiveToolPanel({
       return <HmacPanel t={t} onCopy={onCopy} />;
     case ToolId.PasswordStrength:
       return <PasswordStrengthPanel t={t} />;
+    case ToolId.Bip39:
+      return <Bip39Panel t={t} onCopy={onCopy} />;
   }
 }
