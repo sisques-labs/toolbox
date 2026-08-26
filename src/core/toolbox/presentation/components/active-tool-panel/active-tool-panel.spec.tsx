@@ -39,4 +39,15 @@ describe('ActiveToolPanel', () => {
     );
     expect(screen.getByLabelText('JWT token')).toBeInTheDocument();
   });
+
+  it.each(Object.values(ToolId))(
+    'renders a panel for every ToolId without throwing (%s)',
+    (toolId) => {
+      const { container } = render(
+        <ActiveToolPanel activeTool={toolId} t={enToolbox} onCopy={() => {}} />,
+      );
+
+      expect(container).not.toBeEmptyDOMElement();
+    },
+  );
 });
