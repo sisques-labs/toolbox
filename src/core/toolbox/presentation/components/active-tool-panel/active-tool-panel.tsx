@@ -28,6 +28,8 @@ import { TimestampPanel } from '@/core/toolbox/presentation/components/tool-pane
 import { ColorPanel } from '@/core/toolbox/presentation/components/tool-panels/color/color-panel';
 import { BasePanel } from '@/core/toolbox/presentation/components/tool-panels/base/base-panel';
 import { ChmodPanel } from '@/core/toolbox/presentation/components/tool-panels/chmod/chmod-panel';
+import { IbanPanel } from '@/core/toolbox/presentation/components/tool-panels/iban/iban-panel';
+import { RomanPanel } from '@/core/toolbox/presentation/components/tool-panels/roman/roman-panel';
 import { SubnetPanel } from '@/core/toolbox/presentation/components/tool-panels/subnet/subnet-panel';
 import { HttpStatusPanel } from '@/core/toolbox/presentation/components/tool-panels/http-status/http-status-panel';
 import { IpAddressPanel } from '@/core/toolbox/presentation/components/tool-panels/ip-address/ip-address-panel';
@@ -96,6 +98,10 @@ export function ActiveToolPanel({
       return <BasePanel t={t} onCopy={onCopy} />;
     case ToolId.Chmod:
       return <ChmodPanel t={t} onCopy={onCopy} />;
+    case ToolId.Iban:
+      return <IbanPanel t={t} />;
+    case ToolId.Roman:
+      return <RomanPanel t={t} onCopy={onCopy} />;
     case ToolId.Subnet:
       return <SubnetPanel t={t} />;
     case ToolId.HttpStatus:

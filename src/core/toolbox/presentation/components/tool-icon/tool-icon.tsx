@@ -188,6 +188,18 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M9 16h6" />
     </>
   ),
+  [ToolId.Iban]: (
+    <>
+      <rect x="3" y="6" width="18" height="12" rx="2" />
+      <path d="M3 10h18" />
+      <path d="M7 14h4" />
+    </>
+  ),
+  [ToolId.Roman]: (
+    <>
+      <path d="M5 6v12M9 6v12M9 6h3a3 3 0 0 1 0 12H9M17 6v12M19 6v12" />
+    </>
+  ),
   [ToolId.Subnet]: (
     <>
       <rect x="9" y="3" width="6" height="4" rx="1" />

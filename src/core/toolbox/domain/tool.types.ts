@@ -26,6 +26,8 @@ export const ToolId = {
   Color: 'color',
   Base: 'base',
   Chmod: 'chmod',
+  Iban: 'iban',
+  Roman: 'roman',
   Subnet: 'subnet',
   HttpStatus: 'http-status',
   IpAddress: 'ip-address',

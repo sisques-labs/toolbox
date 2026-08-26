@@ -119,6 +119,15 @@ const dict = {
       label: 'Chmod calculator',
       description: 'Compute Unix file permissions as octal and symbolic modes',
     },
+    iban: {
+      label: 'IBAN validator',
+      description:
+        'Validate an IBAN and parse its country, check digits and BBAN',
+    },
+    roman: {
+      label: 'Roman numeral converter',
+      description: 'Convert between arabic numbers and roman numerals',
+    },
     subnet: {
       label: 'IP subnet calculator',
       description: 'Get network, broadcast and host range from a CIDR',
@@ -186,6 +195,7 @@ const dict = {
     httpStatusQuery: 'Search by code or phrase',
     ipAddressInput: 'IPv4 address (e.g. 192.168.1.1)',
     textStatsInput: 'Text to analyze',
+    ibanInput: 'IBAN',
   },
   labels: {
     plainText: 'Plain text',
@@ -243,6 +253,12 @@ const dict = {
     sentences: 'Sentences',
     readingTime: 'Reading time',
     readingTimeValue: '{count} min',
+    ibanCountryCode: 'Country code',
+    ibanCheckDigits: 'Check digits',
+    ibanBban: 'BBAN',
+    ibanFormatted: 'Formatted',
+    ibanValid: 'Valid',
+    ibanInvalid: 'Invalid checksum',
   },
   presets: {
     everyMinute: 'Every minute',
@@ -262,6 +278,8 @@ const dict = {
     invalidJsonArrayForCsv: 'Enter a JSON array of objects to convert to CSV',
     invalidCsvForJson:
       'Enter valid CSV (a header row plus data rows) to convert to JSON',
+    invalidIban: 'Enter a valid IBAN, e.g. GB29 NWBK 6016 1331 9268 19',
+    invalidRoman: 'Enter a number from 1 to 3999 or a valid roman numeral',
     invalidJwt: 'Not a valid JWT — expected 3 dot-separated parts.',
     undecodableJwt: 'Could not decode this token.',
     invalidColor: 'Enter a valid color (hex, rgb or hsl)',
