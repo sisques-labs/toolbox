@@ -197,6 +197,10 @@ const dict = {
       description:
         'Genera un prefijo de dirección única local (ULA) IPv6 aleatorio',
     },
+    'math-evaluator': {
+      label: 'Evaluador matemático',
+      description: 'Evalúa expresiones aritméticas con funciones',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -269,6 +273,7 @@ const dict = {
     macMulticast: 'Multicast',
     macAddressInput: 'Dirección MAC',
     ipv6SubnetId: 'ID de subred (4 dígitos hex)',
+    mathExpression: 'Expresión (ej. sqrt(16) + 2^3)',
   },
   labels: {
     plainText: 'Texto plano',
@@ -388,6 +393,7 @@ const dict = {
     emptyQrContent: 'Introduce texto o una URL para codificar',
     invalidMac: 'Introduce una MAC válida, ej. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No se ha encontrado fabricante para este prefijo',
+    invalidMathExpression: 'Introduce una expresión matemática válida',
   },
   copiedSuffix: ' copiado',
 } as const satisfies ToolboxDictTranslated;

@@ -62,6 +62,9 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - BIP39 mnemonic — generate or validate a BIP39 mnemonic seed phrase
 - RSA key pair generator — generate an RSA public/private key pair
 
+**Math**
+- Math evaluator — evaluate arithmetic expressions with functions
+
 ## Tech stack
 
 - [Astro](https://astro.build) (SSG) as the base framework

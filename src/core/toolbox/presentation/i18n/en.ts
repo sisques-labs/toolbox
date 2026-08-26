@@ -186,6 +186,10 @@ const dict = {
       label: 'IPv6 ULA generator',
       description: 'Generate a random IPv6 Unique Local Address prefix',
     },
+    'math-evaluator': {
+      label: 'Math evaluator',
+      description: 'Evaluate arithmetic expressions with functions',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -258,6 +262,7 @@ const dict = {
     macMulticast: 'Multicast',
     macAddressInput: 'MAC address',
     ipv6SubnetId: 'Subnet ID (4 hex digits)',
+    mathExpression: 'Expression (e.g. sqrt(16) + 2^3)',
   },
   labels: {
     plainText: 'Plain text',
@@ -375,6 +380,7 @@ const dict = {
     emptyQrContent: 'Enter text or a URL to encode',
     invalidMac: 'Enter a valid MAC address, e.g. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No vendor found for this prefix',
+    invalidMathExpression: 'Enter a valid math expression',
   },
   copiedSuffix: ' copied',
 } as const;

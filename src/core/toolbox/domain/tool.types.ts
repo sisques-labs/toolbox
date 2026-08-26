@@ -41,6 +41,7 @@ export const ToolId = {
   MacGenerator: 'mac-generator',
   MacLookup: 'mac-lookup',
   Ipv6Ula: 'ipv6-ula',
+  MathEvaluator: 'math-evaluator',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

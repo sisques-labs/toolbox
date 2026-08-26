@@ -283,6 +283,13 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <circle cx="19" cy="12" r="1" />
     </>
   ),
+  [ToolId.MathEvaluator]: (
+    <>
+      <rect x="4" y="4" width="16" height="16" rx="2" />
+      <path d="M8 9h3M8 13h5M8 17h3" />
+      <path d="M15 15l3 3M18 15l-3 3" />
+    </>
+  ),
 };
 
 export function ToolIcon({
