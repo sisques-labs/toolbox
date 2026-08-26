@@ -57,6 +57,7 @@ export const ToolId = {
   DeviceInfo: 'device-info',
   RandomPort: 'random-port',
   EmailNormalizer: 'email-normalizer',
+  XmlFormatter: 'xml-formatter',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

@@ -387,6 +387,13 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M3 7l9 6 9-6" />
     </>
   ),
+  [ToolId.XmlFormatter]: (
+    <>
+      <path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
+      <path d="M15 2v5h5" />
+      <path d="M8 13l2 2-2 2M14 13l-2 2 2 2" />
+    </>
+  ),
 };
 
 export function ToolIcon({

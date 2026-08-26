@@ -264,6 +264,10 @@ const dict = {
       description:
         'Normaliza una dirección de email, gestionando los trucos de Gmail',
     },
+    'xml-formatter': {
+      label: 'Formateador XML',
+      description: 'Formatea o minifica un documento XML',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -370,6 +374,7 @@ const dict = {
     safelinkInput: 'Enlace envuelto',
     portRange: 'Rango',
     emailInput: 'Dirección de email',
+    xmlInput: 'Entrada XML',
   },
   labels: {
     plainText: 'Texto plano',
@@ -536,6 +541,7 @@ const dict = {
     invalidSafelink:
       'Introduce un enlace de redirección de Outlook o Google válido',
     invalidEmail: 'Introduce una dirección de email válida',
+    invalidXml: 'Introduce un XML válido y bien formado',
     invalidMac: 'Introduce una MAC válida, ej. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No se ha encontrado fabricante para este prefijo',
     invalidMathExpression: 'Introduce una expresión matemática válida',

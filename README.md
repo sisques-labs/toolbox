@@ -87,6 +87,7 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 **Development**
 - Random port generator — generate a random port number within a chosen range
 - Email normalizer — normalize an email address, handling Gmail dot/plus tricks
+- XML formatter — pretty-print or minify an XML document
 
 ## Tech stack
 
