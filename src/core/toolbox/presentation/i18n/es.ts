@@ -210,6 +210,10 @@ const dict = {
       description:
         'Estima el tiempo restante a partir de una tasa lineal de avance',
     },
+    temperature: {
+      label: 'Conversor de temperatura',
+      description: 'Convierte entre Celsius, Fahrenheit y Kelvin',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -292,6 +296,8 @@ const dict = {
     etaUnitsCompleted: 'Unidades completadas',
     etaTotalUnits: 'Unidades totales',
     etaElapsedSeconds: 'Tiempo transcurrido (segundos)',
+    temperatureValue: 'Temperatura',
+    temperatureUnit: 'Unidad',
   },
   labels: {
     plainText: 'Texto plano',
@@ -359,6 +365,9 @@ const dict = {
     whatPercentHeading: 'X es qué % de Y',
     percentChangeHeading: 'Variación de X a Y',
     etaRemaining: 'Tiempo restante',
+    celsius: 'Celsius',
+    fahrenheit: 'Fahrenheit',
+    kelvin: 'Kelvin',
     bcryptMatch: 'Coincide',
     bcryptNoMatch: 'No coincide',
     passwordEntropy: 'Entropía',

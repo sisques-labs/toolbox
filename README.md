@@ -67,6 +67,9 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - Percentage calculator — compute percentages, shares and percentage change
 - ETA calculator — estimate remaining time from a linear completion rate
 
+**Measurement**
+- Temperature converter — convert between Celsius, Fahrenheit and Kelvin
+
 ## Tech stack
 
 - [Astro](https://astro.build) (SSG) as the base framework

@@ -46,6 +46,7 @@ import { Ipv6UlaPanel } from '@/core/toolbox/presentation/components/tool-panels
 import { MathEvaluatorPanel } from '@/core/toolbox/presentation/components/tool-panels/math-evaluator/math-evaluator-panel';
 import { PercentagePanel } from '@/core/toolbox/presentation/components/tool-panels/percentage/percentage-panel';
 import { EtaPanel } from '@/core/toolbox/presentation/components/tool-panels/eta/eta-panel';
+import { TemperaturePanel } from '@/core/toolbox/presentation/components/tool-panels/temperature/temperature-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -147,5 +148,7 @@ export function ActiveToolPanel({
       return <PercentagePanel t={t} />;
     case ToolId.Eta:
       return <EtaPanel t={t} />;
+    case ToolId.Temperature:
+      return <TemperaturePanel t={t} />;
   }
 }

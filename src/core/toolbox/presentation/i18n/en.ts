@@ -198,6 +198,10 @@ const dict = {
       label: 'ETA calculator',
       description: 'Estimate remaining time from a linear completion rate',
     },
+    temperature: {
+      label: 'Temperature converter',
+      description: 'Convert between Celsius, Fahrenheit and Kelvin',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -280,6 +284,8 @@ const dict = {
     etaUnitsCompleted: 'Units completed',
     etaTotalUnits: 'Total units',
     etaElapsedSeconds: 'Elapsed time (seconds)',
+    temperatureValue: 'Temperature',
+    temperatureUnit: 'Unit',
   },
   labels: {
     plainText: 'Plain text',
@@ -347,6 +353,9 @@ const dict = {
     whatPercentHeading: 'X is what % of Y',
     percentChangeHeading: 'Change from X to Y',
     etaRemaining: 'Remaining time',
+    celsius: 'Celsius',
+    fahrenheit: 'Fahrenheit',
+    kelvin: 'Kelvin',
     bcryptMatch: 'Match',
     bcryptNoMatch: 'No match',
     passwordEntropy: 'Entropy',

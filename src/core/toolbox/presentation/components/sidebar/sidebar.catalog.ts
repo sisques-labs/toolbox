@@ -61,6 +61,10 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
     tools: [ToolId.MathEvaluator, ToolId.Percentage, ToolId.Eta],
   },
   {
+    category: ToolCategoryId.Measurement,
+    tools: [ToolId.Temperature],
+  },
+  {
     category: ToolCategoryId.Crypto,
     tools: [
       ToolId.Cypher,

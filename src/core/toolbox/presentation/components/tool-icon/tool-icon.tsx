@@ -303,6 +303,12 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M12 8v4l3 2" />
     </>
   ),
+  [ToolId.Temperature]: (
+    <>
+      <path d="M12 3a2 2 0 0 0-2 2v9.5a4 4 0 1 0 4 0V5a2 2 0 0 0-2-2z" />
+      <line x1="12" y1="8" x2="15" y2="8" />
+    </>
+  ),
 };
 
 export function ToolIcon({

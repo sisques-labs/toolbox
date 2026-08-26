@@ -44,6 +44,7 @@ export const ToolId = {
   MathEvaluator: 'math-evaluator',
   Percentage: 'percentage',
   Eta: 'eta',
+  Temperature: 'temperature',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];
