@@ -50,6 +50,9 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - HTTP status codes — look up HTTP status codes and their reason phrases
 - IP address converter — convert an IPv4 address between decimal, hex and binary
 
+**Crypto**
+- Caesar cipher — shift letters to encode or decode text, including ROT13
+
 ## Tech stack
 
 - [Astro](https://astro.build) (SSG) as the base framework

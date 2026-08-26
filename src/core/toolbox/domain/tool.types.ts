@@ -31,6 +31,7 @@ export const ToolId = {
   Subnet: 'subnet',
   HttpStatus: 'http-status',
   IpAddress: 'ip-address',
+  Cypher: 'cypher',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

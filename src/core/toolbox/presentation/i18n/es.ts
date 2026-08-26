@@ -154,6 +154,11 @@ const dict = {
       label: 'Conversor de direcciones IP',
       description: 'Convierte una IPv4 entre decimal, hexadecimal y binario',
     },
+    cypher: {
+      label: 'Cifrado César',
+      description:
+        'Desplaza letras para codificar o decodificar texto, incluido ROT13',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -167,6 +172,7 @@ const dict = {
     unescape: 'Desescapar',
     now: 'Ahora',
     download: 'Descargar',
+    rot13: 'ROT13',
   },
   fields: {
     inputText: 'Texto de entrada',
@@ -210,6 +216,7 @@ const dict = {
     ipAddressInput: 'Dirección IPv4 (ej. 192.168.1.1)',
     textStatsInput: 'Texto a analizar',
     ibanInput: 'IBAN',
+    cypherShift: 'Desplazamiento',
   },
   labels: {
     plainText: 'Texto plano',

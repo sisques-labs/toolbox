@@ -33,6 +33,7 @@ import { RomanPanel } from '@/core/toolbox/presentation/components/tool-panels/r
 import { SubnetPanel } from '@/core/toolbox/presentation/components/tool-panels/subnet/subnet-panel';
 import { HttpStatusPanel } from '@/core/toolbox/presentation/components/tool-panels/http-status/http-status-panel';
 import { IpAddressPanel } from '@/core/toolbox/presentation/components/tool-panels/ip-address/ip-address-panel';
+import { CypherPanel } from '@/core/toolbox/presentation/components/tool-panels/cypher/cypher-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -108,5 +109,7 @@ export function ActiveToolPanel({
       return <HttpStatusPanel t={t} />;
     case ToolId.IpAddress:
       return <IpAddressPanel t={t} onCopy={onCopy} />;
+    case ToolId.Cypher:
+      return <CypherPanel t={t} onCopy={onCopy} />;
   }
 }

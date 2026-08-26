@@ -48,4 +48,8 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
     category: ToolCategoryId.Network,
     tools: [ToolId.Subnet, ToolId.HttpStatus, ToolId.IpAddress],
   },
+  {
+    category: ToolCategoryId.Crypto,
+    tools: [ToolId.Cypher],
+  },
 ];
