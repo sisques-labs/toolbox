@@ -282,6 +282,10 @@ const dict = {
       label: 'List converter',
       description: 'Sort, dedupe and reformat a list of lines',
     },
+    'markdown-html': {
+      label: 'Markdown to HTML',
+      description: 'Convert Markdown text to HTML markup',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -400,6 +404,7 @@ const dict = {
     listSuffix: 'Suffix',
     listUnique: 'Remove duplicates',
     listRemoveEmpty: 'Remove empty lines',
+    markdownInput: 'Markdown input',
   },
   labels: {
     plainText: 'Plain text',

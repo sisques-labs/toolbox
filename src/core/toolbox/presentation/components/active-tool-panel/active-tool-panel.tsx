@@ -67,6 +67,7 @@ import { RegexCheatsheetPanel } from '@/core/toolbox/presentation/components/too
 import { TextBinaryPanel } from '@/core/toolbox/presentation/components/tool-panels/text-binary/text-binary-panel';
 import { TextUnicodePanel } from '@/core/toolbox/presentation/components/tool-panels/text-unicode/text-unicode-panel';
 import { ListConverterPanel } from '@/core/toolbox/presentation/components/tool-panels/list-converter/list-converter-panel';
+import { MarkdownHtmlPanel } from '@/core/toolbox/presentation/components/tool-panels/markdown-html/markdown-html-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -210,5 +211,7 @@ export function ActiveToolPanel({
       return <TextUnicodePanel t={t} onCopy={onCopy} />;
     case ToolId.ListConverter:
       return <ListConverterPanel t={t} onCopy={onCopy} />;
+    case ToolId.MarkdownHtml:
+      return <MarkdownHtmlPanel t={t} onCopy={onCopy} />;
   }
 }

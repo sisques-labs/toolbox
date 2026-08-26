@@ -298,6 +298,10 @@ const dict = {
       label: 'Conversor de listas',
       description: 'Ordena, elimina duplicados y reformatea una lista',
     },
+    'markdown-html': {
+      label: 'Markdown a HTML',
+      description: 'Convierte texto Markdown a marcado HTML',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -416,6 +420,7 @@ const dict = {
     listSuffix: 'Sufijo',
     listUnique: 'Eliminar duplicados',
     listRemoveEmpty: 'Eliminar líneas vacías',
+    markdownInput: 'Entrada Markdown',
   },
   labels: {
     plainText: 'Texto plano',
