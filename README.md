@@ -14,6 +14,7 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - Text diff — compare two texts line by line
 - Numeronym generator — abbreviate long words like "internationalization" → "i18n"
 - Text statistics — count characters, words, sentences and reading time
+- NATO phonetic alphabet — spell out text using the NATO phonetic alphabet
 
 **Data**
 - JSON formatter — validate, format and minify JSON

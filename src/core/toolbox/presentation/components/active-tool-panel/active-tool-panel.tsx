@@ -8,6 +8,7 @@ import { RegexPanel } from '@/core/toolbox/presentation/components/tool-panels/r
 import { TextDiffPanel } from '@/core/toolbox/presentation/components/tool-panels/text-diff/text-diff-panel';
 import { NumeronymPanel } from '@/core/toolbox/presentation/components/tool-panels/numeronym/numeronym-panel';
 import { TextStatsPanel } from '@/core/toolbox/presentation/components/tool-panels/text-stats/text-stats-panel';
+import { NatoPanel } from '@/core/toolbox/presentation/components/tool-panels/nato/nato-panel';
 import { JsonPanel } from '@/core/toolbox/presentation/components/tool-panels/json/json-panel';
 import { JsonDiffPanel } from '@/core/toolbox/presentation/components/tool-panels/json-diff/json-diff-panel';
 import { YamlPanel } from '@/core/toolbox/presentation/components/tool-panels/yaml/yaml-panel';
@@ -55,6 +56,8 @@ export function ActiveToolPanel({
       return <NumeronymPanel t={t} onCopy={onCopy} />;
     case ToolId.TextStats:
       return <TextStatsPanel t={t} />;
+    case ToolId.Nato:
+      return <NatoPanel t={t} onCopy={onCopy} />;
     case ToolId.Json:
       return <JsonPanel t={t} onCopy={onCopy} />;
     case ToolId.JsonDiff:

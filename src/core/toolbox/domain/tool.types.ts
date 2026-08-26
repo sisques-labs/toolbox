@@ -6,6 +6,7 @@ export const ToolId = {
   TextDiff: 'text-diff',
   Numeronym: 'numeronym',
   TextStats: 'text-stats',
+  Nato: 'nato',
   Json: 'json',
   JsonDiff: 'json-diff',
   Yaml: 'yaml',

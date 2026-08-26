@@ -48,6 +48,12 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M18 15v6M15 18h6" />
     </>
   ),
+  [ToolId.Nato]: (
+    <>
+      <path d="M5 19V9a3 3 0 0 1 6 0v10M5 14h6" />
+      <path d="M15 19V9l4 6V9" />
+    </>
+  ),
   [ToolId.Json]: (
     <>
       <path d="M8 4c-2 0-3 1-3 3v3c0 1-1 2-2 2 1 0 2 1 2 2v3c0 2 1 3 3 3" />

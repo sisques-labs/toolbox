@@ -44,6 +44,10 @@ const dict = {
       label: 'Estadísticas de texto',
       description: 'Cuenta caracteres, palabras, frases y tiempo de lectura',
     },
+    nato: {
+      label: 'Alfabeto fonético OTAN',
+      description: 'Deletrea texto usando el alfabeto fonético de la OTAN',
+    },
     json: {
       label: 'Formateador JSON',
       description: 'Valida, formatea y minifica JSON',

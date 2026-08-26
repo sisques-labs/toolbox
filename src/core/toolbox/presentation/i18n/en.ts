@@ -38,6 +38,10 @@ const dict = {
       label: 'Text statistics',
       description: 'Count characters, words, sentences and reading time',
     },
+    nato: {
+      label: 'NATO phonetic alphabet',
+      description: 'Spell out text using the NATO phonetic alphabet',
+    },
     json: {
       label: 'JSON formatter',
       description: 'Validate, format and minify JSON',
