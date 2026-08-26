@@ -449,6 +449,13 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M15 9v6l3-3" />
     </>
   ),
+  [ToolId.XmlJson]: (
+    <>
+      <path d="M4 6h7M4 12h5M4 18h7" />
+      <path d="M14 6h6M14 12h6M14 18h6" />
+      <path d="M12 4v16" />
+    </>
+  ),
 };
 
 export function ToolIcon({

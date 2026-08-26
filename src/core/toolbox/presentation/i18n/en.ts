@@ -286,6 +286,10 @@ const dict = {
       label: 'Markdown to HTML',
       description: 'Convert Markdown text to HTML markup',
     },
+    'xml-json': {
+      label: 'XML ↔ JSON',
+      description: 'Convert between XML and JSON',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -301,6 +305,8 @@ const dict = {
     download: 'Download',
     rot13: 'ROT13',
     verify: 'Verify',
+    xmlToJson: 'XML → JSON',
+    jsonToXml: 'JSON → XML',
   },
   fields: {
     inputText: 'Input text',
@@ -574,6 +580,7 @@ const dict = {
     invalidXml: 'Enter valid, well-formed XML',
     invalidDockerRun: 'Enter a docker run command with at least an image',
     invalidBinary: 'Enter valid space-separated binary bytes',
+    invalidJsonForXml: 'Enter valid JSON with a single root key',
     invalidUnicode: 'Enter valid space-separated U+XXXX code points',
     invalidMac: 'Enter a valid MAC address, e.g. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No vendor found for this prefix',

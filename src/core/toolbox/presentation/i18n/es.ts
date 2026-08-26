@@ -302,6 +302,10 @@ const dict = {
       label: 'Markdown a HTML',
       description: 'Convierte texto Markdown a marcado HTML',
     },
+    'xml-json': {
+      label: 'XML ↔ JSON',
+      description: 'Convierte entre XML y JSON',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -317,6 +321,8 @@ const dict = {
     download: 'Descargar',
     rot13: 'ROT13',
     verify: 'Verificar',
+    xmlToJson: 'XML → JSON',
+    jsonToXml: 'JSON → XML',
   },
   fields: {
     inputText: 'Texto de entrada',
@@ -593,6 +599,7 @@ const dict = {
     invalidXml: 'Introduce un XML válido y bien formado',
     invalidDockerRun: 'Introduce un comando docker run con al menos una imagen',
     invalidBinary: 'Introduce bytes binarios válidos separados por espacios',
+    invalidJsonForXml: 'Introduce un JSON válido con una única clave raíz',
     invalidUnicode:
       'Introduce puntos de código U+XXXX válidos separados por espacios',
     invalidMac: 'Introduce una MAC válida, ej. 00:1A:2B:3C:4D:5E',

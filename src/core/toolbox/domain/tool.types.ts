@@ -66,6 +66,7 @@ export const ToolId = {
   TextUnicode: 'text-unicode',
   ListConverter: 'list-converter',
   MarkdownHtml: 'markdown-html',
+  XmlJson: 'xml-json',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

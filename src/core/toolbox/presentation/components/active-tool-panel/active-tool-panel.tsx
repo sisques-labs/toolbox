@@ -68,6 +68,7 @@ import { TextBinaryPanel } from '@/core/toolbox/presentation/components/tool-pan
 import { TextUnicodePanel } from '@/core/toolbox/presentation/components/tool-panels/text-unicode/text-unicode-panel';
 import { ListConverterPanel } from '@/core/toolbox/presentation/components/tool-panels/list-converter/list-converter-panel';
 import { MarkdownHtmlPanel } from '@/core/toolbox/presentation/components/tool-panels/markdown-html/markdown-html-panel';
+import { XmlJsonPanel } from '@/core/toolbox/presentation/components/tool-panels/xml-json/xml-json-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -213,5 +214,7 @@ export function ActiveToolPanel({
       return <ListConverterPanel t={t} onCopy={onCopy} />;
     case ToolId.MarkdownHtml:
       return <MarkdownHtmlPanel t={t} onCopy={onCopy} />;
+    case ToolId.XmlJson:
+      return <XmlJsonPanel t={t} onCopy={onCopy} />;
   }
 }

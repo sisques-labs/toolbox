@@ -46,6 +46,7 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
       ToolId.TextUnicode,
       ToolId.ListConverter,
       ToolId.MarkdownHtml,
+      ToolId.XmlJson,
     ],
   },
   {

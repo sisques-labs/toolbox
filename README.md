@@ -48,6 +48,7 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - Text ↔ Unicode — convert text to Unicode code points and back
 - List converter — sort, dedupe and reformat a list of lines
 - Markdown to HTML — convert Markdown text to HTML markup
+- XML ↔ JSON — convert between XML and JSON
 
 **Network**
 - IP subnet calculator — get network, broadcast and host range from a CIDR
