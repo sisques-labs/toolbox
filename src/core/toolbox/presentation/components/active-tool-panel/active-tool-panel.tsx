@@ -7,6 +7,8 @@ import { LoremPanel } from '@/core/toolbox/presentation/components/tool-panels/l
 import { RegexPanel } from '@/core/toolbox/presentation/components/tool-panels/regex/regex-panel';
 import { TextDiffPanel } from '@/core/toolbox/presentation/components/tool-panels/text-diff/text-diff-panel';
 import { NumeronymPanel } from '@/core/toolbox/presentation/components/tool-panels/numeronym/numeronym-panel';
+import { TextStatsPanel } from '@/core/toolbox/presentation/components/tool-panels/text-stats/text-stats-panel';
+import { NatoPanel } from '@/core/toolbox/presentation/components/tool-panels/nato/nato-panel';
 import { JsonPanel } from '@/core/toolbox/presentation/components/tool-panels/json/json-panel';
 import { JsonDiffPanel } from '@/core/toolbox/presentation/components/tool-panels/json-diff/json-diff-panel';
 import { YamlPanel } from '@/core/toolbox/presentation/components/tool-panels/yaml/yaml-panel';
@@ -26,6 +28,8 @@ import { TimestampPanel } from '@/core/toolbox/presentation/components/tool-pane
 import { ColorPanel } from '@/core/toolbox/presentation/components/tool-panels/color/color-panel';
 import { BasePanel } from '@/core/toolbox/presentation/components/tool-panels/base/base-panel';
 import { ChmodPanel } from '@/core/toolbox/presentation/components/tool-panels/chmod/chmod-panel';
+import { IbanPanel } from '@/core/toolbox/presentation/components/tool-panels/iban/iban-panel';
+import { RomanPanel } from '@/core/toolbox/presentation/components/tool-panels/roman/roman-panel';
 import { SubnetPanel } from '@/core/toolbox/presentation/components/tool-panels/subnet/subnet-panel';
 import { HttpStatusPanel } from '@/core/toolbox/presentation/components/tool-panels/http-status/http-status-panel';
 import { IpAddressPanel } from '@/core/toolbox/presentation/components/tool-panels/ip-address/ip-address-panel';
@@ -52,6 +56,10 @@ export function ActiveToolPanel({
       return <TextDiffPanel t={t} />;
     case ToolId.Numeronym:
       return <NumeronymPanel t={t} onCopy={onCopy} />;
+    case ToolId.TextStats:
+      return <TextStatsPanel t={t} />;
+    case ToolId.Nato:
+      return <NatoPanel t={t} onCopy={onCopy} />;
     case ToolId.Json:
       return <JsonPanel t={t} onCopy={onCopy} />;
     case ToolId.JsonDiff:
@@ -90,6 +98,10 @@ export function ActiveToolPanel({
       return <BasePanel t={t} onCopy={onCopy} />;
     case ToolId.Chmod:
       return <ChmodPanel t={t} onCopy={onCopy} />;
+    case ToolId.Iban:
+      return <IbanPanel t={t} />;
+    case ToolId.Roman:
+      return <RomanPanel t={t} onCopy={onCopy} />;
     case ToolId.Subnet:
       return <SubnetPanel t={t} />;
     case ToolId.HttpStatus:
