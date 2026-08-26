@@ -318,6 +318,10 @@ const dict = {
       label: 'Conversor de archivos Base64',
       description: 'Convierte un archivo a Base64 y viceversa',
     },
+    'string-obfuscator': {
+      label: 'Ofuscador de cadenas',
+      description: 'Enmascara el centro de una cadena, dejando los extremos',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -446,6 +450,9 @@ const dict = {
     tomlInput: 'Entrada TOML',
     base64FileInput: 'Elige un archivo',
     base64PayloadInput: 'URL de datos Base64',
+    obfuscateVisibleStart: 'Visible al inicio',
+    obfuscateVisibleEnd: 'Visible al final',
+    obfuscateMaskChar: 'Carácter de máscara',
   },
   labels: {
     plainText: 'Texto plano',

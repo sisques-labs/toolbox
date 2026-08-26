@@ -481,6 +481,12 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M14 12h1.5a1.5 1.5 0 0 1 0 3H14v3" />
     </>
   ),
+  [ToolId.StringObfuscator]: (
+    <>
+      <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z" />
+      <circle cx="12" cy="12" r="3" />
+    </>
+  ),
 };
 
 export function ToolIcon({

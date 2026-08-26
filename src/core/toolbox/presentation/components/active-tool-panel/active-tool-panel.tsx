@@ -72,6 +72,7 @@ import { XmlJsonPanel } from '@/core/toolbox/presentation/components/tool-panels
 import { TomlJsonPanel } from '@/core/toolbox/presentation/components/tool-panels/toml-json/toml-json-panel';
 import { TomlYamlPanel } from '@/core/toolbox/presentation/components/tool-panels/toml-yaml/toml-yaml-panel';
 import { Base64FilePanel } from '@/core/toolbox/presentation/components/tool-panels/base64-file/base64-file-panel';
+import { StringObfuscatorPanel } from '@/core/toolbox/presentation/components/tool-panels/string-obfuscator/string-obfuscator-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -225,5 +226,7 @@ export function ActiveToolPanel({
       return <TomlYamlPanel t={t} onCopy={onCopy} />;
     case ToolId.Base64File:
       return <Base64FilePanel t={t} onCopy={onCopy} />;
+    case ToolId.StringObfuscator:
+      return <StringObfuscatorPanel t={t} onCopy={onCopy} />;
   }
 }

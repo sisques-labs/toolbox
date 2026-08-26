@@ -12,6 +12,7 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
       ToolId.Numeronym,
       ToolId.TextStats,
       ToolId.Nato,
+      ToolId.StringObfuscator,
     ],
   },
   {

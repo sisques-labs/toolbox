@@ -15,6 +15,7 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - Numeronym generator — abbreviate long words like "internationalization" → "i18n"
 - Text statistics — count characters, words, sentences and reading time
 - NATO phonetic alphabet — spell out text using the NATO phonetic alphabet
+- String obfuscator — mask the middle of a string, keeping the ends visible
 
 **Data**
 - JSON formatter — validate, format and minify JSON
