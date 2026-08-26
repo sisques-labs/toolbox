@@ -49,6 +49,7 @@ export const ToolId = {
   SvgPlaceholder: 'svg-placeholder',
   UrlParser: 'url-parser',
   BasicAuth: 'basic-auth',
+  MetaTags: 'meta-tags',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

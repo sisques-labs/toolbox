@@ -335,6 +335,12 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M12 15v2" />
     </>
   ),
+  [ToolId.MetaTags]: (
+    <>
+      <path d="M4 4h16v4H4z" />
+      <path d="M4 12h10M4 16h7" />
+    </>
+  ),
 };
 
 export function ToolIcon({

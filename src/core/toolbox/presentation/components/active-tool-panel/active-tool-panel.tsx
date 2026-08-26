@@ -51,6 +51,7 @@ import { WifiQrPanel } from '@/core/toolbox/presentation/components/tool-panels/
 import { SvgPlaceholderPanel } from '@/core/toolbox/presentation/components/tool-panels/svg-placeholder/svg-placeholder-panel';
 import { UrlParserPanel } from '@/core/toolbox/presentation/components/tool-panels/url-parser/url-parser-panel';
 import { BasicAuthPanel } from '@/core/toolbox/presentation/components/tool-panels/basic-auth/basic-auth-panel';
+import { MetaTagsPanel } from '@/core/toolbox/presentation/components/tool-panels/meta-tags/meta-tags-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -162,5 +163,7 @@ export function ActiveToolPanel({
       return <UrlParserPanel t={t} />;
     case ToolId.BasicAuth:
       return <BasicAuthPanel t={t} onCopy={onCopy} />;
+    case ToolId.MetaTags:
+      return <MetaTagsPanel t={t} onCopy={onCopy} />;
   }
 }

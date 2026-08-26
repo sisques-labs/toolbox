@@ -230,6 +230,10 @@ const dict = {
       label: 'Generador de Basic Auth',
       description: 'Codifica o decodifica cabeceras HTTP Basic Auth',
     },
+    'meta-tags': {
+      label: 'Generador de meta tags',
+      description: 'Genera etiquetas title, Open Graph y Twitter Card',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -327,6 +331,10 @@ const dict = {
     basicAuthUsername: 'Usuario',
     basicAuthPassword: 'Contraseña',
     basicAuthHeader: 'Cabecera Authorization',
+    metaTitle: 'Título',
+    metaDescription: 'Descripción',
+    metaImageUrl: 'URL de imagen',
+    metaPageUrl: 'URL de página',
   },
   labels: {
     plainText: 'Texto plano',
@@ -406,6 +414,7 @@ const dict = {
     queryParams: 'Parámetros de consulta',
     username: 'Usuario',
     password: 'Contraseña',
+    htmlOutput: 'HTML',
     bcryptMatch: 'Coincide',
     bcryptNoMatch: 'No coincide',
     passwordEntropy: 'Entropía',
