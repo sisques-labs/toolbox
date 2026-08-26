@@ -50,6 +50,7 @@ import { TemperaturePanel } from '@/core/toolbox/presentation/components/tool-pa
 import { WifiQrPanel } from '@/core/toolbox/presentation/components/tool-panels/wifi-qr/wifi-qr-panel';
 import { SvgPlaceholderPanel } from '@/core/toolbox/presentation/components/tool-panels/svg-placeholder/svg-placeholder-panel';
 import { UrlParserPanel } from '@/core/toolbox/presentation/components/tool-panels/url-parser/url-parser-panel';
+import { BasicAuthPanel } from '@/core/toolbox/presentation/components/tool-panels/basic-auth/basic-auth-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -159,5 +160,7 @@ export function ActiveToolPanel({
       return <SvgPlaceholderPanel t={t} />;
     case ToolId.UrlParser:
       return <UrlParserPanel t={t} />;
+    case ToolId.BasicAuth:
+      return <BasicAuthPanel t={t} onCopy={onCopy} />;
   }
 }

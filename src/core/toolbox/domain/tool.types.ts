@@ -48,6 +48,7 @@ export const ToolId = {
   WifiQr: 'wifi-qr',
   SvgPlaceholder: 'svg-placeholder',
   UrlParser: 'url-parser',
+  BasicAuth: 'basic-auth',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

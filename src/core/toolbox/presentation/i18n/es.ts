@@ -226,6 +226,10 @@ const dict = {
       label: 'Analizador de URL',
       description: 'Descompón una URL en sus componentes',
     },
+    'basic-auth': {
+      label: 'Generador de Basic Auth',
+      description: 'Codifica o decodifica cabeceras HTTP Basic Auth',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -320,6 +324,9 @@ const dict = {
     placeholderTextColor: 'Color de texto',
     placeholderText: 'Texto de etiqueta (opcional)',
     urlParserInput: 'URL',
+    basicAuthUsername: 'Usuario',
+    basicAuthPassword: 'Contraseña',
+    basicAuthHeader: 'Cabecera Authorization',
   },
   labels: {
     plainText: 'Texto plano',
@@ -397,6 +404,8 @@ const dict = {
     pathname: 'Ruta',
     fragment: 'Fragmento',
     queryParams: 'Parámetros de consulta',
+    username: 'Usuario',
+    password: 'Contraseña',
     bcryptMatch: 'Coincide',
     bcryptNoMatch: 'No coincide',
     passwordEntropy: 'Entropía',
@@ -453,6 +462,7 @@ const dict = {
     emptyQrContent: 'Introduce texto o una URL para codificar',
     emptyWifiSsid: 'Introduce un nombre de red (SSID)',
     invalidUrl: 'Introduce una URL válida, incluyendo el protocolo',
+    invalidBasicAuth: 'Introduce una cabecera Basic Auth válida',
     invalidMac: 'Introduce una MAC válida, ej. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No se ha encontrado fabricante para este prefijo',
     invalidMathExpression: 'Introduce una expresión matemática válida',

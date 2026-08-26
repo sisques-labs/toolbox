@@ -214,6 +214,10 @@ const dict = {
       label: 'URL parser',
       description: 'Break a URL down into its components',
     },
+    'basic-auth': {
+      label: 'Basic auth generator',
+      description: 'Encode or decode HTTP Basic authentication headers',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -308,6 +312,9 @@ const dict = {
     placeholderTextColor: 'Text color',
     placeholderText: 'Label text (optional)',
     urlParserInput: 'URL',
+    basicAuthUsername: 'Username',
+    basicAuthPassword: 'Password',
+    basicAuthHeader: 'Authorization header',
   },
   labels: {
     plainText: 'Plain text',
@@ -385,6 +392,8 @@ const dict = {
     pathname: 'Path',
     fragment: 'Fragment',
     queryParams: 'Query parameters',
+    username: 'Username',
+    password: 'Password',
     bcryptMatch: 'Match',
     bcryptNoMatch: 'No match',
     passwordEntropy: 'Entropy',
@@ -439,6 +448,7 @@ const dict = {
     emptyQrContent: 'Enter text or a URL to encode',
     emptyWifiSsid: 'Enter a network name (SSID)',
     invalidUrl: 'Enter a valid URL, including the protocol',
+    invalidBasicAuth: 'Enter a valid Basic auth header',
     invalidMac: 'Enter a valid MAC address, e.g. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No vendor found for this prefix',
     invalidMathExpression: 'Enter a valid math expression',

@@ -328,6 +328,13 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M2 12h20M12 4a14 14 0 0 1 0 16M12 4a14 14 0 0 0 0 16" />
     </>
   ),
+  [ToolId.BasicAuth]: (
+    <>
+      <rect x="5" y="11" width="14" height="9" rx="1.5" />
+      <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+      <path d="M12 15v2" />
+    </>
+  ),
 };
 
 export function ToolIcon({
