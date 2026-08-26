@@ -13,6 +13,7 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - Regex tester — test regular expressions against sample text
 - Text diff — compare two texts line by line
 - Numeronym generator — abbreviate long words like "internationalization" → "i18n"
+- Text statistics — count characters, words, sentences and reading time
 
 **Data**
 - JSON formatter — validate, format and minify JSON

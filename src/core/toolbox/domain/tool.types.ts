@@ -5,6 +5,7 @@ export const ToolId = {
   Regex: 'regex',
   TextDiff: 'text-diff',
   Numeronym: 'numeronym',
+  TextStats: 'text-stats',
   Json: 'json',
   JsonDiff: 'json-diff',
   Yaml: 'yaml',

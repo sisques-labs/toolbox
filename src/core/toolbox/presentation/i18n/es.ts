@@ -40,6 +40,10 @@ const dict = {
       description:
         'Abrevia palabras largas como "internacionalización" → "i18n"',
     },
+    'text-stats': {
+      label: 'Estadísticas de texto',
+      description: 'Cuenta caracteres, palabras, frases y tiempo de lectura',
+    },
     json: {
       label: 'Formateador JSON',
       description: 'Valida, formatea y minifica JSON',
@@ -185,6 +189,7 @@ const dict = {
     qrContent: 'Contenido',
     httpStatusQuery: 'Buscar por código o frase',
     ipAddressInput: 'Dirección IPv4 (ej. 192.168.1.1)',
+    textStatsInput: 'Texto a analizar',
   },
   labels: {
     plainText: 'Texto plano',
@@ -236,6 +241,12 @@ const dict = {
     httpRedirection: 'Redirección',
     httpClientError: 'Error de cliente',
     httpServerError: 'Error de servidor',
+    characters: 'Caracteres',
+    charactersNoSpaces: 'Caracteres (sin espacios)',
+    words: 'Palabras',
+    sentences: 'Frases',
+    readingTime: 'Tiempo de lectura',
+    readingTimeValue: '{count} min',
   },
   presets: {
     everyMinute: 'Cada minuto',

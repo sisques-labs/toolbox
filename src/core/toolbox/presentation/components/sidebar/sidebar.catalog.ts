@@ -10,6 +10,7 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
       ToolId.Regex,
       ToolId.TextDiff,
       ToolId.Numeronym,
+      ToolId.TextStats,
     ],
   },
   {

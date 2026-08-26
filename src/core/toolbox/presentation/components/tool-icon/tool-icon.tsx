@@ -42,6 +42,12 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <circle cx="20" cy="12" r="1" />
     </>
   ),
+  [ToolId.TextStats]: (
+    <>
+      <path d="M4 6h16M4 12h10M4 18h13" />
+      <path d="M18 15v6M15 18h6" />
+    </>
+  ),
   [ToolId.Json]: (
     <>
       <path d="M8 4c-2 0-3 1-3 3v3c0 1-1 2-2 2 1 0 2 1 2 2v3c0 2 1 3 3 3" />

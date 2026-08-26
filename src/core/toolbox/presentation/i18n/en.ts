@@ -34,6 +34,10 @@ const dict = {
       label: 'Numeronym generator',
       description: 'Abbreviate long words like "internationalization" → "i18n"',
     },
+    'text-stats': {
+      label: 'Text statistics',
+      description: 'Count characters, words, sentences and reading time',
+    },
     json: {
       label: 'JSON formatter',
       description: 'Validate, format and minify JSON',
@@ -177,6 +181,7 @@ const dict = {
     qrContent: 'Content',
     httpStatusQuery: 'Search by code or phrase',
     ipAddressInput: 'IPv4 address (e.g. 192.168.1.1)',
+    textStatsInput: 'Text to analyze',
   },
   labels: {
     plainText: 'Plain text',
@@ -228,6 +233,12 @@ const dict = {
     httpRedirection: 'Redirection',
     httpClientError: 'Client error',
     httpServerError: 'Server error',
+    characters: 'Characters',
+    charactersNoSpaces: 'Characters (no spaces)',
+    words: 'Words',
+    sentences: 'Sentences',
+    readingTime: 'Reading time',
+    readingTimeValue: '{count} min',
   },
   presets: {
     everyMinute: 'Every minute',
