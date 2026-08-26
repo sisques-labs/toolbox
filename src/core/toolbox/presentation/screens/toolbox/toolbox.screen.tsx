@@ -10,7 +10,7 @@ import enToolbox, {
 import esToolbox from '@/core/toolbox/presentation/i18n/es';
 import type { Locale } from '@/shared/presentation/i18n/locale';
 import type { WidenStringLiterals } from '@/shared/presentation/i18n/widen-literals';
-import type { ToolId } from '@/core/toolbox/domain/tool.types';
+import { ToolId } from '@/core/toolbox/domain/tool.types';
 import { Sidebar } from '@/core/toolbox/presentation/components/sidebar/sidebar';
 import { ToolHeader } from '@/core/toolbox/presentation/components/tool-header/tool-header';
 import { Toast } from '@/core/toolbox/presentation/components/toast/toast';
@@ -33,7 +33,7 @@ function ToolboxScreenContent() {
   const shellT = shellDictionaries[locale];
   const t = toolboxDictionaries[locale];
 
-  const [activeTool, setActiveTool] = useState<ToolId>('case');
+  const [activeTool, setActiveTool] = useState<ToolId>(ToolId.Case);
   const [search, setSearch] = useState('');
   const [toastText, setToastText] = useState('');
   const toastTimer = useRef<ReturnType<typeof setTimeout> | undefined>(
