@@ -70,6 +70,10 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 **Measurement**
 - Temperature converter — convert between Celsius, Fahrenheit and Kelvin
 
+**Images**
+- WiFi QR code — generate a QR code to join a WiFi network
+- SVG placeholder generator — generate a placeholder image as inline SVG
+
 ## Tech stack
 
 - [Astro](https://astro.build) (SSG) as the base framework

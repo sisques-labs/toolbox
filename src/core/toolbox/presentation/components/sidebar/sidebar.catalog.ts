@@ -65,6 +65,10 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
     tools: [ToolId.Temperature],
   },
   {
+    category: ToolCategoryId.Images,
+    tools: [ToolId.WifiQr, ToolId.SvgPlaceholder],
+  },
+  {
     category: ToolCategoryId.Crypto,
     tools: [
       ToolId.Cypher,

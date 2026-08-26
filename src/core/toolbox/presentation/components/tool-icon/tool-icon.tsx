@@ -309,6 +309,19 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <line x1="12" y1="8" x2="15" y2="8" />
     </>
   ),
+  [ToolId.WifiQr]: (
+    <>
+      <path d="M5 9a10 10 0 0 1 14 0" />
+      <path d="M8 12.5a6 6 0 0 1 8 0" />
+      <circle cx="12" cy="17" r="1.5" />
+    </>
+  ),
+  [ToolId.SvgPlaceholder]: (
+    <>
+      <rect x="3" y="5" width="18" height="14" rx="1.5" />
+      <path d="M3 15l4-4 3 3 4-5 7 6" />
+    </>
+  ),
 };
 
 export function ToolIcon({

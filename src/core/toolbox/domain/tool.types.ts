@@ -45,6 +45,8 @@ export const ToolId = {
   Percentage: 'percentage',
   Eta: 'eta',
   Temperature: 'temperature',
+  WifiQr: 'wifi-qr',
+  SvgPlaceholder: 'svg-placeholder',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

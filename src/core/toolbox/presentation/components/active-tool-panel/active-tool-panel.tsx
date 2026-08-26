@@ -47,6 +47,8 @@ import { MathEvaluatorPanel } from '@/core/toolbox/presentation/components/tool-
 import { PercentagePanel } from '@/core/toolbox/presentation/components/tool-panels/percentage/percentage-panel';
 import { EtaPanel } from '@/core/toolbox/presentation/components/tool-panels/eta/eta-panel';
 import { TemperaturePanel } from '@/core/toolbox/presentation/components/tool-panels/temperature/temperature-panel';
+import { WifiQrPanel } from '@/core/toolbox/presentation/components/tool-panels/wifi-qr/wifi-qr-panel';
+import { SvgPlaceholderPanel } from '@/core/toolbox/presentation/components/tool-panels/svg-placeholder/svg-placeholder-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -150,5 +152,9 @@ export function ActiveToolPanel({
       return <EtaPanel t={t} />;
     case ToolId.Temperature:
       return <TemperaturePanel t={t} />;
+    case ToolId.WifiQr:
+      return <WifiQrPanel t={t} />;
+    case ToolId.SvgPlaceholder:
+      return <SvgPlaceholderPanel t={t} />;
   }
 }
