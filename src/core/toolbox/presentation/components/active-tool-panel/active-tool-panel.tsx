@@ -70,6 +70,7 @@ import { ListConverterPanel } from '@/core/toolbox/presentation/components/tool-
 import { MarkdownHtmlPanel } from '@/core/toolbox/presentation/components/tool-panels/markdown-html/markdown-html-panel';
 import { XmlJsonPanel } from '@/core/toolbox/presentation/components/tool-panels/xml-json/xml-json-panel';
 import { TomlJsonPanel } from '@/core/toolbox/presentation/components/tool-panels/toml-json/toml-json-panel';
+import { TomlYamlPanel } from '@/core/toolbox/presentation/components/tool-panels/toml-yaml/toml-yaml-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -219,5 +220,7 @@ export function ActiveToolPanel({
       return <XmlJsonPanel t={t} onCopy={onCopy} />;
     case ToolId.TomlJson:
       return <TomlJsonPanel t={t} onCopy={onCopy} />;
+    case ToolId.TomlYaml:
+      return <TomlYamlPanel t={t} onCopy={onCopy} />;
   }
 }

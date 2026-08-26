@@ -294,6 +294,10 @@ const dict = {
       label: 'TOML ↔ JSON',
       description: 'Convert between TOML and JSON',
     },
+    'toml-yaml': {
+      label: 'TOML ↔ YAML',
+      description: 'Convert between TOML and YAML',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -313,6 +317,8 @@ const dict = {
     jsonToXml: 'JSON → XML',
     tomlToJson: 'TOML → JSON',
     jsonToToml: 'JSON → TOML',
+    tomlToYaml: 'TOML → YAML',
+    yamlToToml: 'YAML → TOML',
   },
   fields: {
     inputText: 'Input text',
@@ -590,6 +596,7 @@ const dict = {
     invalidJsonForXml: 'Enter valid JSON with a single root key',
     invalidToml: 'Enter valid TOML (key = value lines and [tables])',
     invalidJsonForToml: 'Enter a valid flat or one-level-nested JSON object',
+    invalidYamlForToml: 'Enter valid YAML that converts to a flat object',
     invalidUnicode: 'Enter valid space-separated U+XXXX code points',
     invalidMac: 'Enter a valid MAC address, e.g. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No vendor found for this prefix',

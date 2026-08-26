@@ -310,6 +310,10 @@ const dict = {
       label: 'TOML ↔ JSON',
       description: 'Convierte entre TOML y JSON',
     },
+    'toml-yaml': {
+      label: 'TOML ↔ YAML',
+      description: 'Convierte entre TOML y YAML',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -329,6 +333,8 @@ const dict = {
     jsonToXml: 'JSON → XML',
     tomlToJson: 'TOML → JSON',
     jsonToToml: 'JSON → TOML',
+    tomlToYaml: 'TOML → YAML',
+    yamlToToml: 'YAML → TOML',
   },
   fields: {
     inputText: 'Texto de entrada',
@@ -610,6 +616,8 @@ const dict = {
     invalidToml: 'Introduce un TOML válido (líneas clave = valor y [tablas])',
     invalidJsonForToml:
       'Introduce un objeto JSON plano o con un nivel de anidación',
+    invalidYamlForToml:
+      'Introduce un YAML válido que se convierta en un objeto plano',
     invalidUnicode:
       'Introduce puntos de código U+XXXX válidos separados por espacios',
     invalidMac: 'Introduce una MAC válida, ej. 00:1A:2B:3C:4D:5E',

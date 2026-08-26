@@ -68,6 +68,7 @@ export const ToolId = {
   MarkdownHtml: 'markdown-html',
   XmlJson: 'xml-json',
   TomlJson: 'toml-json',
+  TomlYaml: 'toml-yaml',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

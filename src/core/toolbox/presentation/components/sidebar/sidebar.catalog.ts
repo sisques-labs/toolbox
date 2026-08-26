@@ -48,6 +48,7 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
       ToolId.MarkdownHtml,
       ToolId.XmlJson,
       ToolId.TomlJson,
+      ToolId.TomlYaml,
     ],
   },
   {

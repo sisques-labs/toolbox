@@ -464,6 +464,15 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <circle cx="12" cy="4" r="1" />
     </>
   ),
+  [ToolId.TomlYaml]: (
+    <>
+      <path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
+      <path d="M15 2v5h5" />
+      <path d="M10 13l-2 2 2 2" />
+      <path d="M14 13l2 2-2 2" />
+      <circle cx="12" cy="9" r="1" />
+    </>
+  ),
 };
 
 export function ToolIcon({
