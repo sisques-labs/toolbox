@@ -37,6 +37,10 @@ export const ToolId = {
   PasswordStrength: 'password-strength',
   Bip39: 'bip39',
   RsaKeypair: 'rsa-keypair',
+  IpRange: 'ip-range',
+  MacGenerator: 'mac-generator',
+  MacLookup: 'mac-lookup',
+  Ipv6Ula: 'ipv6-ula',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

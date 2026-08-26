@@ -46,7 +46,15 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
   },
   {
     category: ToolCategoryId.Network,
-    tools: [ToolId.Subnet, ToolId.HttpStatus, ToolId.IpAddress],
+    tools: [
+      ToolId.Subnet,
+      ToolId.HttpStatus,
+      ToolId.IpAddress,
+      ToolId.IpRange,
+      ToolId.MacGenerator,
+      ToolId.MacLookup,
+      ToolId.Ipv6Ula,
+    ],
   },
   {
     category: ToolCategoryId.Crypto,

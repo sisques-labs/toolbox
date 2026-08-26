@@ -180,6 +180,23 @@ const dict = {
       label: 'Generador de par de claves RSA',
       description: 'Genera un par de claves pública/privada RSA',
     },
+    'ip-range': {
+      label: 'Expansor de rango IPv4',
+      description: 'Lista todas las direcciones de un bloque CIDR',
+    },
+    'mac-generator': {
+      label: 'Generador de direcciones MAC',
+      description: 'Genera una dirección MAC aleatoria',
+    },
+    'mac-lookup': {
+      label: 'Búsqueda de fabricante MAC',
+      description: 'Busca el fabricante a partir del OUI de una MAC',
+    },
+    'ipv6-ula': {
+      label: 'Generador de ULA IPv6',
+      description:
+        'Genera un prefijo de dirección única local (ULA) IPv6 aleatorio',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -247,6 +264,11 @@ const dict = {
     bip39Strength: 'Fortaleza (bits)',
     bip39MnemonicToValidate: 'Mnemónico a validar',
     modulusLength: 'Tamaño de clave (bits)',
+    macSeparator: 'Separador',
+    macLocallyAdministered: 'Administrada localmente',
+    macMulticast: 'Multicast',
+    macAddressInput: 'Dirección MAC',
+    ipv6SubnetId: 'ID de subred (4 dígitos hex)',
   },
   labels: {
     plainText: 'Texto plano',
@@ -327,6 +349,9 @@ const dict = {
     publicKey: 'Clave pública',
     privateKey: 'Clave privada',
     generating: 'Generando…',
+    addressCount: '{count} direcciones',
+    truncatedNotice: 'Mostrando solo las primeras {count} direcciones',
+    macVendor: 'Fabricante',
   },
   presets: {
     everyMinute: 'Cada minuto',
@@ -361,6 +386,8 @@ const dict = {
     invalidBaseNumber: 'Introduce un número válido para la base seleccionada',
     invalidTotpSecret: 'Introduce un secreto Base32 válido',
     emptyQrContent: 'Introduce texto o una URL para codificar',
+    invalidMac: 'Introduce una MAC válida, ej. 00:1A:2B:3C:4D:5E',
+    macVendorNotFound: 'No se ha encontrado fabricante para este prefijo',
   },
   copiedSuffix: ' copiado',
 } as const satisfies ToolboxDictTranslated;

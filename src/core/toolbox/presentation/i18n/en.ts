@@ -170,6 +170,22 @@ const dict = {
       label: 'RSA key pair generator',
       description: 'Generate an RSA public/private key pair',
     },
+    'ip-range': {
+      label: 'IPv4 range expander',
+      description: 'List every address in a CIDR block',
+    },
+    'mac-generator': {
+      label: 'MAC address generator',
+      description: 'Generate a random MAC address',
+    },
+    'mac-lookup': {
+      label: 'MAC address lookup',
+      description: 'Look up the vendor for a MAC address OUI',
+    },
+    'ipv6-ula': {
+      label: 'IPv6 ULA generator',
+      description: 'Generate a random IPv6 Unique Local Address prefix',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -237,6 +253,11 @@ const dict = {
     bip39Strength: 'Strength (bits)',
     bip39MnemonicToValidate: 'Mnemonic to validate',
     modulusLength: 'Key size (bits)',
+    macSeparator: 'Separator',
+    macLocallyAdministered: 'Locally administered',
+    macMulticast: 'Multicast',
+    macAddressInput: 'MAC address',
+    ipv6SubnetId: 'Subnet ID (4 hex digits)',
   },
   labels: {
     plainText: 'Plain text',
@@ -317,6 +338,9 @@ const dict = {
     publicKey: 'Public key',
     privateKey: 'Private key',
     generating: 'Generating…',
+    addressCount: '{count} addresses',
+    truncatedNotice: 'Showing the first {count} addresses only',
+    macVendor: 'Vendor',
   },
   presets: {
     everyMinute: 'Every minute',
@@ -349,6 +373,8 @@ const dict = {
     invalidBaseNumber: 'Enter a valid number for the selected base',
     invalidTotpSecret: 'Enter a valid Base32 secret',
     emptyQrContent: 'Enter text or a URL to encode',
+    invalidMac: 'Enter a valid MAC address, e.g. 00:1A:2B:3C:4D:5E',
+    macVendorNotFound: 'No vendor found for this prefix',
   },
   copiedSuffix: ' copied',
 } as const;

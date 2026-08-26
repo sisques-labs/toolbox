@@ -49,6 +49,10 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - IP subnet calculator — get network, broadcast and host range from a CIDR
 - HTTP status codes — look up HTTP status codes and their reason phrases
 - IP address converter — convert an IPv4 address between decimal, hex and binary
+- IPv4 range expander — list every address in a CIDR block
+- MAC address generator — generate a random MAC address
+- MAC address lookup — look up the vendor for a MAC address OUI
+- IPv6 ULA generator — generate a random IPv6 Unique Local Address prefix
 
 **Crypto**
 - Caesar cipher — shift letters to encode or decode text, including ROT13

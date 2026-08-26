@@ -258,6 +258,31 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M11 11l9 9M16 16l2-2M19 19l2-2" />
     </>
   ),
+  [ToolId.IpRange]: (
+    <>
+      <rect x="3" y="6" width="18" height="4" rx="1" />
+      <rect x="3" y="14" width="18" height="4" rx="1" />
+      <path d="M7 10v4M12 10v4M17 10v4" strokeDasharray="1.5 2" />
+    </>
+  ),
+  [ToolId.MacGenerator]: (
+    <>
+      <rect x="3" y="7" width="18" height="10" rx="1.5" />
+      <path d="M6 11h.01M9.5 11h.01M13 11h.01M16.5 11h.01" />
+    </>
+  ),
+  [ToolId.MacLookup]: (
+    <>
+      <circle cx="10" cy="10" r="6" />
+      <line x1="14.5" y1="14.5" x2="20" y2="20" />
+    </>
+  ),
+  [ToolId.Ipv6Ula]: (
+    <>
+      <path d="M4 8h16M4 12h10M4 16h13" />
+      <circle cx="19" cy="12" r="1" />
+    </>
+  ),
 };
 
 export function ToolIcon({

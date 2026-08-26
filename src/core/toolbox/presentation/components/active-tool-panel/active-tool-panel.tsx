@@ -39,6 +39,10 @@ import { HmacPanel } from '@/core/toolbox/presentation/components/tool-panels/hm
 import { PasswordStrengthPanel } from '@/core/toolbox/presentation/components/tool-panels/password-strength/password-strength-panel';
 import { Bip39Panel } from '@/core/toolbox/presentation/components/tool-panels/bip39/bip39-panel';
 import { RsaKeypairPanel } from '@/core/toolbox/presentation/components/tool-panels/rsa-keypair/rsa-keypair-panel';
+import { IpRangePanel } from '@/core/toolbox/presentation/components/tool-panels/ip-range/ip-range-panel';
+import { MacGeneratorPanel } from '@/core/toolbox/presentation/components/tool-panels/mac-generator/mac-generator-panel';
+import { MacLookupPanel } from '@/core/toolbox/presentation/components/tool-panels/mac-lookup/mac-lookup-panel';
+import { Ipv6UlaPanel } from '@/core/toolbox/presentation/components/tool-panels/ipv6-ula/ipv6-ula-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -126,5 +130,13 @@ export function ActiveToolPanel({
       return <Bip39Panel t={t} onCopy={onCopy} />;
     case ToolId.RsaKeypair:
       return <RsaKeypairPanel t={t} onCopy={onCopy} />;
+    case ToolId.IpRange:
+      return <IpRangePanel t={t} />;
+    case ToolId.MacGenerator:
+      return <MacGeneratorPanel t={t} onCopy={onCopy} />;
+    case ToolId.MacLookup:
+      return <MacLookupPanel t={t} />;
+    case ToolId.Ipv6Ula:
+      return <Ipv6UlaPanel t={t} onCopy={onCopy} />;
   }
 }
