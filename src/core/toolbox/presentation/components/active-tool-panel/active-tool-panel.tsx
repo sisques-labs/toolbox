@@ -61,6 +61,7 @@ import { RandomPortPanel } from '@/core/toolbox/presentation/components/tool-pan
 import { EmailNormalizerPanel } from '@/core/toolbox/presentation/components/tool-panels/email-normalizer/email-normalizer-panel';
 import { XmlFormatterPanel } from '@/core/toolbox/presentation/components/tool-panels/xml-formatter/xml-formatter-panel';
 import { SqlPrettifierPanel } from '@/core/toolbox/presentation/components/tool-panels/sql-prettifier/sql-prettifier-panel';
+import { DockerComposePanel } from '@/core/toolbox/presentation/components/tool-panels/docker-compose/docker-compose-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -192,5 +193,7 @@ export function ActiveToolPanel({
       return <XmlFormatterPanel t={t} onCopy={onCopy} />;
     case ToolId.SqlPrettifier:
       return <SqlPrettifierPanel t={t} onCopy={onCopy} />;
+    case ToolId.DockerCompose:
+      return <DockerComposePanel t={t} onCopy={onCopy} />;
   }
 }

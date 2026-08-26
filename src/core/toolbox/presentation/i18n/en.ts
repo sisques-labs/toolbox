@@ -258,6 +258,10 @@ const dict = {
       label: 'SQL prettifier',
       description: 'Format a SQL query onto readable, indented lines',
     },
+    'docker-compose': {
+      label: 'Docker Run to Compose',
+      description: 'Convert a docker run command to a docker-compose service',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -366,6 +370,7 @@ const dict = {
     emailInput: 'Email address',
     xmlInput: 'XML input',
     sqlInput: 'SQL input',
+    dockerRunInput: 'docker run command',
   },
   labels: {
     plainText: 'Plain text',
@@ -530,6 +535,7 @@ const dict = {
     invalidSafelink: 'Enter a valid Outlook or Google redirect link',
     invalidEmail: 'Enter a valid email address',
     invalidXml: 'Enter valid, well-formed XML',
+    invalidDockerRun: 'Enter a docker run command with at least an image',
     invalidMac: 'Enter a valid MAC address, e.g. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No vendor found for this prefix',
     invalidMathExpression: 'Enter a valid math expression',

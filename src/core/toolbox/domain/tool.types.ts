@@ -59,6 +59,7 @@ export const ToolId = {
   EmailNormalizer: 'email-normalizer',
   XmlFormatter: 'xml-formatter',
   SqlPrettifier: 'sql-prettifier',
+  DockerCompose: 'docker-compose',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

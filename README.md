@@ -89,6 +89,7 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - Email normalizer — normalize an email address, handling Gmail dot/plus tricks
 - XML formatter — pretty-print or minify an XML document
 - SQL prettifier — format a SQL query onto readable, indented lines
+- Docker Run to Compose — convert a docker run command to a docker-compose service
 
 ## Tech stack
 

@@ -272,6 +272,11 @@ const dict = {
       label: 'Formateador SQL',
       description: 'Formatea una consulta SQL en líneas legibles e indentadas',
     },
+    'docker-compose': {
+      label: 'Docker Run a Compose',
+      description:
+        'Convierte un comando docker run en un servicio docker-compose',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -380,6 +385,7 @@ const dict = {
     emailInput: 'Dirección de email',
     xmlInput: 'Entrada XML',
     sqlInput: 'Entrada SQL',
+    dockerRunInput: 'Comando docker run',
   },
   labels: {
     plainText: 'Texto plano',
@@ -547,6 +553,7 @@ const dict = {
       'Introduce un enlace de redirección de Outlook o Google válido',
     invalidEmail: 'Introduce una dirección de email válida',
     invalidXml: 'Introduce un XML válido y bien formado',
+    invalidDockerRun: 'Introduce un comando docker run con al menos una imagen',
     invalidMac: 'Introduce una MAC válida, ej. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No se ha encontrado fabricante para este prefijo',
     invalidMathExpression: 'Introduce una expresión matemática válida',

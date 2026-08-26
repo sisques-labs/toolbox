@@ -401,6 +401,15 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3" />
     </>
   ),
+  [ToolId.DockerCompose]: (
+    <>
+      <rect x="3" y="10" width="4" height="4" />
+      <rect x="8" y="10" width="4" height="4" />
+      <rect x="8" y="5" width="4" height="4" />
+      <rect x="13" y="10" width="4" height="4" />
+      <path d="M2 16c1 2 4 3 10 3s9-1 10-3" />
+    </>
+  ),
 };
 
 export function ToolIcon({

@@ -88,6 +88,7 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
       ToolId.EmailNormalizer,
       ToolId.XmlFormatter,
       ToolId.SqlPrettifier,
+      ToolId.DockerCompose,
     ],
   },
   {
