@@ -62,6 +62,7 @@ export const ToolId = {
   DockerCompose: 'docker-compose',
   GitCheatsheet: 'git-cheatsheet',
   RegexCheatsheet: 'regex-cheatsheet',
+  TextBinary: 'text-binary',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

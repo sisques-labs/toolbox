@@ -424,6 +424,11 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M5 16h3M16 16h3" />
     </>
   ),
+  [ToolId.TextBinary]: (
+    <>
+      <path d="M4 7h2v10H4zM7 7h1v10H7zM9 7h2v10H9zM12 7h1v10h-1zM14 7h2v10h-2zM17 7h1v10h-1zM19 7h1v10h-1z" />
+    </>
+  ),
 };
 
 export function ToolIcon({

@@ -270,6 +270,10 @@ const dict = {
       label: 'Regex cheatsheet',
       description: 'Search common regular expression syntax',
     },
+    'text-binary': {
+      label: 'Text ↔ Binary',
+      description: 'Convert text to space-separated binary and back',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -380,6 +384,7 @@ const dict = {
     sqlInput: 'SQL input',
     dockerRunInput: 'docker run command',
     cheatsheetQuery: 'Search',
+    binaryInput: 'Binary',
   },
   labels: {
     plainText: 'Plain text',
@@ -545,6 +550,7 @@ const dict = {
     invalidEmail: 'Enter a valid email address',
     invalidXml: 'Enter valid, well-formed XML',
     invalidDockerRun: 'Enter a docker run command with at least an image',
+    invalidBinary: 'Enter valid space-separated binary bytes',
     invalidMac: 'Enter a valid MAC address, e.g. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No vendor found for this prefix',
     invalidMathExpression: 'Enter a valid math expression',

@@ -42,6 +42,7 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
       ToolId.Chmod,
       ToolId.Iban,
       ToolId.Roman,
+      ToolId.TextBinary,
     ],
   },
   {

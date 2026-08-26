@@ -285,6 +285,11 @@ const dict = {
       label: 'Chuleta de Regex',
       description: 'Busca sintaxis común de expresiones regulares',
     },
+    'text-binary': {
+      label: 'Texto ↔ Binario',
+      description:
+        'Convierte texto a binario separado por espacios y viceversa',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -395,6 +400,7 @@ const dict = {
     sqlInput: 'Entrada SQL',
     dockerRunInput: 'Comando docker run',
     cheatsheetQuery: 'Buscar',
+    binaryInput: 'Binario',
   },
   labels: {
     plainText: 'Texto plano',
@@ -563,6 +569,7 @@ const dict = {
     invalidEmail: 'Introduce una dirección de email válida',
     invalidXml: 'Introduce un XML válido y bien formado',
     invalidDockerRun: 'Introduce un comando docker run con al menos una imagen',
+    invalidBinary: 'Introduce bytes binarios válidos separados por espacios',
     invalidMac: 'Introduce una MAC válida, ej. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No se ha encontrado fabricante para este prefijo',
     invalidMathExpression: 'Introduce una expresión matemática válida',

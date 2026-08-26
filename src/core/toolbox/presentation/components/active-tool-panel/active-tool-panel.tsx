@@ -64,6 +64,7 @@ import { SqlPrettifierPanel } from '@/core/toolbox/presentation/components/tool-
 import { DockerComposePanel } from '@/core/toolbox/presentation/components/tool-panels/docker-compose/docker-compose-panel';
 import { GitCheatsheetPanel } from '@/core/toolbox/presentation/components/tool-panels/git-cheatsheet/git-cheatsheet-panel';
 import { RegexCheatsheetPanel } from '@/core/toolbox/presentation/components/tool-panels/regex-cheatsheet/regex-cheatsheet-panel';
+import { TextBinaryPanel } from '@/core/toolbox/presentation/components/tool-panels/text-binary/text-binary-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -201,5 +202,7 @@ export function ActiveToolPanel({
       return <GitCheatsheetPanel t={t} />;
     case ToolId.RegexCheatsheet:
       return <RegexCheatsheetPanel t={t} />;
+    case ToolId.TextBinary:
+      return <TextBinaryPanel t={t} onCopy={onCopy} />;
   }
 }
