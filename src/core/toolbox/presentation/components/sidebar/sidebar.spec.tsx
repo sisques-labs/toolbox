@@ -13,6 +13,7 @@ describe('Sidebar', () => {
         onSearchChange={() => {}}
         activeTool={ToolId.Case}
         onSelectTool={() => {}}
+        onGoHome={() => {}}
       />,
     );
 
@@ -36,6 +37,7 @@ describe('Sidebar', () => {
         onSearchChange={() => {}}
         activeTool={ToolId.Case}
         onSelectTool={onSelectTool}
+        onGoHome={() => {}}
       />,
     );
 
@@ -52,6 +54,7 @@ describe('Sidebar', () => {
         onSearchChange={() => {}}
         activeTool={ToolId.Case}
         onSelectTool={() => {}}
+        onGoHome={() => {}}
       />,
     );
 
@@ -74,6 +77,7 @@ describe('Sidebar', () => {
         onSearchChange={onSearchChange}
         activeTool={ToolId.Case}
         onSelectTool={() => {}}
+        onGoHome={() => {}}
       />,
     );
 
@@ -81,5 +85,41 @@ describe('Sidebar', () => {
       target: { value: 'json' },
     });
     expect(onSearchChange).toHaveBeenCalledWith('json');
+  });
+
+  it('calls onGoHome when the brand is clicked', () => {
+    const onGoHome = vi.fn();
+    render(
+      <Sidebar
+        t={enToolbox}
+        brand="Toolbox"
+        search=""
+        onSearchChange={() => {}}
+        activeTool={ToolId.Case}
+        onSelectTool={() => {}}
+        onGoHome={onGoHome}
+      />,
+    );
+
+    fireEvent.click(screen.getByRole('button', { name: 'Toolbox' }));
+    expect(onGoHome).toHaveBeenCalledOnce();
+  });
+
+  it('highlights no tool when activeTool is null', () => {
+    render(
+      <Sidebar
+        t={enToolbox}
+        brand="Toolbox"
+        search=""
+        onSearchChange={() => {}}
+        activeTool={null}
+        onSelectTool={() => {}}
+        onGoHome={() => {}}
+      />,
+    );
+
+    expect(
+      screen.getByRole('button', { name: /Case converter/ }),
+    ).not.toHaveClass('bg-blue-50');
   });
 });

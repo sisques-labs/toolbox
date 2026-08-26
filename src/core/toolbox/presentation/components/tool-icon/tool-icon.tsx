@@ -34,6 +34,26 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M7 9h1M7 12h1M16 9h1M16 12h1M16 15h1" />
     </>
   ),
+  [ToolId.Numeronym]: (
+    <>
+      <path d="M4 16V8l4 8V8" />
+      <circle cx="13" cy="12" r="1" />
+      <path d="M15 9h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1" />
+      <circle cx="20" cy="12" r="1" />
+    </>
+  ),
+  [ToolId.TextStats]: (
+    <>
+      <path d="M4 6h16M4 12h10M4 18h13" />
+      <path d="M18 15v6M15 18h6" />
+    </>
+  ),
+  [ToolId.Nato]: (
+    <>
+      <path d="M5 19V9a3 3 0 0 1 6 0v10M5 14h6" />
+      <path d="M15 19V9l4 6V9" />
+    </>
+  ),
   [ToolId.Json]: (
     <>
       <path d="M8 4c-2 0-3 1-3 3v3c0 1-1 2-2 2 1 0 2 1 2 2v3c0 2 1 3 3 3" />
@@ -53,6 +73,12 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M15 2v5h5" />
       <path d="M10 13l-2 2 2 2" />
       <path d="M14 13l2 2-2 2" />
+    </>
+  ),
+  [ToolId.JsonCsv]: (
+    <>
+      <rect x="3" y="5" width="8" height="14" rx="1.5" />
+      <path d="M7 8v8M14 8h6M14 12h6M14 16h4" />
     </>
   ),
   [ToolId.Base64]: (
@@ -160,6 +186,18 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <rect x="5" y="11" width="14" height="9" rx="2" />
       <path d="M8 11V8a4 4 0 0 1 8 0" />
       <path d="M9 16h6" />
+    </>
+  ),
+  [ToolId.Iban]: (
+    <>
+      <rect x="3" y="6" width="18" height="12" rx="2" />
+      <path d="M3 10h18" />
+      <path d="M7 14h4" />
+    </>
+  ),
+  [ToolId.Roman]: (
+    <>
+      <path d="M5 6v12M9 6v12M9 6h3a3 3 0 0 1 0 12H9M17 6v12M19 6v12" />
     </>
   ),
   [ToolId.Subnet]: (
