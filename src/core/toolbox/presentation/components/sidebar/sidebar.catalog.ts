@@ -69,6 +69,10 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
     tools: [ToolId.WifiQr, ToolId.SvgPlaceholder],
   },
   {
+    category: ToolCategoryId.Web,
+    tools: [ToolId.UrlParser],
+  },
+  {
     category: ToolCategoryId.Crypto,
     tools: [
       ToolId.Cypher,

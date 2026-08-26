@@ -49,6 +49,7 @@ import { EtaPanel } from '@/core/toolbox/presentation/components/tool-panels/eta
 import { TemperaturePanel } from '@/core/toolbox/presentation/components/tool-panels/temperature/temperature-panel';
 import { WifiQrPanel } from '@/core/toolbox/presentation/components/tool-panels/wifi-qr/wifi-qr-panel';
 import { SvgPlaceholderPanel } from '@/core/toolbox/presentation/components/tool-panels/svg-placeholder/svg-placeholder-panel';
+import { UrlParserPanel } from '@/core/toolbox/presentation/components/tool-panels/url-parser/url-parser-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -156,5 +157,7 @@ export function ActiveToolPanel({
       return <WifiQrPanel t={t} />;
     case ToolId.SvgPlaceholder:
       return <SvgPlaceholderPanel t={t} />;
+    case ToolId.UrlParser:
+      return <UrlParserPanel t={t} />;
   }
 }

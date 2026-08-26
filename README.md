@@ -74,6 +74,9 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - WiFi QR code — generate a QR code to join a WiFi network
 - SVG placeholder generator — generate a placeholder image as inline SVG
 
+**Web**
+- URL parser — break a URL down into its components
+
 ## Tech stack
 
 - [Astro](https://astro.build) (SSG) as the base framework

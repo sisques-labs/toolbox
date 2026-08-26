@@ -322,6 +322,12 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M3 15l4-4 3 3 4-5 7 6" />
     </>
   ),
+  [ToolId.UrlParser]: (
+    <>
+      <circle cx="12" cy="12" r="8" />
+      <path d="M2 12h20M12 4a14 14 0 0 1 0 16M12 4a14 14 0 0 0 0 16" />
+    </>
+  ),
 };
 
 export function ToolIcon({
