@@ -12,13 +12,15 @@ export function Sidebar({
   onSearchChange,
   activeTool,
   onSelectTool,
+  onGoHome,
 }: {
   t: WidenStringLiterals<ToolboxDict>;
   brand: string;
   search: string;
   onSearchChange: (value: string) => void;
-  activeTool: ToolId;
+  activeTool: ToolId | null;
   onSelectTool: (id: ToolId) => void;
+  onGoHome: () => void;
 }) {
   const query = search.trim().toLowerCase();
   const categories = TOOL_CATALOG.map(({ category, tools }) => ({
@@ -34,14 +36,21 @@ export function Sidebar({
 
   return (
     <nav className="flex h-full w-[248px] shrink-0 flex-col overflow-hidden border-r border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900">
-      <div className="flex items-center gap-2.5 px-[18px] pb-4 pt-5">
-        <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-blue-600 text-base font-extrabold text-white">
+      <button
+        type="button"
+        onClick={onGoHome}
+        className="flex items-center gap-2.5 px-[18px] pb-4 pt-5 text-left"
+      >
+        <div
+          aria-hidden="true"
+          className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-blue-600 text-base font-extrabold text-white"
+        >
           T
         </div>
         <div className="text-base font-bold text-slate-900 dark:text-slate-50">
           {brand}
         </div>
-      </div>
+      </button>
       <div className="px-3.5 pb-3.5">
         <input
           value={search}

@@ -15,6 +15,7 @@ import { Sidebar } from '@/core/toolbox/presentation/components/sidebar/sidebar'
 import { ToolHeader } from '@/core/toolbox/presentation/components/tool-header/tool-header';
 import { Toast } from '@/core/toolbox/presentation/components/toast/toast';
 import { ActiveToolPanel } from '@/core/toolbox/presentation/components/active-tool-panel/active-tool-panel';
+import { HomePanel } from '@/core/toolbox/presentation/components/home-panel/home-panel';
 
 const shellDictionaries: Record<Locale, WidenStringLiterals<ShellDict>> = {
   en: enShell,
@@ -33,7 +34,7 @@ function ToolboxScreenContent() {
   const shellT = shellDictionaries[locale];
   const t = toolboxDictionaries[locale];
 
-  const [activeTool, setActiveTool] = useState<ToolId>(ToolId.Case);
+  const [activeTool, setActiveTool] = useState<ToolId | null>(null);
   const [search, setSearch] = useState('');
   const [toastText, setToastText] = useState('');
   const toastTimer = useRef<ReturnType<typeof setTimeout> | undefined>(
@@ -47,7 +48,9 @@ function ToolboxScreenContent() {
     toastTimer.current = setTimeout(() => setToastText(''), TOAST_DURATION_MS);
   }
 
-  const activeMeta = t.tools[activeTool];
+  const activeMeta = activeTool
+    ? t.tools[activeTool]
+    : { label: shellT.heading, description: shellT.tagline };
 
   return (
     <div className="flex h-screen w-full bg-white dark:bg-slate-900">
@@ -58,8 +61,9 @@ function ToolboxScreenContent() {
         onSearchChange={setSearch}
         activeTool={activeTool}
         onSelectTool={setActiveTool}
+        onGoHome={() => setActiveTool(null)}
       />
-      <div className="flex h-full flex-1 flex-col overflow-hidden">
+      <main className="flex h-full flex-1 flex-col overflow-hidden">
         <ToolHeader
           title={activeMeta.label}
           description={activeMeta.description}
@@ -71,9 +75,17 @@ function ToolboxScreenContent() {
           languageLabel={shellT.language.switcherLabel}
         />
         <div className="flex-1 overflow-y-auto">
-          <ActiveToolPanel activeTool={activeTool} t={t} onCopy={handleCopy} />
+          {activeTool ? (
+            <ActiveToolPanel
+              activeTool={activeTool}
+              t={t}
+              onCopy={handleCopy}
+            />
+          ) : (
+            <HomePanel t={t} onSelectTool={setActiveTool} />
+          )}
         </div>
-      </div>
+      </main>
       <Toast text={toastText} />
     </div>
   );
