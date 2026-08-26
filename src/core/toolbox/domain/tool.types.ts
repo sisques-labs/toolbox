@@ -71,6 +71,7 @@ export const ToolId = {
   TomlYaml: 'toml-yaml',
   Base64File: 'base64-file',
   StringObfuscator: 'string-obfuscator',
+  AsciiDrawer: 'ascii-drawer',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

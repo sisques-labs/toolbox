@@ -487,6 +487,18 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <circle cx="12" cy="12" r="3" />
     </>
   ),
+  [ToolId.AsciiDrawer]: (
+    <>
+      <rect x="3" y="4" width="4" height="4" />
+      <rect x="9" y="4" width="4" height="4" />
+      <rect x="15" y="4" width="4" height="4" />
+      <rect x="3" y="10" width="4" height="4" />
+      <rect x="15" y="10" width="4" height="4" />
+      <rect x="3" y="16" width="4" height="4" />
+      <rect x="9" y="16" width="4" height="4" />
+      <rect x="15" y="16" width="4" height="4" />
+    </>
+  ),
 };
 
 export function ToolIcon({

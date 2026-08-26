@@ -322,6 +322,10 @@ const dict = {
       label: 'Ofuscador de cadenas',
       description: 'Enmascara el centro de una cadena, dejando los extremos',
     },
+    'ascii-drawer': {
+      label: 'Dibujante de texto ASCII',
+      description: 'Dibuja texto como un banner ASCII de letras de bloque',
+    },
   },
   actions: {
     copy: 'Copiar',

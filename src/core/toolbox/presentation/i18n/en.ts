@@ -306,6 +306,10 @@ const dict = {
       label: 'String obfuscator',
       description: 'Mask the middle of a string, keeping the ends visible',
     },
+    'ascii-drawer': {
+      label: 'ASCII text drawer',
+      description: 'Draw text as a block-letter ASCII banner',
+    },
   },
   actions: {
     copy: 'Copy',
