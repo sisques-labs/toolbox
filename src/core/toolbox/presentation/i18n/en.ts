@@ -124,6 +124,10 @@ const dict = {
       description:
         'Validate an IBAN and parse its country, check digits and BBAN',
     },
+    roman: {
+      label: 'Roman numeral converter',
+      description: 'Convert between arabic numbers and roman numerals',
+    },
     subnet: {
       label: 'IP subnet calculator',
       description: 'Get network, broadcast and host range from a CIDR',
@@ -275,6 +279,7 @@ const dict = {
     invalidCsvForJson:
       'Enter valid CSV (a header row plus data rows) to convert to JSON',
     invalidIban: 'Enter a valid IBAN, e.g. GB29 NWBK 6016 1331 9268 19',
+    invalidRoman: 'Enter a number from 1 to 3999 or a valid roman numeral',
     invalidJwt: 'Not a valid JWT — expected 3 dot-separated parts.',
     undecodableJwt: 'Could not decode this token.',
     invalidColor: 'Enter a valid color (hex, rgb or hsl)',

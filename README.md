@@ -43,6 +43,7 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - Base converter — convert integers between binary, octal, decimal and hex
 - Chmod calculator — compute Unix file permissions as octal and symbolic modes
 - IBAN validator — validate an IBAN and parse its country, check digits and BBAN
+- Roman numeral converter — convert between arabic numbers and roman numerals
 
 **Network**
 - IP subnet calculator — get network, broadcast and host range from a CIDR
