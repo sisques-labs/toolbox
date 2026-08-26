@@ -83,7 +83,12 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
   },
   {
     category: ToolCategoryId.Development,
-    tools: [ToolId.RandomPort, ToolId.EmailNormalizer, ToolId.XmlFormatter],
+    tools: [
+      ToolId.RandomPort,
+      ToolId.EmailNormalizer,
+      ToolId.XmlFormatter,
+      ToolId.SqlPrettifier,
+    ],
   },
   {
     category: ToolCategoryId.Crypto,

@@ -60,6 +60,7 @@ import { DeviceInfoPanel } from '@/core/toolbox/presentation/components/tool-pan
 import { RandomPortPanel } from '@/core/toolbox/presentation/components/tool-panels/random-port/random-port-panel';
 import { EmailNormalizerPanel } from '@/core/toolbox/presentation/components/tool-panels/email-normalizer/email-normalizer-panel';
 import { XmlFormatterPanel } from '@/core/toolbox/presentation/components/tool-panels/xml-formatter/xml-formatter-panel';
+import { SqlPrettifierPanel } from '@/core/toolbox/presentation/components/tool-panels/sql-prettifier/sql-prettifier-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -189,5 +190,7 @@ export function ActiveToolPanel({
       return <EmailNormalizerPanel t={t} onCopy={onCopy} />;
     case ToolId.XmlFormatter:
       return <XmlFormatterPanel t={t} onCopy={onCopy} />;
+    case ToolId.SqlPrettifier:
+      return <SqlPrettifierPanel t={t} onCopy={onCopy} />;
   }
 }

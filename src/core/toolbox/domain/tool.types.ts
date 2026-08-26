@@ -58,6 +58,7 @@ export const ToolId = {
   RandomPort: 'random-port',
   EmailNormalizer: 'email-normalizer',
   XmlFormatter: 'xml-formatter',
+  SqlPrettifier: 'sql-prettifier',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

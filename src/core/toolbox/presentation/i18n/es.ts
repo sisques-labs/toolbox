@@ -268,6 +268,10 @@ const dict = {
       label: 'Formateador XML',
       description: 'Formatea o minifica un documento XML',
     },
+    'sql-prettifier': {
+      label: 'Formateador SQL',
+      description: 'Formatea una consulta SQL en líneas legibles e indentadas',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -375,6 +379,7 @@ const dict = {
     portRange: 'Rango',
     emailInput: 'Dirección de email',
     xmlInput: 'Entrada XML',
+    sqlInput: 'Entrada SQL',
   },
   labels: {
     plainText: 'Texto plano',
