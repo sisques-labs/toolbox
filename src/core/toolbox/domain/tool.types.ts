@@ -43,6 +43,7 @@ export const ToolId = {
   Ipv6Ula: 'ipv6-ula',
   MathEvaluator: 'math-evaluator',
   Percentage: 'percentage',
+  Eta: 'eta',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

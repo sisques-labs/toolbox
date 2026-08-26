@@ -45,6 +45,7 @@ import { MacLookupPanel } from '@/core/toolbox/presentation/components/tool-pane
 import { Ipv6UlaPanel } from '@/core/toolbox/presentation/components/tool-panels/ipv6-ula/ipv6-ula-panel';
 import { MathEvaluatorPanel } from '@/core/toolbox/presentation/components/tool-panels/math-evaluator/math-evaluator-panel';
 import { PercentagePanel } from '@/core/toolbox/presentation/components/tool-panels/percentage/percentage-panel';
+import { EtaPanel } from '@/core/toolbox/presentation/components/tool-panels/eta/eta-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -144,5 +145,7 @@ export function ActiveToolPanel({
       return <MathEvaluatorPanel t={t} onCopy={onCopy} />;
     case ToolId.Percentage:
       return <PercentagePanel t={t} />;
+    case ToolId.Eta:
+      return <EtaPanel t={t} />;
   }
 }

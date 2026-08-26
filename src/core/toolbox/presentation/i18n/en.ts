@@ -194,6 +194,10 @@ const dict = {
       label: 'Percentage calculator',
       description: 'Compute percentages, shares and percentage change',
     },
+    eta: {
+      label: 'ETA calculator',
+      description: 'Estimate remaining time from a linear completion rate',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -273,6 +277,9 @@ const dict = {
     percentWhole: 'Whole',
     percentFrom: 'From',
     percentTo: 'To',
+    etaUnitsCompleted: 'Units completed',
+    etaTotalUnits: 'Total units',
+    etaElapsedSeconds: 'Elapsed time (seconds)',
   },
   labels: {
     plainText: 'Plain text',
@@ -339,6 +346,7 @@ const dict = {
     percentOfHeading: 'X% of Y',
     whatPercentHeading: 'X is what % of Y',
     percentChangeHeading: 'Change from X to Y',
+    etaRemaining: 'Remaining time',
     bcryptMatch: 'Match',
     bcryptNoMatch: 'No match',
     passwordEntropy: 'Entropy',
@@ -394,6 +402,8 @@ const dict = {
     invalidMac: 'Enter a valid MAC address, e.g. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No vendor found for this prefix',
     invalidMathExpression: 'Enter a valid math expression',
+    invalidEtaInput:
+      'Enter positive values for completed units, total units and elapsed time',
   },
   copiedSuffix: ' copied',
 } as const;

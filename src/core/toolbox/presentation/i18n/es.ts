@@ -205,6 +205,11 @@ const dict = {
       label: 'Calculadora de porcentajes',
       description: 'Calcula porcentajes, proporciones y variación porcentual',
     },
+    eta: {
+      label: 'Calculadora de ETA',
+      description:
+        'Estima el tiempo restante a partir de una tasa lineal de avance',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -284,6 +289,9 @@ const dict = {
     percentWhole: 'Total',
     percentFrom: 'Desde',
     percentTo: 'Hasta',
+    etaUnitsCompleted: 'Unidades completadas',
+    etaTotalUnits: 'Unidades totales',
+    etaElapsedSeconds: 'Tiempo transcurrido (segundos)',
   },
   labels: {
     plainText: 'Texto plano',
@@ -350,6 +358,7 @@ const dict = {
     percentOfHeading: 'X% de Y',
     whatPercentHeading: 'X es qué % de Y',
     percentChangeHeading: 'Variación de X a Y',
+    etaRemaining: 'Tiempo restante',
     bcryptMatch: 'Coincide',
     bcryptNoMatch: 'No coincide',
     passwordEntropy: 'Entropía',
@@ -407,6 +416,8 @@ const dict = {
     invalidMac: 'Introduce una MAC válida, ej. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No se ha encontrado fabricante para este prefijo',
     invalidMathExpression: 'Introduce una expresión matemática válida',
+    invalidEtaInput:
+      'Introduce valores positivos para unidades completadas, totales y tiempo transcurrido',
   },
   copiedSuffix: ' copiado',
 } as const satisfies ToolboxDictTranslated;

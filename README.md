@@ -65,6 +65,7 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 **Math**
 - Math evaluator — evaluate arithmetic expressions with functions
 - Percentage calculator — compute percentages, shares and percentage change
+- ETA calculator — estimate remaining time from a linear completion rate
 
 ## Tech stack
 

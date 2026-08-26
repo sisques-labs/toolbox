@@ -297,6 +297,12 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <circle cx="17" cy="17" r="2.5" />
     </>
   ),
+  [ToolId.Eta]: (
+    <>
+      <circle cx="12" cy="12" r="8" />
+      <path d="M12 8v4l3 2" />
+    </>
+  ),
 };
 
 export function ToolIcon({

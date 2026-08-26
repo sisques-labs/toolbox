@@ -58,7 +58,7 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
   },
   {
     category: ToolCategoryId.Math,
-    tools: [ToolId.MathEvaluator, ToolId.Percentage],
+    tools: [ToolId.MathEvaluator, ToolId.Percentage, ToolId.Eta],
   },
   {
     category: ToolCategoryId.Crypto,
