@@ -90,6 +90,8 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - XML formatter — pretty-print or minify an XML document
 - SQL prettifier — format a SQL query onto readable, indented lines
 - Docker Run to Compose — convert a docker run command to a docker-compose service
+- Git cheatsheet — search common git commands and what they do
+- Regex cheatsheet — search common regular expression syntax
 
 ## Tech stack
 

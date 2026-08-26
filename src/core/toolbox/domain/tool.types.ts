@@ -60,6 +60,8 @@ export const ToolId = {
   XmlFormatter: 'xml-formatter',
   SqlPrettifier: 'sql-prettifier',
   DockerCompose: 'docker-compose',
+  GitCheatsheet: 'git-cheatsheet',
+  RegexCheatsheet: 'regex-cheatsheet',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

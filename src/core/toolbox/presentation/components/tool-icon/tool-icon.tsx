@@ -410,6 +410,20 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M2 16c1 2 4 3 10 3s9-1 10-3" />
     </>
   ),
+  [ToolId.GitCheatsheet]: (
+    <>
+      <circle cx="6" cy="6" r="2.5" />
+      <circle cx="6" cy="18" r="2.5" />
+      <circle cx="18" cy="12" r="2.5" />
+      <path d="M6 8.5V15.5M8.5 12H15.5M6 15.5c0-3 2-3.5 4-3.5" />
+    </>
+  ),
+  [ToolId.RegexCheatsheet]: (
+    <>
+      <path d="M4 8h4l2 8 4-12 2 8h4" />
+      <path d="M5 16h3M16 16h3" />
+    </>
+  ),
 };
 
 export function ToolIcon({

@@ -62,6 +62,8 @@ import { EmailNormalizerPanel } from '@/core/toolbox/presentation/components/too
 import { XmlFormatterPanel } from '@/core/toolbox/presentation/components/tool-panels/xml-formatter/xml-formatter-panel';
 import { SqlPrettifierPanel } from '@/core/toolbox/presentation/components/tool-panels/sql-prettifier/sql-prettifier-panel';
 import { DockerComposePanel } from '@/core/toolbox/presentation/components/tool-panels/docker-compose/docker-compose-panel';
+import { GitCheatsheetPanel } from '@/core/toolbox/presentation/components/tool-panels/git-cheatsheet/git-cheatsheet-panel';
+import { RegexCheatsheetPanel } from '@/core/toolbox/presentation/components/tool-panels/regex-cheatsheet/regex-cheatsheet-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -195,5 +197,9 @@ export function ActiveToolPanel({
       return <SqlPrettifierPanel t={t} onCopy={onCopy} />;
     case ToolId.DockerCompose:
       return <DockerComposePanel t={t} onCopy={onCopy} />;
+    case ToolId.GitCheatsheet:
+      return <GitCheatsheetPanel t={t} />;
+    case ToolId.RegexCheatsheet:
+      return <RegexCheatsheetPanel t={t} />;
   }
 }

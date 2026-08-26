@@ -262,6 +262,14 @@ const dict = {
       label: 'Docker Run to Compose',
       description: 'Convert a docker run command to a docker-compose service',
     },
+    'git-cheatsheet': {
+      label: 'Git cheatsheet',
+      description: 'Search common git commands and what they do',
+    },
+    'regex-cheatsheet': {
+      label: 'Regex cheatsheet',
+      description: 'Search common regular expression syntax',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -371,6 +379,7 @@ const dict = {
     xmlInput: 'XML input',
     sqlInput: 'SQL input',
     dockerRunInput: 'docker run command',
+    cheatsheetQuery: 'Search',
   },
   labels: {
     plainText: 'Plain text',
