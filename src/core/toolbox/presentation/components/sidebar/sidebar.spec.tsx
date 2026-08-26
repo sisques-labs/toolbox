@@ -1,4 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
+import { ToolId } from '@/core/toolbox/domain/tool.types';
 import enToolbox from '@/core/toolbox/presentation/i18n/en';
 import { Sidebar } from './sidebar';
 
@@ -10,7 +11,7 @@ describe('Sidebar', () => {
         brand="Toolbox"
         search=""
         onSearchChange={() => {}}
-        activeTool="case"
+        activeTool={ToolId.Case}
         onSelectTool={() => {}}
       />,
     );
@@ -33,13 +34,13 @@ describe('Sidebar', () => {
         brand="Toolbox"
         search=""
         onSearchChange={() => {}}
-        activeTool="case"
+        activeTool={ToolId.Case}
         onSelectTool={onSelectTool}
       />,
     );
 
     fireEvent.click(screen.getByRole('button', { name: /UUID generator/ }));
-    expect(onSelectTool).toHaveBeenCalledWith('uuid');
+    expect(onSelectTool).toHaveBeenCalledWith(ToolId.Uuid);
   });
 
   it('filters the tool list by the search term and hides empty categories', () => {
@@ -49,7 +50,7 @@ describe('Sidebar', () => {
         brand="Toolbox"
         search="uuid"
         onSearchChange={() => {}}
-        activeTool="case"
+        activeTool={ToolId.Case}
         onSelectTool={() => {}}
       />,
     );
@@ -71,7 +72,7 @@ describe('Sidebar', () => {
         brand="Toolbox"
         search=""
         onSearchChange={onSearchChange}
-        activeTool="case"
+        activeTool={ToolId.Case}
         onSelectTool={() => {}}
       />,
     );
