@@ -158,6 +158,10 @@ const dict = {
       label: 'HMAC generator',
       description: 'Generate an HMAC digest from a message and a secret key',
     },
+    'password-strength': {
+      label: 'Password strength analyser',
+      description: 'Estimate a password’s entropy and time to crack',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -287,6 +291,16 @@ const dict = {
     ibanInvalid: 'Invalid checksum',
     bcryptMatch: 'Match',
     bcryptNoMatch: 'No match',
+    passwordEntropy: 'Entropy',
+    entropyBitsValue: '{count} bits',
+    passwordCrackTime: 'Time to crack',
+    timeInstant: 'Instantly',
+    timeSeconds: '{count}s',
+    timeMinutes: '{count} min',
+    timeHours: '{count} h',
+    timeDays: '{count} days',
+    timeYears: '{count} years',
+    timeCenturies: 'Centuries',
   },
   presets: {
     everyMinute: 'Every minute',

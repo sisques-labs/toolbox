@@ -54,6 +54,7 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - Caesar cipher — shift letters to encode or decode text, including ROT13
 - Bcrypt — hash text with bcrypt and verify a hash against text
 - HMAC generator — generate an HMAC digest from a message and a secret key
+- Password strength analyser — estimate a password's entropy and time to crack
 
 ## Tech stack
 
