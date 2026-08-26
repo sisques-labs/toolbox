@@ -1,10 +1,38 @@
-import type { ToolCategoryId, ToolId } from '@/core/toolbox/domain/tool.types';
+import { ToolCategoryId, ToolId } from '@/core/toolbox/domain/tool.types';
 
 export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
-  { category: 'text', tools: ['case', 'slug', 'lorem', 'regex'] },
-  { category: 'data', tools: ['json', 'yaml'] },
-  { category: 'encoding', tools: ['base64', 'url', 'html', 'jwt', 'hash'] },
-  { category: 'generators', tools: ['uuid', 'ulid', 'password', 'crontab'] },
-  { category: 'converters', tools: ['timestamp', 'color'] },
-  { category: 'network', tools: ['subnet'] },
+  {
+    category: ToolCategoryId.Text,
+    tools: [
+      ToolId.Case,
+      ToolId.Slug,
+      ToolId.Lorem,
+      ToolId.Regex,
+      ToolId.TextDiff,
+    ],
+  },
+  {
+    category: ToolCategoryId.Data,
+    tools: [ToolId.Json, ToolId.JsonDiff, ToolId.Yaml],
+  },
+  {
+    category: ToolCategoryId.Encoding,
+    tools: [ToolId.Base64, ToolId.Url, ToolId.Html, ToolId.Jwt, ToolId.Hash],
+  },
+  {
+    category: ToolCategoryId.Generators,
+    tools: [
+      ToolId.Uuid,
+      ToolId.Ulid,
+      ToolId.Password,
+      ToolId.Totp,
+      ToolId.Crontab,
+      ToolId.Qr,
+    ],
+  },
+  {
+    category: ToolCategoryId.Converters,
+    tools: [ToolId.Timestamp, ToolId.Color, ToolId.Base, ToolId.Chmod],
+  },
+  { category: ToolCategoryId.Network, tools: [ToolId.Subnet] },
 ];
