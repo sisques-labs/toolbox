@@ -259,6 +259,11 @@ const dict = {
       label: 'Generador de puertos aleatorios',
       description: 'Genera un número de puerto aleatorio en un rango dado',
     },
+    'email-normalizer': {
+      label: 'Normalizador de email',
+      description:
+        'Normaliza una dirección de email, gestionando los trucos de Gmail',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -364,6 +369,7 @@ const dict = {
     userAgentInput: 'Cadena user agent',
     safelinkInput: 'Enlace envuelto',
     portRange: 'Rango',
+    emailInput: 'Dirección de email',
   },
   labels: {
     plainText: 'Texto plano',
@@ -469,6 +475,7 @@ const dict = {
     portRegistered: 'Registrados (1024-49151)',
     portDynamic: 'Dinámicos/privados (49152-65535)',
     portAny: 'Cualquiera (0-65535)',
+    normalizedEmail: 'Email normalizado',
     bcryptMatch: 'Coincide',
     bcryptNoMatch: 'No coincide',
     passwordEntropy: 'Entropía',
@@ -528,6 +535,7 @@ const dict = {
     invalidBasicAuth: 'Introduce una cabecera Basic Auth válida',
     invalidSafelink:
       'Introduce un enlace de redirección de Outlook o Google válido',
+    invalidEmail: 'Introduce una dirección de email válida',
     invalidMac: 'Introduce una MAC válida, ej. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No se ha encontrado fabricante para este prefijo',
     invalidMathExpression: 'Introduce una expresión matemática válida',

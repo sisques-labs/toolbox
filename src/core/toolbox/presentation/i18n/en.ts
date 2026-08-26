@@ -246,6 +246,10 @@ const dict = {
       label: 'Random port generator',
       description: 'Generate a random port number within a chosen range',
     },
+    'email-normalizer': {
+      label: 'Email normalizer',
+      description: 'Normalize an email address, handling Gmail dot/plus tricks',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -351,6 +355,7 @@ const dict = {
     userAgentInput: 'User agent string',
     safelinkInput: 'Wrapped link',
     portRange: 'Range',
+    emailInput: 'Email address',
   },
   labels: {
     plainText: 'Plain text',
@@ -456,6 +461,7 @@ const dict = {
     portRegistered: 'Registered (1024-49151)',
     portDynamic: 'Dynamic/private (49152-65535)',
     portAny: 'Any (0-65535)',
+    normalizedEmail: 'Normalized email',
     bcryptMatch: 'Match',
     bcryptNoMatch: 'No match',
     passwordEntropy: 'Entropy',
@@ -512,6 +518,7 @@ const dict = {
     invalidUrl: 'Enter a valid URL, including the protocol',
     invalidBasicAuth: 'Enter a valid Basic auth header',
     invalidSafelink: 'Enter a valid Outlook or Google redirect link',
+    invalidEmail: 'Enter a valid email address',
     invalidMac: 'Enter a valid MAC address, e.g. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No vendor found for this prefix',
     invalidMathExpression: 'Enter a valid math expression',

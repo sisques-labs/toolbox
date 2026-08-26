@@ -58,6 +58,7 @@ import { UserAgentPanel } from '@/core/toolbox/presentation/components/tool-pane
 import { SafelinkPanel } from '@/core/toolbox/presentation/components/tool-panels/safelink/safelink-panel';
 import { DeviceInfoPanel } from '@/core/toolbox/presentation/components/tool-panels/device-info/device-info-panel';
 import { RandomPortPanel } from '@/core/toolbox/presentation/components/tool-panels/random-port/random-port-panel';
+import { EmailNormalizerPanel } from '@/core/toolbox/presentation/components/tool-panels/email-normalizer/email-normalizer-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -183,5 +184,7 @@ export function ActiveToolPanel({
       return <DeviceInfoPanel t={t} />;
     case ToolId.RandomPort:
       return <RandomPortPanel t={t} onCopy={onCopy} />;
+    case ToolId.EmailNormalizer:
+      return <EmailNormalizerPanel t={t} onCopy={onCopy} />;
   }
 }

@@ -56,6 +56,7 @@ export const ToolId = {
   Safelink: 'safelink',
   DeviceInfo: 'device-info',
   RandomPort: 'random-port',
+  EmailNormalizer: 'email-normalizer',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];
