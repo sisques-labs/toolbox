@@ -12,11 +12,15 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - Lorem ipsum — generate placeholder paragraphs
 - Regex tester — test regular expressions against sample text
 - Text diff — compare two texts line by line
+- Numeronym generator — abbreviate long words like "internationalization" → "i18n"
+- Text statistics — count characters, words, sentences and reading time
+- NATO phonetic alphabet — spell out text using the NATO phonetic alphabet
 
 **Data**
 - JSON formatter — validate, format and minify JSON
 - JSON diff — compare two JSON documents and list the differences
 - YAML ↔ JSON — convert between YAML and JSON
+- JSON ↔ CSV — convert between a JSON array of objects and CSV
 
 **Encoding & security**
 - Base64 — encode and decode Base64 strings
@@ -38,9 +42,13 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - Color converter — convert colors between hex, RGB and HSL
 - Base converter — convert integers between binary, octal, decimal and hex
 - Chmod calculator — compute Unix file permissions as octal and symbolic modes
+- IBAN validator — validate an IBAN and parse its country, check digits and BBAN
+- Roman numeral converter — convert between arabic numbers and roman numerals
 
 **Network**
 - IP subnet calculator — get network, broadcast and host range from a CIDR
+- HTTP status codes — look up HTTP status codes and their reason phrases
+- IP address converter — convert an IPv4 address between decimal, hex and binary
 
 ## Tech stack
 

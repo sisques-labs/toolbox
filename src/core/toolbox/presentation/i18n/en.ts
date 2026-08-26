@@ -30,6 +30,18 @@ const dict = {
       label: 'Text diff',
       description: 'Compare two texts line by line',
     },
+    numeronym: {
+      label: 'Numeronym generator',
+      description: 'Abbreviate long words like "internationalization" → "i18n"',
+    },
+    'text-stats': {
+      label: 'Text statistics',
+      description: 'Count characters, words, sentences and reading time',
+    },
+    nato: {
+      label: 'NATO phonetic alphabet',
+      description: 'Spell out text using the NATO phonetic alphabet',
+    },
     json: {
       label: 'JSON formatter',
       description: 'Validate, format and minify JSON',
@@ -41,6 +53,10 @@ const dict = {
     yaml: {
       label: 'YAML ↔ JSON',
       description: 'Convert between YAML and JSON',
+    },
+    'json-csv': {
+      label: 'JSON ↔ CSV',
+      description: 'Convert between a JSON array of objects and CSV',
     },
     base64: {
       label: 'Base64',
@@ -103,9 +119,26 @@ const dict = {
       label: 'Chmod calculator',
       description: 'Compute Unix file permissions as octal and symbolic modes',
     },
+    iban: {
+      label: 'IBAN validator',
+      description:
+        'Validate an IBAN and parse its country, check digits and BBAN',
+    },
+    roman: {
+      label: 'Roman numeral converter',
+      description: 'Convert between arabic numbers and roman numerals',
+    },
     subnet: {
       label: 'IP subnet calculator',
       description: 'Get network, broadcast and host range from a CIDR',
+    },
+    'http-status': {
+      label: 'HTTP status codes',
+      description: 'Look up HTTP status codes and their reason phrases',
+    },
+    'ip-address': {
+      label: 'IP address converter',
+      description: 'Convert an IPv4 address between decimal, hex and binary',
     },
   },
   actions: {
@@ -135,6 +168,7 @@ const dict = {
     cidr: 'CIDR (e.g. 192.168.1.0/24)',
     indent: 'Indent',
     jsonInput: 'JSON input',
+    csvInput: 'CSV input',
     jsonLeft: 'JSON A',
     jsonRight: 'JSON B',
     yamlInput: 'YAML input',
@@ -158,6 +192,10 @@ const dict = {
     fromBase: 'From base',
     totpSecret: 'Base32 secret',
     qrContent: 'Content',
+    httpStatusQuery: 'Search by code or phrase',
+    ipAddressInput: 'IPv4 address (e.g. 192.168.1.1)',
+    textStatsInput: 'Text to analyze',
+    ibanInput: 'IBAN',
   },
   labels: {
     plainText: 'Plain text',
@@ -204,6 +242,23 @@ const dict = {
     chmodWrite: 'Write',
     chmodExecute: 'Execute',
     totpRemaining: 'Expires in {seconds}s',
+    httpInformational: 'Informational',
+    httpSuccess: 'Success',
+    httpRedirection: 'Redirection',
+    httpClientError: 'Client error',
+    httpServerError: 'Server error',
+    characters: 'Characters',
+    charactersNoSpaces: 'Characters (no spaces)',
+    words: 'Words',
+    sentences: 'Sentences',
+    readingTime: 'Reading time',
+    readingTimeValue: '{count} min',
+    ibanCountryCode: 'Country code',
+    ibanCheckDigits: 'Check digits',
+    ibanBban: 'BBAN',
+    ibanFormatted: 'Formatted',
+    ibanValid: 'Valid',
+    ibanInvalid: 'Invalid checksum',
   },
   presets: {
     everyMinute: 'Every minute',
@@ -219,6 +274,12 @@ const dict = {
   },
   errors: {
     invalidCidr: 'Enter a valid CIDR, e.g. 10.0.0.0/16',
+    invalidIpAddress: 'Enter a valid IPv4 address, e.g. 192.168.1.1',
+    invalidJsonArrayForCsv: 'Enter a JSON array of objects to convert to CSV',
+    invalidCsvForJson:
+      'Enter valid CSV (a header row plus data rows) to convert to JSON',
+    invalidIban: 'Enter a valid IBAN, e.g. GB29 NWBK 6016 1331 9268 19',
+    invalidRoman: 'Enter a number from 1 to 3999 or a valid roman numeral',
     invalidJwt: 'Not a valid JWT — expected 3 dot-separated parts.',
     undecodableJwt: 'Could not decode this token.',
     invalidColor: 'Enter a valid color (hex, rgb or hsl)',
