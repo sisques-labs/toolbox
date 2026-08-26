@@ -55,6 +55,12 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M14 13l2 2-2 2" />
     </>
   ),
+  [ToolId.JsonCsv]: (
+    <>
+      <rect x="3" y="5" width="8" height="14" rx="1.5" />
+      <path d="M7 8v8M14 8h6M14 12h6M14 16h4" />
+    </>
+  ),
   [ToolId.Base64]: (
     <>
       <rect x="3" y="6" width="6" height="4" rx="1" />

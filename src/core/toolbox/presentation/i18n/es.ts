@@ -47,6 +47,10 @@ const dict = {
       label: 'YAML ↔ JSON',
       description: 'Convierte entre YAML y JSON',
     },
+    'json-csv': {
+      label: 'JSON ↔ CSV',
+      description: 'Convierte entre un array JSON de objetos y CSV',
+    },
     base64: {
       label: 'Base64',
       description: 'Codifica y decodifica cadenas Base64',
@@ -150,6 +154,7 @@ const dict = {
     cidr: 'CIDR (ej. 192.168.1.0/24)',
     indent: 'Sangría',
     jsonInput: 'Entrada JSON',
+    csvInput: 'Entrada CSV',
     jsonLeft: 'JSON A',
     jsonRight: 'JSON B',
     yamlInput: 'Entrada YAML',
@@ -242,6 +247,10 @@ const dict = {
   errors: {
     invalidCidr: 'Introduce un CIDR válido, ej. 10.0.0.0/16',
     invalidIpAddress: 'Introduce una IPv4 válida, ej. 192.168.1.1',
+    invalidJsonArrayForCsv:
+      'Introduce un array JSON de objetos para convertir a CSV',
+    invalidCsvForJson:
+      'Introduce un CSV válido (una fila de cabecera y filas de datos) para convertir a JSON',
     invalidJwt:
       'No es un JWT válido — se esperaban 3 partes separadas por puntos.',
     undecodableJwt: 'No se ha podido decodificar este token.',

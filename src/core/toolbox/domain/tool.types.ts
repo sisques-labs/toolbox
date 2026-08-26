@@ -7,6 +7,7 @@ export const ToolId = {
   Json: 'json',
   JsonDiff: 'json-diff',
   Yaml: 'yaml',
+  JsonCsv: 'json-csv',
   Base64: 'base64',
   Url: 'url',
   Html: 'html',

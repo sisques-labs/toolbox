@@ -17,6 +17,7 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - JSON formatter — validate, format and minify JSON
 - JSON diff — compare two JSON documents and list the differences
 - YAML ↔ JSON — convert between YAML and JSON
+- JSON ↔ CSV — convert between a JSON array of objects and CSV
 
 **Encoding & security**
 - Base64 — encode and decode Base64 strings

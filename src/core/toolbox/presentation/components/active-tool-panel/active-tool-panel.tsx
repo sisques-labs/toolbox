@@ -9,6 +9,7 @@ import { TextDiffPanel } from '@/core/toolbox/presentation/components/tool-panel
 import { JsonPanel } from '@/core/toolbox/presentation/components/tool-panels/json/json-panel';
 import { JsonDiffPanel } from '@/core/toolbox/presentation/components/tool-panels/json-diff/json-diff-panel';
 import { YamlPanel } from '@/core/toolbox/presentation/components/tool-panels/yaml/yaml-panel';
+import { JsonCsvPanel } from '@/core/toolbox/presentation/components/tool-panels/json-csv/json-csv-panel';
 import { Base64Panel } from '@/core/toolbox/presentation/components/tool-panels/base64/base64-panel';
 import { UrlPanel } from '@/core/toolbox/presentation/components/tool-panels/url/url-panel';
 import { HtmlPanel } from '@/core/toolbox/presentation/components/tool-panels/html/html-panel';
@@ -54,6 +55,8 @@ export function ActiveToolPanel({
       return <JsonDiffPanel t={t} />;
     case ToolId.Yaml:
       return <YamlPanel t={t} onCopy={onCopy} />;
+    case ToolId.JsonCsv:
+      return <JsonCsvPanel t={t} onCopy={onCopy} />;
     case ToolId.Base64:
       return <Base64Panel t={t} onCopy={onCopy} />;
     case ToolId.Url:
