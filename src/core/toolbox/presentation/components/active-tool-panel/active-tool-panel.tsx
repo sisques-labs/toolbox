@@ -6,6 +6,7 @@ import { SlugPanel } from '@/core/toolbox/presentation/components/tool-panels/sl
 import { LoremPanel } from '@/core/toolbox/presentation/components/tool-panels/lorem/lorem-panel';
 import { RegexPanel } from '@/core/toolbox/presentation/components/tool-panels/regex/regex-panel';
 import { TextDiffPanel } from '@/core/toolbox/presentation/components/tool-panels/text-diff/text-diff-panel';
+import { NumeronymPanel } from '@/core/toolbox/presentation/components/tool-panels/numeronym/numeronym-panel';
 import { JsonPanel } from '@/core/toolbox/presentation/components/tool-panels/json/json-panel';
 import { JsonDiffPanel } from '@/core/toolbox/presentation/components/tool-panels/json-diff/json-diff-panel';
 import { YamlPanel } from '@/core/toolbox/presentation/components/tool-panels/yaml/yaml-panel';
@@ -49,6 +50,8 @@ export function ActiveToolPanel({
       return <RegexPanel t={t} />;
     case ToolId.TextDiff:
       return <TextDiffPanel t={t} />;
+    case ToolId.Numeronym:
+      return <NumeronymPanel t={t} onCopy={onCopy} />;
     case ToolId.Json:
       return <JsonPanel t={t} onCopy={onCopy} />;
     case ToolId.JsonDiff:

@@ -30,6 +30,10 @@ const dict = {
       label: 'Text diff',
       description: 'Compare two texts line by line',
     },
+    numeronym: {
+      label: 'Numeronym generator',
+      description: 'Abbreviate long words like "internationalization" → "i18n"',
+    },
     json: {
       label: 'JSON formatter',
       description: 'Validate, format and minify JSON',

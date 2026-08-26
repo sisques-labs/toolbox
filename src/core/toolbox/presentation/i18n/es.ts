@@ -35,6 +35,11 @@ const dict = {
       label: 'Diff de texto',
       description: 'Compara dos textos línea a línea',
     },
+    numeronym: {
+      label: 'Generador de numerónimos',
+      description:
+        'Abrevia palabras largas como "internacionalización" → "i18n"',
+    },
     json: {
       label: 'Formateador JSON',
       description: 'Valida, formatea y minifica JSON',
