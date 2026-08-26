@@ -177,6 +177,12 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <circle cx="12" cy="17.2" r="0.4" fill="currentColor" />
     </>
   ),
+  [ToolId.IpAddress]: (
+    <>
+      <rect x="3" y="9" width="18" height="6" rx="1.5" />
+      <path d="M7 12h.01M11 12h.01M15 12h.01" />
+    </>
+  ),
 };
 
 export function ToolIcon({

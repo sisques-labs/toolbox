@@ -26,6 +26,7 @@ import { BasePanel } from '@/core/toolbox/presentation/components/tool-panels/ba
 import { ChmodPanel } from '@/core/toolbox/presentation/components/tool-panels/chmod/chmod-panel';
 import { SubnetPanel } from '@/core/toolbox/presentation/components/tool-panels/subnet/subnet-panel';
 import { HttpStatusPanel } from '@/core/toolbox/presentation/components/tool-panels/http-status/http-status-panel';
+import { IpAddressPanel } from '@/core/toolbox/presentation/components/tool-panels/ip-address/ip-address-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -87,5 +88,7 @@ export function ActiveToolPanel({
       return <SubnetPanel t={t} />;
     case ToolId.HttpStatus:
       return <HttpStatusPanel t={t} />;
+    case ToolId.IpAddress:
+      return <IpAddressPanel t={t} onCopy={onCopy} />;
   }
 }

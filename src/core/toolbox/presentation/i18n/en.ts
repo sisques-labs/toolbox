@@ -111,6 +111,10 @@ const dict = {
       label: 'HTTP status codes',
       description: 'Look up HTTP status codes and their reason phrases',
     },
+    'ip-address': {
+      label: 'IP address converter',
+      description: 'Convert an IPv4 address between decimal, hex and binary',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -163,6 +167,7 @@ const dict = {
     totpSecret: 'Base32 secret',
     qrContent: 'Content',
     httpStatusQuery: 'Search by code or phrase',
+    ipAddressInput: 'IPv4 address (e.g. 192.168.1.1)',
   },
   labels: {
     plainText: 'Plain text',
@@ -229,6 +234,7 @@ const dict = {
   },
   errors: {
     invalidCidr: 'Enter a valid CIDR, e.g. 10.0.0.0/16',
+    invalidIpAddress: 'Enter a valid IPv4 address, e.g. 192.168.1.1',
     invalidJwt: 'Not a valid JWT — expected 3 dot-separated parts.',
     undecodableJwt: 'Could not decode this token.',
     invalidColor: 'Enter a valid color (hex, rgb or hsl)',

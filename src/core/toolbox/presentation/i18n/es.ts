@@ -118,6 +118,10 @@ const dict = {
       label: 'Códigos de estado HTTP',
       description: 'Consulta códigos de estado HTTP y sus frases de motivo',
     },
+    'ip-address': {
+      label: 'Conversor de direcciones IP',
+      description: 'Convierte una IPv4 entre decimal, hexadecimal y binario',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -170,6 +174,7 @@ const dict = {
     totpSecret: 'Secreto Base32',
     qrContent: 'Contenido',
     httpStatusQuery: 'Buscar por código o frase',
+    ipAddressInput: 'Dirección IPv4 (ej. 192.168.1.1)',
   },
   labels: {
     plainText: 'Texto plano',
@@ -236,6 +241,7 @@ const dict = {
   },
   errors: {
     invalidCidr: 'Introduce un CIDR válido, ej. 10.0.0.0/16',
+    invalidIpAddress: 'Introduce una IPv4 válida, ej. 192.168.1.1',
     invalidJwt:
       'No es un JWT válido — se esperaban 3 partes separadas por puntos.',
     undecodableJwt: 'No se ha podido decodificar este token.',

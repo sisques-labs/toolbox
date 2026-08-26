@@ -24,6 +24,7 @@ export const ToolId = {
   Chmod: 'chmod',
   Subnet: 'subnet',
   HttpStatus: 'http-status',
+  IpAddress: 'ip-address',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];
