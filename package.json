@@ -9,7 +9,7 @@
   },
   "homepage": "https://github.com/sisques-labs/toolbox",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "packageManager": "pnpm@11.22.0",
   "type": "module",
   "scripts": {

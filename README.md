@@ -2,6 +2,46 @@
 
 Sisques Labs toolbox — a collection of small web utilities.
 
+## Tools
+
+This is the current catalog of tools. It's kept in sync with `src/core/toolbox/presentation/components/sidebar/sidebar.catalog.ts` — see [`AGENTS.md`](AGENTS.md) for the rule that every added/removed tool must update this list.
+
+**Text**
+- Case converter — convert text between camelCase, snake_case, kebab-case and more
+- Slug generator — turn any text into a URL-friendly slug
+- Lorem ipsum — generate placeholder paragraphs
+- Regex tester — test regular expressions against sample text
+- Text diff — compare two texts line by line
+
+**Data**
+- JSON formatter — validate, format and minify JSON
+- JSON diff — compare two JSON documents and list the differences
+- YAML ↔ JSON — convert between YAML and JSON
+
+**Encoding & security**
+- Base64 — encode and decode Base64 strings
+- URL encoder — encode and decode URL-formatted (percent-encoded) strings
+- HTML entities — escape and unescape HTML special characters
+- JWT decoder — inspect the header and payload of a JSON Web Token
+- Hash generator — generate MD5 and SHA hashes from text
+
+**Generators**
+- UUID generator — generate random v4 UUIDs
+- ULID generator — generate lexicographically sortable ULIDs
+- Password generator — create strong random passwords
+- OTP / TOTP — generate time-based one-time passwords from a Base32 secret
+- Crontab generator — build and explain cron schedule expressions
+- QR code — generate a QR code from text or a URL
+
+**Converters**
+- Timestamp converter — convert between Unix time and readable dates
+- Color converter — convert colors between hex, RGB and HSL
+- Base converter — convert integers between binary, octal, decimal and hex
+- Chmod calculator — compute Unix file permissions as octal and symbolic modes
+
+**Network**
+- IP subnet calculator — get network, broadcast and host range from a CIDR
+
 ## Tech stack
 
 - [Astro](https://astro.build) (SSG) as the base framework
@@ -27,12 +67,10 @@ Node version is pinned in `.nvmrc` (24). Package manager is pnpm, pinned via the
 
 DDD + Screaming Architecture, mirroring [`sisques-labs/gardenia-web`](https://github.com/sisques-labs/gardenia-web) adapted to a backend-less static site. See [`AGENTS.md`](AGENTS.md) for the full set of conventions (layering rules, naming, testing, i18n). In short:
 
-- `src/core/<feature>/` — one folder per tool/feature, each with the layers it actually needs: `domain/` (pure types), `application/` (use-cases, only once there's real logic to orchestrate), `infrastructure/` (repositories, only once a tool talks to an API), `presentation/` (`components/`, `hooks/`, `screens/`, `i18n/`). `home` currently only has a `presentation/` layer — it's UI composition, not a domain.
+- `src/core/toolbox/` — the site's only feature: the tool sidebar/header shell plus one `domain`/`application` pair per utility (the 24 tools listed above), with `domain/` (pure types), `application/use-cases/<name>/` (one folder per tool's logic), and `presentation/` (`components/`, `screens/`, `i18n/`) for the shell and per-tool panels.
 - `src/shared/` — cross-cutting code used by every feature: `presentation/components/` (shell chrome: `app-shell`, `theme-toggle`, `language-switcher`), `presentation/providers/` (theme/locale context), `presentation/i18n/` (locale plumbing + the `shell` dictionary), `presentation/styles/` (global Tailwind stylesheet).
-- `src/pages/*.astro` — thin Astro routes (fixed by Astro's routing convention); each just renders one screen from `src/core/<feature>/presentation/screens/`.
+- `src/pages/*.astro` — thin Astro routes (fixed by Astro's routing convention), rendering `ToolboxScreen` (the unprefixed `/` and the localized `/[lang]/` route both point at the same screen; there's no per-tool route — tool selection happens client-side in the sidebar).
 - Path alias `@/*` → `./src/*` (configured in `tsconfig.json`, mirrored in `vitest.config.ts`).
-
-Each new tool gets its own route (`src/pages/<tool>.astro`) rendering `src/core/<tool>/presentation/screens/<tool>/<tool>.screen.tsx`, following the same pattern as `home`.
 
 ## Git hooks (Husky)
 
@@ -60,3 +98,7 @@ docker run -p 8080:8080 toolbox
 ## Releases
 
 `.github/workflows/release-train.yml` runs on every push to `develop`, `staging`, and `main`. It detects integrated conventional-commit changes, bumps the version, builds and publishes the Docker image (`sisqueslabs/toolbox` on Docker Hub, `ghcr.io/sisques-labs/toolbox` on GHCR), and generates `CHANGELOG.md`/GitHub Releases via [`cliff.toml`](cliff.toml). `develop` and `staging` publish alpha/beta pre-releases; `main` publishes stable releases and syncs back into `develop`.
+
+## License
+
+[MIT](LICENSE)
