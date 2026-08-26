@@ -247,6 +247,10 @@ const dict = {
       description:
         'Analiza una cadena user agent en navegador, SO y dispositivo',
     },
+    safelink: {
+      label: 'Decodificador de Safelinks',
+      description: 'Desenvuelve enlaces de redirección de Outlook y Google',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -350,6 +354,7 @@ const dict = {
     metaPageUrl: 'URL de página',
     mimeTypeQuery: 'Buscar por extensión o tipo MIME',
     userAgentInput: 'Cadena user agent',
+    safelinkInput: 'Enlace envuelto',
   },
   labels: {
     plainText: 'Texto plano',
@@ -439,6 +444,7 @@ const dict = {
     operatingSystem: 'Sistema operativo',
     deviceType: 'Tipo de dispositivo',
     engine: 'Motor',
+    decodedUrl: 'URL decodificada',
     bcryptMatch: 'Coincide',
     bcryptNoMatch: 'No coincide',
     passwordEntropy: 'Entropía',
@@ -496,6 +502,8 @@ const dict = {
     emptyWifiSsid: 'Introduce un nombre de red (SSID)',
     invalidUrl: 'Introduce una URL válida, incluyendo el protocolo',
     invalidBasicAuth: 'Introduce una cabecera Basic Auth válida',
+    invalidSafelink:
+      'Introduce un enlace de redirección de Outlook o Google válido',
     invalidMac: 'Introduce una MAC válida, ej. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No se ha encontrado fabricante para este prefijo',
     invalidMathExpression: 'Introduce una expresión matemática válida',

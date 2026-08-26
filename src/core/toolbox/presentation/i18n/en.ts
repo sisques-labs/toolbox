@@ -234,6 +234,10 @@ const dict = {
       label: 'User agent parser',
       description: 'Parse a user agent string into browser, OS and device',
     },
+    safelink: {
+      label: 'Safelink decoder',
+      description: 'Unwrap Outlook and Google redirect links',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -337,6 +341,7 @@ const dict = {
     metaPageUrl: 'Page URL',
     mimeTypeQuery: 'Search by extension or MIME type',
     userAgentInput: 'User agent string',
+    safelinkInput: 'Wrapped link',
   },
   labels: {
     plainText: 'Plain text',
@@ -426,6 +431,7 @@ const dict = {
     operatingSystem: 'Operating system',
     deviceType: 'Device type',
     engine: 'Engine',
+    decodedUrl: 'Decoded URL',
     bcryptMatch: 'Match',
     bcryptNoMatch: 'No match',
     passwordEntropy: 'Entropy',
@@ -481,6 +487,7 @@ const dict = {
     emptyWifiSsid: 'Enter a network name (SSID)',
     invalidUrl: 'Enter a valid URL, including the protocol',
     invalidBasicAuth: 'Enter a valid Basic auth header',
+    invalidSafelink: 'Enter a valid Outlook or Google redirect link',
     invalidMac: 'Enter a valid MAC address, e.g. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No vendor found for this prefix',
     invalidMathExpression: 'Enter a valid math expression',

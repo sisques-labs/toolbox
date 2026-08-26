@@ -81,6 +81,7 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - MIME types — look up the MIME type for a file extension
 - Keycode info — press a key to see its key, code and keyCode values
 - User agent parser — parse a user agent string into browser, OS and device
+- Safelink decoder — unwrap Outlook and Google redirect links
 
 ## Tech stack
 

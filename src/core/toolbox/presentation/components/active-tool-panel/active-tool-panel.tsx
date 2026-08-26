@@ -55,6 +55,7 @@ import { MetaTagsPanel } from '@/core/toolbox/presentation/components/tool-panel
 import { MimeTypesPanel } from '@/core/toolbox/presentation/components/tool-panels/mime-types/mime-types-panel';
 import { KeycodePanel } from '@/core/toolbox/presentation/components/tool-panels/keycode/keycode-panel';
 import { UserAgentPanel } from '@/core/toolbox/presentation/components/tool-panels/user-agent/user-agent-panel';
+import { SafelinkPanel } from '@/core/toolbox/presentation/components/tool-panels/safelink/safelink-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -174,5 +175,7 @@ export function ActiveToolPanel({
       return <KeycodePanel t={t} />;
     case ToolId.UserAgent:
       return <UserAgentPanel t={t} />;
+    case ToolId.Safelink:
+      return <SafelinkPanel t={t} onCopy={onCopy} />;
   }
 }

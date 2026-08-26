@@ -360,6 +360,13 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M9 20h6M12 15v5" />
     </>
   ),
+  [ToolId.Safelink]: (
+    <>
+      <path d="M9 17H7a5 5 0 0 1 0-10h2" />
+      <path d="M15 7h2a5 5 0 1 1 0 10h-2" />
+      <path d="M9 12h5M12 9l3 3-3 3" />
+    </>
+  ),
 };
 
 export function ToolIcon({

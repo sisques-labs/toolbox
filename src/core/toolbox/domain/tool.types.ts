@@ -53,6 +53,7 @@ export const ToolId = {
   MimeTypes: 'mime-types',
   Keycode: 'keycode',
   UserAgent: 'user-agent',
+  Safelink: 'safelink',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];
