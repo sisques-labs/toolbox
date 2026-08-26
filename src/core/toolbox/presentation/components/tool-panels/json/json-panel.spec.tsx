@@ -38,4 +38,17 @@ describe('JsonPanel', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Copy' }));
     expect(onCopy).toHaveBeenCalledWith('{\n  "a": 1\n}', 'JSON');
   });
+
+  it('enables the download button for valid JSON', () => {
+    render(<JsonPanel t={enToolbox} onCopy={() => {}} />);
+    expect(screen.getByRole('button', { name: 'Download' })).toBeEnabled();
+  });
+
+  it('disables the download button for invalid JSON', () => {
+    render(<JsonPanel t={enToolbox} onCopy={() => {}} />);
+    fireEvent.change(screen.getByLabelText('JSON input'), {
+      target: { value: '{not json}' },
+    });
+    expect(screen.getByRole('button', { name: 'Download' })).toBeDisabled();
+  });
 });

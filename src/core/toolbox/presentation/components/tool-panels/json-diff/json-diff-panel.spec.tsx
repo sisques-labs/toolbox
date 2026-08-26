@@ -10,6 +10,30 @@ describe('JsonDiffPanel', () => {
     expect(screen.getByText(/Changed · version/)).toBeInTheDocument();
   });
 
+  it('enables the download button when there are differences', () => {
+    render(<JsonDiffPanel t={enToolbox} />);
+    expect(screen.getByRole('button', { name: 'Download' })).toBeEnabled();
+  });
+
+  it('disables the download button when both sides match', () => {
+    render(<JsonDiffPanel t={enToolbox} />);
+    fireEvent.change(screen.getByLabelText('JSON A'), {
+      target: { value: '{"a":1}' },
+    });
+    fireEvent.change(screen.getByLabelText('JSON B'), {
+      target: { value: '{"a":1}' },
+    });
+    expect(screen.getByRole('button', { name: 'Download' })).toBeDisabled();
+  });
+
+  it('disables the download button for invalid JSON', () => {
+    render(<JsonDiffPanel t={enToolbox} />);
+    fireEvent.change(screen.getByLabelText('JSON A'), {
+      target: { value: '{' },
+    });
+    expect(screen.getByRole('button', { name: 'Download' })).toBeDisabled();
+  });
+
   it('shows no differences when both sides match', () => {
     render(<JsonDiffPanel t={enToolbox} />);
     fireEvent.change(screen.getByLabelText('JSON A'), {

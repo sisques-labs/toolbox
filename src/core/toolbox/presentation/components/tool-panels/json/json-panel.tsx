@@ -6,6 +6,7 @@ import {
 import { TextareaField } from '@/shared/presentation/components/textarea-field/textarea-field';
 import { SelectField } from '@/shared/presentation/components/select-field/select-field';
 import { Button } from '@/shared/presentation/components/button/button';
+import { DownloadButton } from '@/shared/presentation/components/download-button/download-button';
 import { ToolPanelFrame } from '@/core/toolbox/presentation/components/tool-panel-frame/tool-panel-frame';
 import type { ToolboxDict } from '@/core/toolbox/presentation/i18n/en';
 import type { WidenStringLiterals } from '@/shared/presentation/i18n/widen-literals';
@@ -62,7 +63,14 @@ export function JsonPanel({
           >
             {result.text}
           </pre>
-          <div className="absolute right-2.5 top-2.5">
+          <div className="absolute right-2.5 top-2.5 flex gap-1.5">
+            <DownloadButton
+              content={result.text}
+              baseName="json"
+              extension="json"
+              mimeType="application/json"
+              label={t.actions.download}
+            />
             <Button
               variant="ghost"
               size="sm"
@@ -73,11 +81,23 @@ export function JsonPanel({
           </div>
         </div>
       ) : (
-        <div
-          data-testid="json-output"
-          className="rounded-lg bg-red-50 p-3.5 font-mono text-sm text-red-600 dark:bg-red-500/10 dark:text-red-400"
-        >
-          {result.text}
+        <div className="relative">
+          <div
+            data-testid="json-output"
+            className="rounded-lg bg-red-50 p-3.5 font-mono text-sm text-red-600 dark:bg-red-500/10 dark:text-red-400"
+          >
+            {result.text}
+          </div>
+          <div className="absolute right-2.5 top-2.5">
+            <DownloadButton
+              content={result.text}
+              baseName="json"
+              extension="json"
+              mimeType="application/json"
+              label={t.actions.download}
+              disabled
+            />
+          </div>
         </div>
       )}
     </ToolPanelFrame>

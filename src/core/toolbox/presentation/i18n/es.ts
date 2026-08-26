@@ -126,6 +126,7 @@ const dict = {
     escape: 'Escapar',
     unescape: 'Desescapar',
     now: 'Ahora',
+    download: 'Descargar',
   },
   fields: {
     inputText: 'Texto de entrada',
