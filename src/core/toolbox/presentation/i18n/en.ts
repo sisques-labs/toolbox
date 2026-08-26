@@ -154,6 +154,10 @@ const dict = {
       label: 'Bcrypt',
       description: 'Hash text with bcrypt and verify a hash against text',
     },
+    hmac: {
+      label: 'HMAC generator',
+      description: 'Generate an HMAC digest from a message and a secret key',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -216,6 +220,8 @@ const dict = {
     bcryptRounds: 'Cost factor (rounds)',
     bcryptHash: 'Hash to verify',
     bcryptPlainText: 'Plain text to verify',
+    algorithm: 'Algorithm',
+    hmacSecret: 'Secret key',
   },
   labels: {
     plainText: 'Plain text',

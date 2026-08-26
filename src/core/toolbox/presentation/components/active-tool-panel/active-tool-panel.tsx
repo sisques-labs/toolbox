@@ -35,6 +35,7 @@ import { HttpStatusPanel } from '@/core/toolbox/presentation/components/tool-pan
 import { IpAddressPanel } from '@/core/toolbox/presentation/components/tool-panels/ip-address/ip-address-panel';
 import { CypherPanel } from '@/core/toolbox/presentation/components/tool-panels/cypher/cypher-panel';
 import { BcryptPanel } from '@/core/toolbox/presentation/components/tool-panels/bcrypt/bcrypt-panel';
+import { HmacPanel } from '@/core/toolbox/presentation/components/tool-panels/hmac/hmac-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -114,5 +115,7 @@ export function ActiveToolPanel({
       return <CypherPanel t={t} onCopy={onCopy} />;
     case ToolId.Bcrypt:
       return <BcryptPanel t={t} onCopy={onCopy} />;
+    case ToolId.Hmac:
+      return <HmacPanel t={t} onCopy={onCopy} />;
   }
 }

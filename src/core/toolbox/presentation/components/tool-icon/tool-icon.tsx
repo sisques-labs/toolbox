@@ -234,6 +234,11 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M8 8h3a2 2 0 0 1 0 4H8V8zM8 12h3.5a2 2 0 0 1 0 4H8v-4z" />
     </>
   ),
+  [ToolId.Hmac]: (
+    <>
+      <path d="M4 12h4l2-5 4 10 2-5h4" />
+    </>
+  ),
 };
 
 export function ToolIcon({

@@ -33,6 +33,7 @@ export const ToolId = {
   IpAddress: 'ip-address',
   Cypher: 'cypher',
   Bcrypt: 'bcrypt',
+  Hmac: 'hmac',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];
