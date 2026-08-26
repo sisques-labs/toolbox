@@ -34,6 +34,7 @@ import { SubnetPanel } from '@/core/toolbox/presentation/components/tool-panels/
 import { HttpStatusPanel } from '@/core/toolbox/presentation/components/tool-panels/http-status/http-status-panel';
 import { IpAddressPanel } from '@/core/toolbox/presentation/components/tool-panels/ip-address/ip-address-panel';
 import { CypherPanel } from '@/core/toolbox/presentation/components/tool-panels/cypher/cypher-panel';
+import { BcryptPanel } from '@/core/toolbox/presentation/components/tool-panels/bcrypt/bcrypt-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -111,5 +112,7 @@ export function ActiveToolPanel({
       return <IpAddressPanel t={t} onCopy={onCopy} />;
     case ToolId.Cypher:
       return <CypherPanel t={t} onCopy={onCopy} />;
+    case ToolId.Bcrypt:
+      return <BcryptPanel t={t} onCopy={onCopy} />;
   }
 }

@@ -159,6 +159,10 @@ const dict = {
       description:
         'Desplaza letras para codificar o decodificar texto, incluido ROT13',
     },
+    bcrypt: {
+      label: 'Bcrypt',
+      description: 'Hashea texto con bcrypt y verifica un hash contra texto',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -173,6 +177,7 @@ const dict = {
     now: 'Ahora',
     download: 'Descargar',
     rot13: 'ROT13',
+    verify: 'Verificar',
   },
   fields: {
     inputText: 'Texto de entrada',
@@ -217,6 +222,9 @@ const dict = {
     textStatsInput: 'Texto a analizar',
     ibanInput: 'IBAN',
     cypherShift: 'Desplazamiento',
+    bcryptRounds: 'Factor de coste (rounds)',
+    bcryptHash: 'Hash a verificar',
+    bcryptPlainText: 'Texto plano a verificar',
   },
   labels: {
     plainText: 'Texto plano',
@@ -280,6 +288,8 @@ const dict = {
     ibanFormatted: 'Formateado',
     ibanValid: 'Válido',
     ibanInvalid: 'Suma de control inválida',
+    bcryptMatch: 'Coincide',
+    bcryptNoMatch: 'No coincide',
   },
   presets: {
     everyMinute: 'Cada minuto',

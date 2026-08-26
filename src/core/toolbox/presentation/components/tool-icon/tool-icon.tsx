@@ -228,6 +228,12 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <circle cx="12" cy="15.5" r="1.25" />
     </>
   ),
+  [ToolId.Bcrypt]: (
+    <>
+      <rect x="4" y="4" width="16" height="16" rx="2" />
+      <path d="M8 8h3a2 2 0 0 1 0 4H8V8zM8 12h3.5a2 2 0 0 1 0 4H8v-4z" />
+    </>
+  ),
 };
 
 export function ToolIcon({

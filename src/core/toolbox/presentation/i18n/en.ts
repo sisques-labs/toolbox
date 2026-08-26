@@ -150,6 +150,10 @@ const dict = {
       label: 'Caesar cipher',
       description: 'Shift letters to encode or decode text, including ROT13',
     },
+    bcrypt: {
+      label: 'Bcrypt',
+      description: 'Hash text with bcrypt and verify a hash against text',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -164,6 +168,7 @@ const dict = {
     now: 'Now',
     download: 'Download',
     rot13: 'ROT13',
+    verify: 'Verify',
   },
   fields: {
     inputText: 'Input text',
@@ -208,6 +213,9 @@ const dict = {
     textStatsInput: 'Text to analyze',
     ibanInput: 'IBAN',
     cypherShift: 'Shift',
+    bcryptRounds: 'Cost factor (rounds)',
+    bcryptHash: 'Hash to verify',
+    bcryptPlainText: 'Plain text to verify',
   },
   labels: {
     plainText: 'Plain text',
@@ -271,6 +279,8 @@ const dict = {
     ibanFormatted: 'Formatted',
     ibanValid: 'Valid',
     ibanInvalid: 'Invalid checksum',
+    bcryptMatch: 'Match',
+    bcryptNoMatch: 'No match',
   },
   presets: {
     everyMinute: 'Every minute',

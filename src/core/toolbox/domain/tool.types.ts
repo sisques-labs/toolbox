@@ -32,6 +32,7 @@ export const ToolId = {
   HttpStatus: 'http-status',
   IpAddress: 'ip-address',
   Cypher: 'cypher',
+  Bcrypt: 'bcrypt',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];
