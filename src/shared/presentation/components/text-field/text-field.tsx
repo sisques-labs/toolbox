@@ -29,7 +29,7 @@ export function TextField({
         value={value}
         onChange={onChange}
         placeholder={placeholder}
-        className="rounded-lg border border-slate-200 bg-white px-3 py-2 font-sans text-sm text-slate-900 outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:focus:ring-indigo-500/20"
+        className="rounded-lg border border-slate-200 bg-white px-3 py-2 font-sans text-sm text-slate-900 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:focus:ring-blue-500/20"
       />
     </div>
   );

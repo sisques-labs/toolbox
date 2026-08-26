@@ -15,7 +15,7 @@ export function ResultRow({
     <div className="flex items-center justify-between gap-3 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2.5 dark:border-slate-800 dark:bg-slate-800/50">
       <div className="min-w-0">
         {label && (
-          <div className="mb-0.5 text-[11px] font-semibold text-slate-400 dark:text-slate-500">
+          <div className="mb-0.5 text-[11px] font-semibold text-slate-400 dark:text-slate-400">
             {label}
           </div>
         )}

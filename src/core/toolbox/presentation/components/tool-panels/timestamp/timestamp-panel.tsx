@@ -53,7 +53,7 @@ export function TimestampPanel({
             const t = new Date(e.target.value).getTime();
             if (Number.isFinite(t)) setEpochMs(t);
           }}
-          className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none focus:border-indigo-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"
+          className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none focus:border-blue-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"
         />
       </div>
       <div className="flex flex-col gap-2">
