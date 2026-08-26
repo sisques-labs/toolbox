@@ -473,6 +473,14 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <circle cx="12" cy="9" r="1" />
     </>
   ),
+  [ToolId.Base64File]: (
+    <>
+      <path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
+      <path d="M15 2v5h5" />
+      <path d="M8 15h1.5a1.5 1.5 0 1 0 0-3H8v6" />
+      <path d="M14 12h1.5a1.5 1.5 0 0 1 0 3H14v3" />
+    </>
+  ),
 };
 
 export function ToolIcon({

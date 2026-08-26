@@ -69,6 +69,7 @@ export const ToolId = {
   XmlJson: 'xml-json',
   TomlJson: 'toml-json',
   TomlYaml: 'toml-yaml',
+  Base64File: 'base64-file',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

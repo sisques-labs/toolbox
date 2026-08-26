@@ -298,6 +298,10 @@ const dict = {
       label: 'TOML ↔ YAML',
       description: 'Convert between TOML and YAML',
     },
+    'base64-file': {
+      label: 'Base64 file converter',
+      description: 'Convert a file to Base64 and back',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -424,6 +428,8 @@ const dict = {
     listRemoveEmpty: 'Remove empty lines',
     markdownInput: 'Markdown input',
     tomlInput: 'TOML input',
+    base64FileInput: 'Choose a file',
+    base64PayloadInput: 'Base64 data URL',
   },
   labels: {
     plainText: 'Plain text',
@@ -513,6 +519,9 @@ const dict = {
     operatingSystem: 'Operating system',
     deviceType: 'Device type',
     engine: 'Engine',
+    fileName: 'File name',
+    fileSize: 'File size',
+    mimeType: 'MIME type',
     decodedUrl: 'Decoded URL',
     sortNone: 'None',
     sortAsc: 'Ascending',
@@ -597,6 +606,7 @@ const dict = {
     invalidToml: 'Enter valid TOML (key = value lines and [tables])',
     invalidJsonForToml: 'Enter a valid flat or one-level-nested JSON object',
     invalidYamlForToml: 'Enter valid YAML that converts to a flat object',
+    invalidBase64DataUrl: 'Enter a valid data:*;base64,... URL',
     invalidUnicode: 'Enter valid space-separated U+XXXX code points',
     invalidMac: 'Enter a valid MAC address, e.g. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No vendor found for this prefix',
