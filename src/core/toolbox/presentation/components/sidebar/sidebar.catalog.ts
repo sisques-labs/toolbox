@@ -9,11 +9,14 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
       ToolId.Lorem,
       ToolId.Regex,
       ToolId.TextDiff,
+      ToolId.Numeronym,
+      ToolId.TextStats,
+      ToolId.Nato,
     ],
   },
   {
     category: ToolCategoryId.Data,
-    tools: [ToolId.Json, ToolId.JsonDiff, ToolId.Yaml],
+    tools: [ToolId.Json, ToolId.JsonDiff, ToolId.Yaml, ToolId.JsonCsv],
   },
   {
     category: ToolCategoryId.Encoding,
@@ -32,10 +35,17 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
   },
   {
     category: ToolCategoryId.Converters,
-    tools: [ToolId.Timestamp, ToolId.Color, ToolId.Base, ToolId.Chmod],
+    tools: [
+      ToolId.Timestamp,
+      ToolId.Color,
+      ToolId.Base,
+      ToolId.Chmod,
+      ToolId.Iban,
+      ToolId.Roman,
+    ],
   },
   {
     category: ToolCategoryId.Network,
-    tools: [ToolId.Subnet, ToolId.HttpStatus],
+    tools: [ToolId.Subnet, ToolId.HttpStatus, ToolId.IpAddress],
   },
 ];

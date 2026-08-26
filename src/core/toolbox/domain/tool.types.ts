@@ -4,9 +4,13 @@ export const ToolId = {
   Lorem: 'lorem',
   Regex: 'regex',
   TextDiff: 'text-diff',
+  Numeronym: 'numeronym',
+  TextStats: 'text-stats',
+  Nato: 'nato',
   Json: 'json',
   JsonDiff: 'json-diff',
   Yaml: 'yaml',
+  JsonCsv: 'json-csv',
   Base64: 'base64',
   Url: 'url',
   Html: 'html',
@@ -22,8 +26,11 @@ export const ToolId = {
   Color: 'color',
   Base: 'base',
   Chmod: 'chmod',
+  Iban: 'iban',
+  Roman: 'roman',
   Subnet: 'subnet',
   HttpStatus: 'http-status',
+  IpAddress: 'ip-address',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];
