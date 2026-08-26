@@ -73,6 +73,7 @@ export const ToolId = {
   StringObfuscator: 'string-obfuscator',
   AsciiDrawer: 'ascii-drawer',
   EmojiPicker: 'emoji-picker',
+  PhoneParser: 'phone-parser',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

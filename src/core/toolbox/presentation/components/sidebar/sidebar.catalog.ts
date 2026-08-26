@@ -19,7 +19,13 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
   },
   {
     category: ToolCategoryId.Data,
-    tools: [ToolId.Json, ToolId.JsonDiff, ToolId.Yaml, ToolId.JsonCsv],
+    tools: [
+      ToolId.Json,
+      ToolId.JsonDiff,
+      ToolId.Yaml,
+      ToolId.JsonCsv,
+      ToolId.PhoneParser,
+    ],
   },
   {
     category: ToolCategoryId.Encoding,

@@ -24,6 +24,7 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - JSON diff — compare two JSON documents and list the differences
 - YAML ↔ JSON — convert between YAML and JSON
 - JSON ↔ CSV — convert between a JSON array of objects and CSV
+- Phone parser — parse an international phone number into its parts
 
 **Encoding & security**
 - Base64 — encode and decode Base64 strings
@@ -129,7 +130,7 @@ Node version is pinned in `.nvmrc` (24). Package manager is pnpm, pinned via the
 
 DDD + Screaming Architecture, mirroring [`sisques-labs/gardenia-web`](https://github.com/sisques-labs/gardenia-web) adapted to a backend-less static site. See [`AGENTS.md`](AGENTS.md) for the full set of conventions (layering rules, naming, testing, i18n). In short:
 
-- `src/core/toolbox/` — the site's only feature: the tool sidebar/header shell plus one `domain`/`application` pair per utility (the 24 tools listed above), with `domain/` (pure types), `application/use-cases/<name>/` (one folder per tool's logic), and `presentation/` (`components/`, `screens/`, `i18n/`) for the shell and per-tool panels.
+- `src/core/toolbox/` — the site's only feature: the tool sidebar/header shell plus one `domain`/`application` pair per utility (the 75 tools listed above), with `domain/` (pure types), `application/use-cases/<name>/` (one folder per tool's logic), and `presentation/` (`components/`, `screens/`, `i18n/`) for the shell and per-tool panels.
 - `src/shared/` — cross-cutting code used by every feature: `presentation/components/` (shell chrome: `app-shell`, `theme-toggle`, `language-switcher`), `presentation/providers/` (theme/locale context), `presentation/i18n/` (locale plumbing + the `shell` dictionary), `presentation/styles/` (global Tailwind stylesheet).
 - `src/pages/*.astro` — thin Astro routes (fixed by Astro's routing convention), rendering `ToolboxScreen` (the unprefixed `/` and the localized `/[lang]/` route both point at the same screen; there's no per-tool route — tool selection happens client-side in the sidebar).
 - Path alias `@/*` → `./src/*` (configured in `tsconfig.json`, mirrored in `vitest.config.ts`).

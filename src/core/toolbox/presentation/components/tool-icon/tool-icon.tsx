@@ -506,6 +506,12 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M9 9h.01M15 9h.01" />
     </>
   ),
+  [ToolId.PhoneParser]: (
+    <>
+      <rect x="7" y="2" width="10" height="20" rx="2" />
+      <path d="M11 18h2" />
+    </>
+  ),
 };
 
 export function ToolIcon({

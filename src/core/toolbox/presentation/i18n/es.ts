@@ -330,6 +330,10 @@ const dict = {
       label: 'Selector de emojis',
       description: 'Busca emojis por nombre y cópialos',
     },
+    'phone-parser': {
+      label: 'Analizador de teléfonos',
+      description: 'Analiza un número de teléfono internacional',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -458,6 +462,7 @@ const dict = {
     tomlInput: 'Entrada TOML',
     base64FileInput: 'Elige un archivo',
     base64PayloadInput: 'URL de datos Base64',
+    phoneInput: 'Número de teléfono (con prefijo de país)',
     obfuscateVisibleStart: 'Visible al inicio',
     obfuscateVisibleEnd: 'Visible al final',
     obfuscateMaskChar: 'Carácter de máscara',
@@ -553,6 +558,10 @@ const dict = {
     fileName: 'Nombre de archivo',
     fileSize: 'Tamaño de archivo',
     mimeType: 'Tipo MIME',
+    dialCode: 'Prefijo',
+    country: 'País',
+    nationalNumber: 'Número nacional',
+    formattedNumber: 'Formateado',
     decodedUrl: 'URL decodificada',
     sortNone: 'Ninguno',
     sortAsc: 'Ascendente',
@@ -643,6 +652,8 @@ const dict = {
     invalidYamlForToml:
       'Introduce un YAML válido que se convierta en un objeto plano',
     invalidBase64DataUrl: 'Introduce una URL válida data:*;base64,...',
+    invalidPhone:
+      'Introduce un número que empiece por + y un prefijo reconocido',
     invalidUnicode:
       'Introduce puntos de código U+XXXX válidos separados por espacios',
     invalidMac: 'Introduce una MAC válida, ej. 00:1A:2B:3C:4D:5E',
