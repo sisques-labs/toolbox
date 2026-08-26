@@ -28,7 +28,7 @@ export function LanguageSwitcher({
           aria-pressed={locale === option.value}
           className={`rounded-full px-2.5 py-1 transition ${
             locale === option.value
-              ? 'bg-indigo-500 text-white shadow-sm'
+              ? 'bg-blue-600 text-white shadow-sm'
               : 'text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-100'
           }`}
         >

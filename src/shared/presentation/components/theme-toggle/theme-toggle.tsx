@@ -52,7 +52,7 @@ export function ThemeToggle({
       onClick={onToggle}
       aria-label={isDark ? labels.switchToLight : labels.switchToDark}
       aria-pressed={isDark}
-      className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 transition hover:border-indigo-300 hover:text-indigo-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-400 dark:hover:border-indigo-400 dark:hover:text-indigo-400"
+      className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 transition hover:border-blue-300 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-400 dark:hover:border-blue-400 dark:hover:text-blue-400"
     >
       {isDark ? <SunIcon /> : <MoonIcon />}
     </button>
