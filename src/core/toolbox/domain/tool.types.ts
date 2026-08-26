@@ -44,6 +44,12 @@ export const ToolCategoryId = {
   Generators: 'generators',
   Converters: 'converters',
   Network: 'network',
+  Crypto: 'crypto',
+  Web: 'web',
+  Development: 'development',
+  Math: 'math',
+  Measurement: 'measurement',
+  Images: 'images',
 } as const;
 
 export type ToolCategoryId =

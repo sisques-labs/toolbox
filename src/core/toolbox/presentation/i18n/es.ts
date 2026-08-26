@@ -12,6 +12,12 @@ const dict = {
     generators: 'Generadores',
     converters: 'Conversores',
     network: 'Red',
+    crypto: 'Criptografía',
+    web: 'Web',
+    development: 'Desarrollo',
+    math: 'Matemáticas',
+    measurement: 'Medición',
+    images: 'Imágenes',
   },
   tools: {
     case: {

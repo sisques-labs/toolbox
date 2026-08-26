@@ -7,6 +7,12 @@ const dict = {
     generators: 'Generators',
     converters: 'Converters',
     network: 'Network',
+    crypto: 'Crypto',
+    web: 'Web',
+    development: 'Development',
+    math: 'Math',
+    measurement: 'Measurement',
+    images: 'Images',
   },
   tools: {
     case: {

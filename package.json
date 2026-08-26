@@ -28,6 +28,7 @@
   "dependencies": {
     "@astrojs/react": "6.0.4",
     "astro": "7.2.4",
+    "bcryptjs": "^3.0.3",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "uqr": "^0.1.3"

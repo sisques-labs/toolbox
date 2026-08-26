@@ -19,7 +19,7 @@ Features live under `src/core/{feature}/`, each with only the layers it actually
 - **infrastructure/** — repositories/API clients implementing the ports. Only needed once a feature talks to an external API.
 - **presentation/** — `screens/`, `components/`, `hooks/`, `i18n/`, `schemas/` (if a form needs validation), `providers/` (if the feature owns cross-component client state).
 
-`src/core/toolbox/` is the site's only feature: the tool sidebar/header shell plus one `domain`/`application` pair per utility, grouped into categories (text, data, encoding & security, generators, converters, network) and their `presentation` panels. The full, current list of tools lives in the README's "Tools" section (see the README-sync rule below), not here — don't duplicate it in this file.
+`src/core/toolbox/` is the site's only feature: the tool sidebar/header shell plus one `domain`/`application` pair per utility, grouped into categories (text, data, encoding & security, generators, converters, network, crypto, web, development, math, measurement, images) and their `presentation` panels. The full, current list of tools lives in the README's "Tools" section (see the README-sync rule below), not here — don't duplicate it in this file.
 
 **README sync (mandatory):** any change that adds or removes a tool (a new `application/use-cases/{name}/`, a new `ToolId`/catalog entry, or the removal of one) must update the README's "Tools" section in the same change. That section is the canonical, always-current catalog of what the toolbox can do — keep it grouped by category and in sync with `src/core/toolbox/presentation/components/sidebar/sidebar.catalog.ts`. A PR that adds/removes a tool without touching the README is incomplete.
 
