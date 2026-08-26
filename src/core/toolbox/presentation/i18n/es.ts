@@ -201,6 +201,10 @@ const dict = {
       label: 'Evaluador matemático',
       description: 'Evalúa expresiones aritméticas con funciones',
     },
+    percentage: {
+      label: 'Calculadora de porcentajes',
+      description: 'Calcula porcentajes, proporciones y variación porcentual',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -274,6 +278,12 @@ const dict = {
     macAddressInput: 'Dirección MAC',
     ipv6SubnetId: 'ID de subred (4 dígitos hex)',
     mathExpression: 'Expresión (ej. sqrt(16) + 2^3)',
+    percentPercent: 'Porcentaje',
+    percentValue: 'Valor',
+    percentPart: 'Parte',
+    percentWhole: 'Total',
+    percentFrom: 'Desde',
+    percentTo: 'Hasta',
   },
   labels: {
     plainText: 'Texto plano',
@@ -337,6 +347,9 @@ const dict = {
     ibanFormatted: 'Formateado',
     ibanValid: 'Válido',
     ibanInvalid: 'Suma de control inválida',
+    percentOfHeading: 'X% de Y',
+    whatPercentHeading: 'X es qué % de Y',
+    percentChangeHeading: 'Variación de X a Y',
     bcryptMatch: 'Coincide',
     bcryptNoMatch: 'No coincide',
     passwordEntropy: 'Entropía',

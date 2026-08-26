@@ -190,6 +190,10 @@ const dict = {
       label: 'Math evaluator',
       description: 'Evaluate arithmetic expressions with functions',
     },
+    percentage: {
+      label: 'Percentage calculator',
+      description: 'Compute percentages, shares and percentage change',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -263,6 +267,12 @@ const dict = {
     macAddressInput: 'MAC address',
     ipv6SubnetId: 'Subnet ID (4 hex digits)',
     mathExpression: 'Expression (e.g. sqrt(16) + 2^3)',
+    percentPercent: 'Percent',
+    percentValue: 'Value',
+    percentPart: 'Part',
+    percentWhole: 'Whole',
+    percentFrom: 'From',
+    percentTo: 'To',
   },
   labels: {
     plainText: 'Plain text',
@@ -326,6 +336,9 @@ const dict = {
     ibanFormatted: 'Formatted',
     ibanValid: 'Valid',
     ibanInvalid: 'Invalid checksum',
+    percentOfHeading: 'X% of Y',
+    whatPercentHeading: 'X is what % of Y',
+    percentChangeHeading: 'Change from X to Y',
     bcryptMatch: 'Match',
     bcryptNoMatch: 'No match',
     passwordEntropy: 'Entropy',

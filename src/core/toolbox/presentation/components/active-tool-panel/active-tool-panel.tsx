@@ -44,6 +44,7 @@ import { MacGeneratorPanel } from '@/core/toolbox/presentation/components/tool-p
 import { MacLookupPanel } from '@/core/toolbox/presentation/components/tool-panels/mac-lookup/mac-lookup-panel';
 import { Ipv6UlaPanel } from '@/core/toolbox/presentation/components/tool-panels/ipv6-ula/ipv6-ula-panel';
 import { MathEvaluatorPanel } from '@/core/toolbox/presentation/components/tool-panels/math-evaluator/math-evaluator-panel';
+import { PercentagePanel } from '@/core/toolbox/presentation/components/tool-panels/percentage/percentage-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -141,5 +142,7 @@ export function ActiveToolPanel({
       return <Ipv6UlaPanel t={t} onCopy={onCopy} />;
     case ToolId.MathEvaluator:
       return <MathEvaluatorPanel t={t} onCopy={onCopy} />;
+    case ToolId.Percentage:
+      return <PercentagePanel t={t} />;
   }
 }

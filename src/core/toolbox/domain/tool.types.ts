@@ -42,6 +42,7 @@ export const ToolId = {
   MacLookup: 'mac-lookup',
   Ipv6Ula: 'ipv6-ula',
   MathEvaluator: 'math-evaluator',
+  Percentage: 'percentage',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

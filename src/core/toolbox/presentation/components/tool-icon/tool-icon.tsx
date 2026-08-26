@@ -290,6 +290,13 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M15 15l3 3M18 15l-3 3" />
     </>
   ),
+  [ToolId.Percentage]: (
+    <>
+      <line x1="5" y1="19" x2="19" y2="5" />
+      <circle cx="7" cy="7" r="2.5" />
+      <circle cx="17" cy="17" r="2.5" />
+    </>
+  ),
 };
 
 export function ToolIcon({
