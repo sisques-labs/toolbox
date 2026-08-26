@@ -64,6 +64,7 @@ export const ToolId = {
   RegexCheatsheet: 'regex-cheatsheet',
   TextBinary: 'text-binary',
   TextUnicode: 'text-unicode',
+  ListConverter: 'list-converter',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

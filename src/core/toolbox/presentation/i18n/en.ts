@@ -278,6 +278,10 @@ const dict = {
       label: 'Text ↔ Unicode',
       description: 'Convert text to Unicode code points and back',
     },
+    'list-converter': {
+      label: 'List converter',
+      description: 'Sort, dedupe and reformat a list of lines',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -390,6 +394,12 @@ const dict = {
     cheatsheetQuery: 'Search',
     binaryInput: 'Binary',
     unicodeInput: 'Unicode code points',
+    listInput: 'List (one item per line)',
+    listSort: 'Sort',
+    listPrefix: 'Prefix',
+    listSuffix: 'Suffix',
+    listUnique: 'Remove duplicates',
+    listRemoveEmpty: 'Remove empty lines',
   },
   labels: {
     plainText: 'Plain text',
@@ -480,6 +490,9 @@ const dict = {
     deviceType: 'Device type',
     engine: 'Engine',
     decodedUrl: 'Decoded URL',
+    sortNone: 'None',
+    sortAsc: 'Ascending',
+    sortDesc: 'Descending',
     userAgent: 'User agent',
     platform: 'Platform',
     language: 'Language',

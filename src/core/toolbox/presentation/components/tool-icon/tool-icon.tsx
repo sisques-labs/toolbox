@@ -435,6 +435,13 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M8 9h3M8 12h3M8 15h3M14 9h2v6h-2" />
     </>
   ),
+  [ToolId.ListConverter]: (
+    <>
+      <path d="M9 6h11M9 12h11M9 18h11" />
+      <path d="M4 5v6M4 5l-2 2M4 5l2 2" />
+      <path d="M4 15v4M4 19h2M4 19H2" />
+    </>
+  ),
 };
 
 export function ToolIcon({

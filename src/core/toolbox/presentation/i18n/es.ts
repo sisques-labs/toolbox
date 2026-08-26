@@ -294,6 +294,10 @@ const dict = {
       label: 'Texto ↔ Unicode',
       description: 'Convierte texto a puntos de código Unicode y viceversa',
     },
+    'list-converter': {
+      label: 'Conversor de listas',
+      description: 'Ordena, elimina duplicados y reformatea una lista',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -406,6 +410,12 @@ const dict = {
     cheatsheetQuery: 'Buscar',
     binaryInput: 'Binario',
     unicodeInput: 'Puntos de código Unicode',
+    listInput: 'Lista (un elemento por línea)',
+    listSort: 'Ordenar',
+    listPrefix: 'Prefijo',
+    listSuffix: 'Sufijo',
+    listUnique: 'Eliminar duplicados',
+    listRemoveEmpty: 'Eliminar líneas vacías',
   },
   labels: {
     plainText: 'Texto plano',
@@ -496,6 +506,9 @@ const dict = {
     deviceType: 'Tipo de dispositivo',
     engine: 'Motor',
     decodedUrl: 'URL decodificada',
+    sortNone: 'Ninguno',
+    sortAsc: 'Ascendente',
+    sortDesc: 'Descendente',
     userAgent: 'User agent',
     platform: 'Plataforma',
     language: 'Idioma',
