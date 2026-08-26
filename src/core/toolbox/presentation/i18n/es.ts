@@ -234,6 +234,10 @@ const dict = {
       label: 'Generador de meta tags',
       description: 'Genera etiquetas title, Open Graph y Twitter Card',
     },
+    'mime-types': {
+      label: 'Tipos MIME',
+      description: 'Consulta el tipo MIME de una extensión de archivo',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -335,6 +339,7 @@ const dict = {
     metaDescription: 'Descripción',
     metaImageUrl: 'URL de imagen',
     metaPageUrl: 'URL de página',
+    mimeTypeQuery: 'Buscar por extensión o tipo MIME',
   },
   labels: {
     plainText: 'Texto plano',

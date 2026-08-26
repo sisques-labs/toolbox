@@ -70,7 +70,12 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
   },
   {
     category: ToolCategoryId.Web,
-    tools: [ToolId.UrlParser, ToolId.BasicAuth, ToolId.MetaTags],
+    tools: [
+      ToolId.UrlParser,
+      ToolId.BasicAuth,
+      ToolId.MetaTags,
+      ToolId.MimeTypes,
+    ],
   },
   {
     category: ToolCategoryId.Crypto,

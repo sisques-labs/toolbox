@@ -78,6 +78,7 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - URL parser — break a URL down into its components
 - Basic auth generator — encode or decode HTTP Basic authentication headers
 - Meta tag generator — generate title, Open Graph and Twitter card meta tags
+- MIME types — look up the MIME type for a file extension
 
 ## Tech stack
 

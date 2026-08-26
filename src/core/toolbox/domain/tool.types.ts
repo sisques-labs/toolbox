@@ -50,6 +50,7 @@ export const ToolId = {
   UrlParser: 'url-parser',
   BasicAuth: 'basic-auth',
   MetaTags: 'meta-tags',
+  MimeTypes: 'mime-types',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

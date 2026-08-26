@@ -52,6 +52,7 @@ import { SvgPlaceholderPanel } from '@/core/toolbox/presentation/components/tool
 import { UrlParserPanel } from '@/core/toolbox/presentation/components/tool-panels/url-parser/url-parser-panel';
 import { BasicAuthPanel } from '@/core/toolbox/presentation/components/tool-panels/basic-auth/basic-auth-panel';
 import { MetaTagsPanel } from '@/core/toolbox/presentation/components/tool-panels/meta-tags/meta-tags-panel';
+import { MimeTypesPanel } from '@/core/toolbox/presentation/components/tool-panels/mime-types/mime-types-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -165,5 +166,7 @@ export function ActiveToolPanel({
       return <BasicAuthPanel t={t} onCopy={onCopy} />;
     case ToolId.MetaTags:
       return <MetaTagsPanel t={t} onCopy={onCopy} />;
+    case ToolId.MimeTypes:
+      return <MimeTypesPanel t={t} />;
   }
 }
