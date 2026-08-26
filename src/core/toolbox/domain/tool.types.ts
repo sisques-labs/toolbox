@@ -3,6 +3,7 @@ export const ToolId = {
   Slug: 'slug',
   Lorem: 'lorem',
   Regex: 'regex',
+  TextDiff: 'text-diff',
   Json: 'json',
   JsonDiff: 'json-diff',
   Yaml: 'yaml',
@@ -14,9 +15,13 @@ export const ToolId = {
   Uuid: 'uuid',
   Ulid: 'ulid',
   Password: 'password',
+  Totp: 'totp',
   Crontab: 'crontab',
+  Qr: 'qr',
   Timestamp: 'timestamp',
   Color: 'color',
+  Base: 'base',
+  Chmod: 'chmod',
   Subnet: 'subnet',
 } as const;
 

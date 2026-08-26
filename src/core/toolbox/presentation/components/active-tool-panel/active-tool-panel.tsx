@@ -5,6 +5,7 @@ import { CasePanel } from '@/core/toolbox/presentation/components/tool-panels/ca
 import { SlugPanel } from '@/core/toolbox/presentation/components/tool-panels/slug/slug-panel';
 import { LoremPanel } from '@/core/toolbox/presentation/components/tool-panels/lorem/lorem-panel';
 import { RegexPanel } from '@/core/toolbox/presentation/components/tool-panels/regex/regex-panel';
+import { TextDiffPanel } from '@/core/toolbox/presentation/components/tool-panels/text-diff/text-diff-panel';
 import { JsonPanel } from '@/core/toolbox/presentation/components/tool-panels/json/json-panel';
 import { JsonDiffPanel } from '@/core/toolbox/presentation/components/tool-panels/json-diff/json-diff-panel';
 import { YamlPanel } from '@/core/toolbox/presentation/components/tool-panels/yaml/yaml-panel';
@@ -16,9 +17,13 @@ import { HashPanel } from '@/core/toolbox/presentation/components/tool-panels/ha
 import { UuidPanel } from '@/core/toolbox/presentation/components/tool-panels/uuid/uuid-panel';
 import { UlidPanel } from '@/core/toolbox/presentation/components/tool-panels/ulid/ulid-panel';
 import { PasswordPanel } from '@/core/toolbox/presentation/components/tool-panels/password/password-panel';
+import { TotpPanel } from '@/core/toolbox/presentation/components/tool-panels/totp/totp-panel';
 import { CrontabPanel } from '@/core/toolbox/presentation/components/tool-panels/crontab/crontab-panel';
+import { QrPanel } from '@/core/toolbox/presentation/components/tool-panels/qr/qr-panel';
 import { TimestampPanel } from '@/core/toolbox/presentation/components/tool-panels/timestamp/timestamp-panel';
 import { ColorPanel } from '@/core/toolbox/presentation/components/tool-panels/color/color-panel';
+import { BasePanel } from '@/core/toolbox/presentation/components/tool-panels/base/base-panel';
+import { ChmodPanel } from '@/core/toolbox/presentation/components/tool-panels/chmod/chmod-panel';
 import { SubnetPanel } from '@/core/toolbox/presentation/components/tool-panels/subnet/subnet-panel';
 
 export function ActiveToolPanel({
@@ -39,6 +44,8 @@ export function ActiveToolPanel({
       return <LoremPanel t={t} onCopy={onCopy} />;
     case ToolId.Regex:
       return <RegexPanel t={t} />;
+    case ToolId.TextDiff:
+      return <TextDiffPanel t={t} />;
     case ToolId.Json:
       return <JsonPanel t={t} onCopy={onCopy} />;
     case ToolId.JsonDiff:
@@ -61,12 +68,20 @@ export function ActiveToolPanel({
       return <UlidPanel t={t} onCopy={onCopy} />;
     case ToolId.Password:
       return <PasswordPanel t={t} onCopy={onCopy} />;
+    case ToolId.Totp:
+      return <TotpPanel t={t} onCopy={onCopy} />;
     case ToolId.Crontab:
       return <CrontabPanel t={t} onCopy={onCopy} />;
+    case ToolId.Qr:
+      return <QrPanel t={t} />;
     case ToolId.Timestamp:
       return <TimestampPanel t={t} onCopy={onCopy} />;
     case ToolId.Color:
       return <ColorPanel t={t} onCopy={onCopy} />;
+    case ToolId.Base:
+      return <BasePanel t={t} onCopy={onCopy} />;
+    case ToolId.Chmod:
+      return <ChmodPanel t={t} onCopy={onCopy} />;
     case ToolId.Subnet:
       return <SubnetPanel t={t} />;
   }

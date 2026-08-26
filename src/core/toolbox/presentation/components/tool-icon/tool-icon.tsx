@@ -27,6 +27,13 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M5 16h3M16 16h3" />
     </>
   ),
+  [ToolId.TextDiff]: (
+    <>
+      <path d="M4 5h7v14H4z" />
+      <path d="M13 5h7v14h-7z" />
+      <path d="M7 9h1M7 12h1M16 9h1M16 12h1M16 15h1" />
+    </>
+  ),
   [ToolId.Json]: (
     <>
       <path d="M8 4c-2 0-3 1-3 3v3c0 1-1 2-2 2 1 0 2 1 2 2v3c0 2 1 3 3 3" />
@@ -107,11 +114,26 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <path d="M8 11V7a4 4 0 1 1 8 0v4" />
     </>
   ),
+  [ToolId.Totp]: (
+    <>
+      <rect x="5" y="4" width="14" height="16" rx="2" />
+      <path d="M9 9h6M9 13h4" />
+      <circle cx="15" cy="16" r="1" />
+    </>
+  ),
   [ToolId.Crontab]: (
     <>
       <rect x="4" y="5" width="16" height="15" rx="2" />
       <path d="M8 3v4M16 3v4M4 11h16" />
       <path d="M8 15h2M12 15h2" />
+    </>
+  ),
+  [ToolId.Qr]: (
+    <>
+      <rect x="4" y="4" width="7" height="7" rx="1" />
+      <rect x="13" y="4" width="7" height="7" rx="1" />
+      <rect x="4" y="13" width="7" height="7" rx="1" />
+      <path d="M14 14h2v2h-2zM18 14h2v2h-2zM14 18h2v2h-2zM18 18h2v2h-2z" />
     </>
   ),
   [ToolId.Timestamp]: (
@@ -125,6 +147,19 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <circle cx="12" cy="12" r="8" />
       <circle cx="12" cy="12" r="3" />
       <path d="M12 2v2M12 20v2M2 12h2M20 12h2" />
+    </>
+  ),
+  [ToolId.Base]: (
+    <>
+      <path d="M4 7h6v10H4zM14 7h6v10h-6z" />
+      <path d="M10 12h4" />
+    </>
+  ),
+  [ToolId.Chmod]: (
+    <>
+      <rect x="5" y="11" width="14" height="9" rx="2" />
+      <path d="M8 11V8a4 4 0 0 1 8 0" />
+      <path d="M9 16h6" />
     </>
   ),
   [ToolId.Subnet]: (
