@@ -56,6 +56,7 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - HMAC generator — generate an HMAC digest from a message and a secret key
 - Password strength analyser — estimate a password's entropy and time to crack
 - BIP39 mnemonic — generate or validate a BIP39 mnemonic seed phrase
+- RSA key pair generator — generate an RSA public/private key pair
 
 ## Tech stack
 

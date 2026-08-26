@@ -176,6 +176,10 @@ const dict = {
       label: 'Mnemónico BIP39',
       description: 'Genera o valida una frase semilla mnemónica BIP39',
     },
+    'rsa-keypair': {
+      label: 'Generador de par de claves RSA',
+      description: 'Genera un par de claves pública/privada RSA',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -242,6 +246,7 @@ const dict = {
     hmacSecret: 'Clave secreta',
     bip39Strength: 'Fortaleza (bits)',
     bip39MnemonicToValidate: 'Mnemónico a validar',
+    modulusLength: 'Tamaño de clave (bits)',
   },
   labels: {
     plainText: 'Texto plano',
@@ -319,6 +324,9 @@ const dict = {
     timeCenturies: 'Siglos',
     valid: 'Válido',
     invalid: 'No válido',
+    publicKey: 'Clave pública',
+    privateKey: 'Clave privada',
+    generating: 'Generando…',
   },
   presets: {
     everyMinute: 'Cada minuto',

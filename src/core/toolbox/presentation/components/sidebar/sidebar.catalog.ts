@@ -56,6 +56,7 @@ export const TOOL_CATALOG: { category: ToolCategoryId; tools: ToolId[] }[] = [
       ToolId.Hmac,
       ToolId.PasswordStrength,
       ToolId.Bip39,
+      ToolId.RsaKeypair,
     ],
   },
 ];

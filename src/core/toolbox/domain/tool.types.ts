@@ -36,6 +36,7 @@ export const ToolId = {
   Hmac: 'hmac',
   PasswordStrength: 'password-strength',
   Bip39: 'bip39',
+  RsaKeypair: 'rsa-keypair',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

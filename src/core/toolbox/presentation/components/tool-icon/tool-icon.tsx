@@ -252,6 +252,12 @@ const ICON_PATHS: Record<ToolId, React.ReactNode> = {
       <circle cx="19" cy="16" r="2" />
     </>
   ),
+  [ToolId.RsaKeypair]: (
+    <>
+      <circle cx="8" cy="8" r="4" />
+      <path d="M11 11l9 9M16 16l2-2M19 19l2-2" />
+    </>
+  ),
 };
 
 export function ToolIcon({

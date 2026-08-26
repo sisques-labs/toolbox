@@ -38,6 +38,7 @@ import { BcryptPanel } from '@/core/toolbox/presentation/components/tool-panels/
 import { HmacPanel } from '@/core/toolbox/presentation/components/tool-panels/hmac/hmac-panel';
 import { PasswordStrengthPanel } from '@/core/toolbox/presentation/components/tool-panels/password-strength/password-strength-panel';
 import { Bip39Panel } from '@/core/toolbox/presentation/components/tool-panels/bip39/bip39-panel';
+import { RsaKeypairPanel } from '@/core/toolbox/presentation/components/tool-panels/rsa-keypair/rsa-keypair-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -123,5 +124,7 @@ export function ActiveToolPanel({
       return <PasswordStrengthPanel t={t} />;
     case ToolId.Bip39:
       return <Bip39Panel t={t} onCopy={onCopy} />;
+    case ToolId.RsaKeypair:
+      return <RsaKeypairPanel t={t} onCopy={onCopy} />;
   }
 }
