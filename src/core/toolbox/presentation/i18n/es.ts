@@ -290,6 +290,10 @@ const dict = {
       description:
         'Convierte texto a binario separado por espacios y viceversa',
     },
+    'text-unicode': {
+      label: 'Texto ↔ Unicode',
+      description: 'Convierte texto a puntos de código Unicode y viceversa',
+    },
   },
   actions: {
     copy: 'Copiar',
@@ -401,6 +405,7 @@ const dict = {
     dockerRunInput: 'Comando docker run',
     cheatsheetQuery: 'Buscar',
     binaryInput: 'Binario',
+    unicodeInput: 'Puntos de código Unicode',
   },
   labels: {
     plainText: 'Texto plano',
@@ -570,6 +575,8 @@ const dict = {
     invalidXml: 'Introduce un XML válido y bien formado',
     invalidDockerRun: 'Introduce un comando docker run con al menos una imagen',
     invalidBinary: 'Introduce bytes binarios válidos separados por espacios',
+    invalidUnicode:
+      'Introduce puntos de código U+XXXX válidos separados por espacios',
     invalidMac: 'Introduce una MAC válida, ej. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No se ha encontrado fabricante para este prefijo',
     invalidMathExpression: 'Introduce una expresión matemática válida',

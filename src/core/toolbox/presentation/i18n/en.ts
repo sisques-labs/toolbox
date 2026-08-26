@@ -274,6 +274,10 @@ const dict = {
       label: 'Text ↔ Binary',
       description: 'Convert text to space-separated binary and back',
     },
+    'text-unicode': {
+      label: 'Text ↔ Unicode',
+      description: 'Convert text to Unicode code points and back',
+    },
   },
   actions: {
     copy: 'Copy',
@@ -385,6 +389,7 @@ const dict = {
     dockerRunInput: 'docker run command',
     cheatsheetQuery: 'Search',
     binaryInput: 'Binary',
+    unicodeInput: 'Unicode code points',
   },
   labels: {
     plainText: 'Plain text',
@@ -551,6 +556,7 @@ const dict = {
     invalidXml: 'Enter valid, well-formed XML',
     invalidDockerRun: 'Enter a docker run command with at least an image',
     invalidBinary: 'Enter valid space-separated binary bytes',
+    invalidUnicode: 'Enter valid space-separated U+XXXX code points',
     invalidMac: 'Enter a valid MAC address, e.g. 00:1A:2B:3C:4D:5E',
     macVendorNotFound: 'No vendor found for this prefix',
     invalidMathExpression: 'Enter a valid math expression',

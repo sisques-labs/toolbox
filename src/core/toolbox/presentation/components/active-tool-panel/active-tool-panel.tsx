@@ -65,6 +65,7 @@ import { DockerComposePanel } from '@/core/toolbox/presentation/components/tool-
 import { GitCheatsheetPanel } from '@/core/toolbox/presentation/components/tool-panels/git-cheatsheet/git-cheatsheet-panel';
 import { RegexCheatsheetPanel } from '@/core/toolbox/presentation/components/tool-panels/regex-cheatsheet/regex-cheatsheet-panel';
 import { TextBinaryPanel } from '@/core/toolbox/presentation/components/tool-panels/text-binary/text-binary-panel';
+import { TextUnicodePanel } from '@/core/toolbox/presentation/components/tool-panels/text-unicode/text-unicode-panel';
 
 export function ActiveToolPanel({
   activeTool,
@@ -204,5 +205,7 @@ export function ActiveToolPanel({
       return <RegexCheatsheetPanel t={t} />;
     case ToolId.TextBinary:
       return <TextBinaryPanel t={t} onCopy={onCopy} />;
+    case ToolId.TextUnicode:
+      return <TextUnicodePanel t={t} onCopy={onCopy} />;
   }
 }

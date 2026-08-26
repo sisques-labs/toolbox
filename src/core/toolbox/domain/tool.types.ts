@@ -63,6 +63,7 @@ export const ToolId = {
   GitCheatsheet: 'git-cheatsheet',
   RegexCheatsheet: 'regex-cheatsheet',
   TextBinary: 'text-binary',
+  TextUnicode: 'text-unicode',
 } as const;
 
 export type ToolId = (typeof ToolId)[keyof typeof ToolId];

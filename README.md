@@ -45,6 +45,7 @@ This is the current catalog of tools. It's kept in sync with `src/core/toolbox/p
 - IBAN validator — validate an IBAN and parse its country, check digits and BBAN
 - Roman numeral converter — convert between arabic numbers and roman numerals
 - Text ↔ Binary — convert text to space-separated binary and back
+- Text ↔ Unicode — convert text to Unicode code points and back
 
 **Network**
 - IP subnet calculator — get network, broadcast and host range from a CIDR
