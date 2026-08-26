@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { DiffJsonUseCase } from '@/core/toolbox/application/use-cases/diff-json/diff-json.use-case';
 import { TextareaField } from '@/shared/presentation/components/textarea-field/textarea-field';
+import { DownloadButton } from '@/shared/presentation/components/download-button/download-button';
 import { ToolPanelFrame } from '@/core/toolbox/presentation/components/tool-panel-frame/tool-panel-frame';
 import type { ToolboxDict } from '@/core/toolbox/presentation/i18n/en';
 import type { WidenStringLiterals } from '@/shared/presentation/i18n/widen-literals';
@@ -24,6 +25,7 @@ export function JsonDiffPanel({
   const [left, setLeft] = useState(DEFAULT_LEFT);
   const [right, setRight] = useState(DEFAULT_RIGHT);
   const result = useCase.execute(left, right);
+  const hasChanges = result.ok && result.changes.length > 0;
 
   return (
     <ToolPanelFrame>
@@ -39,6 +41,16 @@ export function JsonDiffPanel({
           rows={8}
           value={right}
           onChange={(e) => setRight(e.target.value)}
+        />
+      </div>
+      <div className="flex justify-end">
+        <DownloadButton
+          content={hasChanges ? JSON.stringify(result.changes, null, 2) : ''}
+          baseName="json-diff"
+          extension="json"
+          mimeType="application/json"
+          label={t.actions.download}
+          disabled={!hasChanges}
         />
       </div>
       {!result.ok ? (

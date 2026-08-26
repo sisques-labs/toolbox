@@ -23,4 +23,18 @@ describe('YamlPanel', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Copy' }));
     expect(onCopy).toHaveBeenCalled();
   });
+
+  it('enables the download button for a successful conversion', () => {
+    render(<YamlPanel t={enToolbox} onCopy={() => {}} />);
+    expect(screen.getByRole('button', { name: 'Download' })).toBeEnabled();
+  });
+
+  it('disables the download button when the conversion fails', () => {
+    render(<YamlPanel t={enToolbox} onCopy={() => {}} />);
+    fireEvent.click(screen.getByRole('button', { name: 'JSON → YAML' }));
+    fireEvent.change(screen.getByLabelText('JSON input'), {
+      target: { value: '{not json}' },
+    });
+    expect(screen.getByRole('button', { name: 'Download' })).toBeDisabled();
+  });
 });
