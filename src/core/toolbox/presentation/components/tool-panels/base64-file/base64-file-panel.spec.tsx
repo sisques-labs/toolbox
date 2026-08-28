@@ -18,7 +18,11 @@ describe('Base64FilePanel', () => {
     expect(screen.getByText('hello.txt')).toBeInTheDocument();
   });
 
-  it('rebuilds the download link from the validated data URL parts instead of the raw pasted text', () => {
+  it('downloads via an object URL built from the validated data URL parts, never the raw pasted text', () => {
+    const createObjectURL = vi.fn((_blob: Blob) => 'blob:mock-url');
+    const revokeObjectURL = vi.fn();
+    vi.stubGlobal('URL', { ...URL, createObjectURL, revokeObjectURL });
+
     render(<Base64FilePanel t={enToolbox} onCopy={() => {}} />);
     fireEvent.change(screen.getByLabelText('Base64 data URL'), {
       target: { value: 'data:text/plain;base64,aGVsbG8=' },
@@ -33,8 +37,14 @@ describe('Base64FilePanel', () => {
 
     fireEvent.click(screen.getByText('Download'));
 
-    expect(capturedHref).toBe('data:text/plain;base64,aGVsbG8=');
+    expect(createObjectURL).toHaveBeenCalledOnce();
+    const blob = createObjectURL.mock.calls[0][0] as Blob;
+    expect(blob.type).toBe('text/plain');
+    expect(capturedHref).toBe('blob:mock-url');
+    expect(revokeObjectURL).toHaveBeenCalledWith('blob:mock-url');
+
     clickSpy.mockRestore();
+    vi.unstubAllGlobals();
   });
 
   it('shows an error for an invalid pasted data URL', () => {

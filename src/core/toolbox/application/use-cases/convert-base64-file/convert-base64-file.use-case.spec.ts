@@ -21,4 +21,15 @@ describe('ConvertBase64FileUseCase', () => {
     expect(useCase.extractBase64('not a data url').ok).toBe(false);
     expect(useCase.extractBase64('data:text/plain,hello').ok).toBe(false);
   });
+
+  it('decodes a base64 payload into a Blob with the given mime type', async () => {
+    const blob = useCase.toBlob('aGVsbG8=', 'text/plain');
+    expect(blob.type).toBe('text/plain');
+    expect(await blob.text()).toBe('hello');
+  });
+
+  it('falls back to a generic mime type when none is given', () => {
+    const blob = useCase.toBlob('aGVsbG8=', '');
+    expect(blob.type).toBe('application/octet-stream');
+  });
 });
