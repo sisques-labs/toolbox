@@ -43,6 +43,16 @@ describe('ConvertXmlJsonUseCase', () => {
     });
   });
 
+  it('escapes double quotes in attribute values to avoid attribute injection', () => {
+    const result = useCase.jsonToXml(
+      '{"user":{"@id":"1\\" onclick=\\"evil()"}}',
+    );
+    expect(result).toEqual({
+      ok: true,
+      xml: '<user id="1&quot; onclick=&quot;evil()"></user>',
+    });
+  });
+
   it('rejects malformed JSON', () => {
     expect(useCase.jsonToXml('not json').ok).toBe(false);
   });

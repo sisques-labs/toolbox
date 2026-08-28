@@ -7,11 +7,22 @@ const RANGES: Record<PortRange, [number, number]> = {
   any: [0, 65535],
 };
 
+const UINT32_RANGE = 0x100000000;
+
+function unbiasedRandomInt(span: number): number {
+  const rejectionLimit = Math.floor(UINT32_RANGE / span) * span;
+  const buffer = new Uint32Array(1);
+  let randomValue: number;
+  do {
+    [randomValue] = crypto.getRandomValues(buffer);
+  } while (randomValue >= rejectionLimit);
+  return randomValue % span;
+}
+
 export class GenerateRandomPortUseCase {
   execute(range: PortRange): number {
     const [min, max] = RANGES[range];
     const span = max - min + 1;
-    const [randomValue] = crypto.getRandomValues(new Uint32Array(1));
-    return min + (randomValue % span);
+    return min + unbiasedRandomInt(span);
   }
 }

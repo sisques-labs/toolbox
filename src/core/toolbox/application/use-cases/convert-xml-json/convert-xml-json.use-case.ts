@@ -11,6 +11,8 @@ export interface JsonXmlResult {
 type JsonValue = string | { [key: string]: JsonValue | JsonValue[] };
 
 function isWellFormed(xml: string): boolean {
+  // codeql[js/xss-through-dom] Parsed as application/xml for validation only; the
+  // Document is discarded here and never inserted into the live DOM.
   const doc = new DOMParser().parseFromString(xml, 'application/xml');
   return doc.getElementsByTagName('parsererror').length === 0;
 }
@@ -47,7 +49,9 @@ function escapeXml(value: string): string {
   return value
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
 }
 
 function valueToXml(tagName: string, value: JsonValue, indent: string): string {
@@ -84,6 +88,8 @@ export class ConvertXmlJsonUseCase {
   xmlToJson(xml: string): XmlJsonResult {
     if (!xml.trim() || !isWellFormed(xml)) return { ok: false };
 
+    // codeql[js/xss-through-dom] Only tagName/attributes/textContent are read from
+    // the parsed Document into a plain JSON value; it is never inserted into the live DOM.
     const doc = new DOMParser().parseFromString(xml, 'application/xml');
     const root = doc.documentElement;
     const result = { [root.tagName]: elementToValue(root) };

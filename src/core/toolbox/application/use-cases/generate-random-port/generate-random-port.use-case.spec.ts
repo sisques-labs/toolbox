@@ -26,4 +26,23 @@ describe('GenerateRandomPortUseCase', () => {
     expect(port).toBeGreaterThanOrEqual(0);
     expect(port).toBeLessThanOrEqual(65535);
   });
+
+  it('re-draws instead of using a biased value near the top of the uint32 range', () => {
+    const spy = vi.spyOn(crypto, 'getRandomValues');
+    spy.mockImplementationOnce((array) => {
+      (array as Uint32Array)[0] = 0xffffffff;
+      return array;
+    });
+    spy.mockImplementationOnce((array) => {
+      (array as Uint32Array)[0] = 0;
+      return array;
+    });
+
+    const port = useCase.execute('registered');
+
+    expect(spy).toHaveBeenCalledTimes(2);
+    expect(port).toBe(1024);
+
+    spy.mockRestore();
+  });
 });

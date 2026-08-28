@@ -94,10 +94,13 @@ export function Base64FilePanel({
         <Button
           variant="secondary"
           onClick={() => {
+            const blob = useCase.toBlob(decoded.base64!, decoded.mimeType!);
+            const url = URL.createObjectURL(blob);
             const anchor = document.createElement('a');
-            anchor.href = payload;
+            anchor.href = url;
             anchor.download = 'file';
             anchor.click();
+            URL.revokeObjectURL(url);
           }}
         >
           {t.actions.download}
