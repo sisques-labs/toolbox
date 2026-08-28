@@ -27,6 +27,16 @@ describe('FormatXmlUseCase', () => {
     });
   });
 
+  it('keeps XML comments spanning multiple lines at a single indentation level', () => {
+    const result = useCase.format(
+      '<root><!--\nmulti\nline\n--><a>1</a></root>',
+      2,
+    );
+    expect(result.ok).toBe(true);
+    expect(result.formatted).toContain('\n  <a>1</a>\n');
+    expect(result.formatted).not.toContain('    <a>1</a>');
+  });
+
   it('rejects malformed XML', () => {
     expect(useCase.format('<root><a></root>', 2).ok).toBe(false);
   });

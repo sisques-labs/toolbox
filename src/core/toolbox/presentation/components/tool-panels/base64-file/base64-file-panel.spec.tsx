@@ -18,6 +18,25 @@ describe('Base64FilePanel', () => {
     expect(screen.getByText('hello.txt')).toBeInTheDocument();
   });
 
+  it('rebuilds the download link from the validated data URL parts instead of the raw pasted text', () => {
+    render(<Base64FilePanel t={enToolbox} onCopy={() => {}} />);
+    fireEvent.change(screen.getByLabelText('Base64 data URL'), {
+      target: { value: 'data:text/plain;base64,aGVsbG8=' },
+    });
+
+    let capturedHref = '';
+    const clickSpy = vi
+      .spyOn(HTMLAnchorElement.prototype, 'click')
+      .mockImplementation(function (this: HTMLAnchorElement) {
+        capturedHref = this.href;
+      });
+
+    fireEvent.click(screen.getByText('Download'));
+
+    expect(capturedHref).toBe('data:text/plain;base64,aGVsbG8=');
+    clickSpy.mockRestore();
+  });
+
   it('shows an error for an invalid pasted data URL', () => {
     render(<Base64FilePanel t={enToolbox} onCopy={() => {}} />);
     fireEvent.change(screen.getByLabelText('Base64 data URL'), {

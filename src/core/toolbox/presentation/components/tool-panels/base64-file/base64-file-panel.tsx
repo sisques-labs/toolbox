@@ -95,7 +95,10 @@ export function Base64FilePanel({
           variant="secondary"
           onClick={() => {
             const anchor = document.createElement('a');
-            anchor.href = payload;
+            anchor.href = useCase.buildDataUrl(
+              decoded.base64!,
+              decoded.mimeType!,
+            );
             anchor.download = 'file';
             anchor.click();
           }}
